@@ -39,7 +39,7 @@
 }
 
 #header.scroll > div:first-child {
-  @apply bg-page md:bg-white/90 md:backdrop-blur-md;
+  @apply bg-page md:bg-gray-50/90 md:backdrop-blur-md;
   box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
 }
 .dark #header.scroll > div:first-child,
@@ -87,4 +87,17 @@
 
 .dd *:first-child {
   margin-top: 0;
+}
+
+.bg-zoom {
+  animation: bg-zoom 10s infinite alternate;
+}
+
+@keyframes bg-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
