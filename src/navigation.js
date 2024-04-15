@@ -61,7 +61,7 @@ export const headerData = {
   actions: [
     {
       text: "Book a Tour",
-      href: "#locations",
+      href: "#",
       target: "_self",
     },
   ],
@@ -146,6 +146,6 @@ export const footerData = {
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(src/assets/favicons/rrm-favicon.png)]"></span>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://rightruddermarketing.com/"> Right Rudder Marketing</a> · All rights reserved.
+    Made by <a class="text-blue-900 hover:text-blue-200 underline dark:text-muted" href="https://rightruddermarketing.com/"> Right Rudder Marketing</a> · All rights reserved.
   `,
 };
