@@ -1,6 +1,6 @@
 site:
   name: Helicopter Tours
-  site: "https://astrowind.vercel.app"
+  site: "hightide-helitours.netlify.app"
   base: "/"
   trailingSlash: false
 
@@ -78,7 +78,7 @@ ui:
         serif: InterVariable
         heading: InterVariable
       colors:
-        default: rgb(42 67 89)
+        default: rgb(50 60 70)
         heading: rgb(0 0 0)
         muted: rgb(50 50 50 / 66%)
         bgPage: rgb(255 255 255)
