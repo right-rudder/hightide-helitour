@@ -12,6 +12,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
+import { Icon } from 'astro-icon/components';
 
 
 const metadata = {
@@ -57,42 +58,57 @@ const metadata = {
 
   <Features2
     id="locations"
-    title="From Our locations"
+    title="From Our Locations"
     tagline="Select a City"
     columns={3}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
         title: 'Southport, NC',
-        description: '1234 Lorem Ipsum St, 12345, Southport',
+        description: 'Open Fri-Sun',
         icon: 'tabler:map-pin',
         callToAction: {
           variant: 'secondary',
-          text: 'Book Now',
+          text: 'Explore',
           href: '#',
-          icon: 'tabler:calendar-event',
+        },
+        classes: {
+          panel: 'bg-southport-tour bg-cover bg-center',
+          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
+          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
+          icon: 'text-slate-700 dark:text-white',
         },
       },
       {
         title: 'St. Simons Island, GA',
-        description: '5678 Lorem Ipsum St, 56789, St. Simons Island',
+        description: 'Open Fri-Sun',
         icon: 'tabler:map-pin',
         callToAction: {
           variant: 'secondary',
-          text: 'Book Now',
+          text: 'Explore',
           href: '#',
-          icon: 'tabler:calendar-event',
+        },
+        classes: {
+          panel: 'bg-simons-tour bg-cover bg-center',
+          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
+          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
+          icon: 'text-slate-700',
         },
       },
       {
         title: 'Beaufort, SC',
-        description: '9012 Lorem Ipsum St, 90123, Beaufort',
+        description: 'Open Fri-Sun',
         icon: 'tabler:map-pin',
         callToAction: {
           variant: 'secondary',
-          text: 'Book Now',
+          text: 'Explore',
           href: '#',
-          icon: 'tabler:calendar-event',
+        },
+        classes: {
+          panel: 'bg-beaufort-tour bg-cover bg-center',
+          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
+          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
+          icon: 'text-slate-700',
         },
       },
     ]}
@@ -110,23 +126,35 @@ const metadata = {
         description:
           "Head over tour our tour location page where you can pick a state and city.",
         icon: 'tabler:map-pin',
+        classes: {
+          icon: 'text-gray-500',
+        }
       },
       {
         title: 'Step 2: <span class="font-medium">Pick a tour</em>',
         description:
           `Each location usually has around three to five tour options. Read through each route and select the view you’d like most.`,
         icon: 'tabler:checklist',
+        classes: {
+          icon: 'text-gray-500',
+        }
       },
       {
         title: 'Step 3: <span class="font-medium">Add passengers</span>',
         description:
         'We require a minimum of two passengers to fly. Per trip, we can take up to three passengers. If you are a party of more than 3 we can divide your party into equal groups.',
         icon: 'tabler:users-plus',
+        classes: {
+          icon: 'text-gray-500',
+        }
       },
       {
         title: 'Step 4: <span class="font-medium">Get ready to fly</span>',
         description: `Add your payment method & start the countdown to your flight! Upon checkout, you will receive an email confirmation and your tickets.`,
         icon: 'tabler:check',
+        classes: {
+          icon: 'text-gray-500',
+        }
       },
     ]}
     image={{
@@ -137,7 +165,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Words from Real Customers"
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     testimonials={[
       {
@@ -180,7 +208,7 @@ const metadata = {
     }]}
     title=" Gift Cards Available"
     subtitle="Give the gift of flight with a helicopter tour gift card. Perfect for any occasion."
-    bg='<div class="absolute inset-0 bg-slate-400" aria-hidden="true"></div>'
+    bg='<div class="absolute inset-0 bg-beaufort-tour bg-cover bg-center" aria-hidden="true"></div>'
   />
 
   <!-- FAQs Widget ******************* -->
