@@ -1,6 +1,6 @@
 site:
   name: Helicopter Tours
-  site: "hightide-helitours.netlify.app"
+  site: "https://astrowind.vercel.app"
   base: "/"
   trailingSlash: false
 
