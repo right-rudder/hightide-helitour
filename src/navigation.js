@@ -11,7 +11,7 @@ export const headerData = {
         },
         {
           text: "Beaufort",
-          href: getPermalink("/locations/beaufort"),
+          href: getPermalink("/beaufort"),
         },
         {
           text: "St. Simons Island",
