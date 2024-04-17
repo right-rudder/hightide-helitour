@@ -1,0 +1,311 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero2 from "~/components/widgets/Hero2.astro";
+import Note from "~/components/widgets/Note.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import beaufortRoadmap from "~/components/common/beaufortRoadmap.astro";
+import Image from "~/components/common/Image.astro";
+
+const metadata = {
+  title: "Helitours | High Tide Aviation",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero2
+    actions={[
+      {
+        variant: "primary",
+        text: "Choose a Tour",
+        href: "#tours",
+        target: "_self",
+      },
+      /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    image={{
+      src: "~/assets/images/IMG_1676.jpg",
+      alt: "Helicopter on the ground ready to take off",
+    }}
+  >
+    <Fragment slot="title">
+      Let's Fly Above
+      <br />
+      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight"
+        >Beaufort</span
+      >
+    </Fragment>
+
+    <!-- <Fragment slot="subtitle">
+      <div class="dark:text-white bg-gray-200/70 text-primary rounded px-2 py-5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a, quae sunt obcaecati placeat illo expedita praesentium ab blanditiis esse exercitationem!
+      </div>
+    </Fragment> -->
+  </Hero2>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Roadmap Widget **************** -->
+  <section id="beaufort-roadmap">
+    <div class="bg-white py-16 sm:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <h2
+            class="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center"
+          >
+            Steps to Fly Above Beaufort
+          </h2>
+          <p class="mt-4 text-lg leading-2 text-black text-center">
+            Cross the skies of Beaufort and experience the thrill of helicopter
+          </p>
+        </div>
+        <div>
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                1
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lift Off in Beaufort Airport
+                </h3>
+                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="certified-instructor-explaining-instrument-training"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                2
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="certified-instructor-delivering-written-exam"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                3
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="a-pilot-giving-thumbs-up-in-cabin-in-flight"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                4
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="a-happy-pilot-next-to-aircraft"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Words from Real Customers"
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    testimonials={[
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: "Emily Kennedy",
+        job: "Front-end developer",
+        image: {
+          src: "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
+          alt: "Emily Kennedy Image",
+        },
+      },
+      {
+        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+        name: "Sarah Hansen",
+        job: "Photographer",
+        image: {
+          src: "https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+          alt: "Sarah Hansen Image",
+        },
+      },
+      {
+        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+        name: "Mark Wilkinson",
+        job: "Small business owner",
+        image: {
+          src: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80",
+          alt: "Mark Wilkinson Image",
+        },
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: "primary",
+        text: "View Gift Cards",
+        href: "/",
+      },
+    ]}
+    title=" Gift Cards Available"
+    subtitle="Give the gift of flight with a helicopter tour gift card. Perfect for any occasion."
+    bg='<div class="absolute inset-0 bg-beaufort-tour bg-cover bg-center" aria-hidden="true"></div>'
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    bg='<div class="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    classes={{ container: "max-w-6xl" }}
+    items={[
+      {
+        title: "Why AstroWind?",
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: "What do I need to start?",
+        description:
+          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
+      },
+      {
+        title: "How to install the Astro + Tailwind CSS template?",
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+      {
+        title: "What is something that you would like to try again?",
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title:
+          "If you could only ask one question to each person you meet, what would that question be?",
+        description:
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  />
+</Layout>
