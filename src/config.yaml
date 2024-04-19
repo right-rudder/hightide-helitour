@@ -1,5 +1,5 @@
 site:
-  name: Helicopter Tours
+  name: High Tide Aviation
   site: "https://astrowind.vercel.app"
   base: "/"
   trailingSlash: false
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Helicopter Tours
-    template: "%s — Helicopter Tours"
+    default: High Tide Aviation
+    template: "%s — High Tide Aviation"
   description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Helicopter Tours
+    site_name: High Tide Aviation
     images:
       - url: "~/assets/images/IMG_0743.jpg"
         width: 1200
