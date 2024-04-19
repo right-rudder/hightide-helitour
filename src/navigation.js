@@ -7,7 +7,7 @@ export const headerData = {
       links: [
         {
           text: "Southport",
-          href: getPermalink("/locations/southport"),
+          href: getPermalink("/southport"),
         },
         {
           text: "Beaufort",
@@ -15,7 +15,7 @@ export const headerData = {
         },
         {
           text: "St. Simons Island",
-          href: getPermalink("/locations/st-simons-island"),
+          href: getPermalink("/st-simons-island"),
         },
       ],
     },
