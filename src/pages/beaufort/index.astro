@@ -55,7 +55,9 @@ const metadata = {
 
   <!-- Roadmap Widget **************** -->
   <section id="beaufort-roadmap">
-    <div class="bg-white py-16 sm:py-32">
+    <div
+      class="text- bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
+    >
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto w-full lg:mx-0">
           <h2
@@ -63,7 +65,9 @@ const metadata = {
           >
             Steps to Fly Above Beaufort
           </h2>
-          <p class="mt-4 text-lg leading-2 text-black text-center">
+          <p
+            class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
+          >
             Cross the skies of Beaufort and experience the thrill of helicopter
           </p>
         </div>
@@ -83,7 +87,9 @@ const metadata = {
                 >
                   Lift Off in Beaufort Airport
                 </h3>
-                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
                   Lorem ipsum dolor sit amet<strong>
                     consectetur
                   </strong>adipisicing elit. Vel aliquam<strong>
@@ -120,7 +126,9 @@ const metadata = {
                 >
                   Lorem ipsum dolor sit amet.
                 </h3>
-                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
                   Lorem ipsum dolor sit amet<strong>
                     consectetur
                   </strong>adipisicing elit. Vel aliquam<strong>
@@ -155,7 +163,9 @@ const metadata = {
                 >
                   Lorem ipsum dolor sit amet.
                 </h3>
-                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
                   Lorem ipsum dolor sit amet<strong>
                     consectetur
                   </strong>adipisicing elit. Vel aliquam<strong>
@@ -192,7 +202,9 @@ const metadata = {
                 >
                   Lorem ipsum dolor sit amet.
                 </h3>
-                <p class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800">
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
                   Lorem ipsum dolor sit amet<strong>
                     consectetur
                   </strong>adipisicing elit. Vel aliquam<strong>
@@ -224,52 +236,184 @@ const metadata = {
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     prices={[
       {
+        image: {
+          src: "~/assets/images/IMG_1676.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
         city: "Beaufort",
         title: "Quick Hop",
         subtitle:
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: "0",
+        price: 55,
+        period: "per person",
         items: [
           {
-            description: "Unlimited projects",
-            icon: "tabler:check",
+            description: "25 miles of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:helicopter",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-skyscraper",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-monument",
           },
         ],
-        period: "/ month",
         callToAction: {
-          target: "_blank",
-          text: "Get Started for Free",
+          target: "_self",
+          text: "Book Now",
+          href: "#",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
           href: "#",
         },
       },
       {
+        image: {
+          src: "~/assets/images/IMG_0722.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
         city: "Beaufort",
         title: "Pro Tour",
-        subtitle: "Premium templates and advanced customization",
-        price: 15,
-        period: "/ Month",
+        subtitle:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
+        price: 95,
+        period: "per person",
+        items: [
+          {
+            description: "25 miles of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:helicopter",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-skyscraper",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-monument",
+          },
+        ],
         callToAction: {
-          target: "_blank",
-          text: "Upgrade to Pro",
+          target: "_self",
+          text: "Book Now",
+          href: "#",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
           href: "#",
         },
         hasRibbon: true,
         ribbonTitle: "popular",
       },
       {
+        image: {
+          src: "~/assets/images/IMG_0762.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
         city: "Beaufort",
         title: "All in Tour",
-        subtitle: "Tailored solutions for large-scale projects",
-        price: 45,
-        period: "/ Month",
+        subtitle:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
+        price: 145,
+        period: "per person",
+        items: [
+          {
+            description: "25 miles of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:helicopter",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-skyscraper",
+          },
+          {
+            description: "Lorem ipsum dolor..",
+            icon: "tabler:building-monument",
+          },
+        ],
         callToAction: {
-          target: "_blank",
-          text: "Unlock Enterprise Features",
+          target: "_self",
+          text: "Book Now",
+          href: "#",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
           href: "#",
         },
       },
     ]}
   />
+
+  <section id="location" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
+              >
+                Come to Fly
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
+              >
+                Location
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, tempore impedit et asperiores excepturi tempora
+                numquam. Eius, voluptatem incidunt dicta assumenda fugiat
+                consequuntur ducimus adipisci quae minima?
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
+              </dl>
+            </div>
+          </div>
+          <div class="h-full w-full flex justify-center align-middle">
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.308243855036!2d-80.63734772424385!3d32.41090037381882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc0d96cfb61a4b%3A0x682bf86deda375d2!2sHigh%20Tide%20Aviation%20Lowcountry%20Air%20Tours!5e0!3m2!1sen!2sco!4v1713557201227!5m2!1sen!2sco"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Testimonials Widget *********** -->
 
@@ -305,21 +449,6 @@ const metadata = {
         },
       },
     ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: "primary",
-        text: "View Gift Cards",
-        href: "/",
-      },
-    ]}
-    title=" Gift Cards Available"
-    subtitle="Give the gift of flight with a helicopter tour gift card. Perfect for any occasion."
-    bg='<div class="absolute inset-0 bg-beaufort-tour bg-cover bg-center" aria-hidden="true"></div>'
   />
 
   <!-- FAQs Widget ******************* -->
