@@ -8,9 +8,10 @@ import CallToAction from "~/components/widgets/CallToAction.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
 import beaufortRoadmap from "~/components/common/beaufortRoadmap.astro";
 import Image from "~/components/common/Image.astro";
+import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
-  title: "Helitours | High Tide Aviation",
+  title: "Beaufort | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -214,6 +215,61 @@ const metadata = {
       </div>
     </div>
   </section>
+
+  <!-- Pricing Widget ******************* -->
+
+  <Pricing2
+    id="tours"
+    title="Select from the tours below"
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    prices={[
+      {
+        city: "Beaufort",
+        title: "Quick Hop",
+        subtitle:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
+        price: "0",
+        items: [
+          {
+            description: "Unlimited projects",
+            icon: "tabler:check",
+          },
+        ],
+        period: "/ month",
+        callToAction: {
+          target: "_blank",
+          text: "Get Started for Free",
+          href: "#",
+        },
+      },
+      {
+        city: "Beaufort",
+        title: "Pro Tour",
+        subtitle: "Premium templates and advanced customization",
+        price: 15,
+        period: "/ Month",
+        callToAction: {
+          target: "_blank",
+          text: "Upgrade to Pro",
+          href: "#",
+        },
+        hasRibbon: true,
+        ribbonTitle: "popular",
+      },
+      {
+        city: "Beaufort",
+        title: "All in Tour",
+        subtitle: "Tailored solutions for large-scale projects",
+        price: 45,
+        period: "/ Month",
+        callToAction: {
+          target: "_blank",
+          text: "Unlock Enterprise Features",
+          href: "#",
+        },
+      },
+    ]}
+  />
 
   <!-- Testimonials Widget *********** -->
 
