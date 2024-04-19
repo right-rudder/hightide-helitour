@@ -1,7 +1,7 @@
 ---
-import Image from '~/components/common/Image.astro';
-import Button from '~/components/ui/Button.astro';
-import type { CallToAction } from '~/types';
+import Image from "~/components/common/Image.astro";
+import Button from "~/components/ui/Button.astro";
+import type { CallToAction } from "~/types";
 
 export interface Props {
   id?: string;
@@ -15,37 +15,41 @@ export interface Props {
 
 const {
   id,
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
   tagline,
-  content = await Astro.slots.render('content'),
-  actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  content = await Astro.slots.render("content"),
+  actions = await Astro.slots.render("actions"),
+  image = await Astro.slots.render("image"),
 } = Astro.props;
 ---
 
-<section class="relative h-screen md:-mt-[76px] not-prose overflow-hidden" {...id ? { id } : {}}>
+<section
+  class="relative lg:h-screen md:-mt-[76px] not-prose overflow-hidden"
+  {...id ? { id } : {}}
+>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="flex justify-center align-middle items-center h-full max-w-7xl mx-auto px-4 sm:px-6 z-50">
+  <div
+    class="flex justify-center align-middle items-center h-full max-w-7xl mx-auto px-4 sm:px-6 z-50"
+  >
     <div>
       {
         image && (
-            <div class="absolute inset-0 -z-10 m-auto h-full max-w-full bg-zoom">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <Image
-                  class="object-cover object-center h-4/5 lg:h-full w-full filter brightness-110 dark:brightness-50"
-                  widths={[768, 1024, 2040]}
-                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 100%) 1024px, 2040px"
-                  loading="eager"
-                  {...image}
-                />
-              )}
-            </div>
-          )
-        }
-      </div>
+          <div class="absolute inset-0 -z-10 m-auto h-full max-w-full bg-zoom">
+            {typeof image === "string" ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="object-cover object-center h-full w-full filter brightness-110 dark:brightness-50"
+                widths={[768, 1024, 2040]}
+                loading="eager"
+                {...image}
+              />
+            )}
+          </div>
+        )
+      }
+    </div>
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
       <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
@@ -66,7 +70,14 @@ const {
           )
         }
         <div class="max-w-3xl mx-auto">
-          {subtitle && <div class="text-xl text-muted mb-6 dark:text-slate-300" set:html={subtitle} />}
+          {
+            subtitle && (
+              <div
+                class="text-xl text-muted mb-6 dark:text-slate-300"
+                set:html={subtitle}
+              />
+            )
+          }
           {
             actions && (
               <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
