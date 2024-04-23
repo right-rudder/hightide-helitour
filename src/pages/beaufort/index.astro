@@ -1,7 +1,7 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 
-import Hero2 from "~/components/widgets/Hero2.astro";
+import Hero3 from "~/components/widgets/Hero3.astro";
 import Note from "~/components/widgets/Note.astro";
 import FAQs from "~/components/widgets/FAQs.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
@@ -19,15 +19,29 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero2
+  <Hero3
     actions={[
       {
-        variant: "primary",
-        text: "Choose a Tour",
+        variant: "custom",
+        text: "View Rides",
         href: "#tours",
         target: "_self",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    openHours={[
+      {
+        weekday: "Monday - Tuesday",
+        time: "Closed",
+      },
+      {
+        weekday: "Wednesday - Friday",
+        time: "9:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Saturday - Sunday",
+        time: "9:00 AM - 3:00 PM",
+      },
     ]}
     image={{
       src: "~/assets/images/IMG_1676.jpg",
@@ -47,7 +61,7 @@ const metadata = {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a, quae sunt obcaecati placeat illo expedita praesentium ab blanditiis esse exercitationem!
       </div>
     </Fragment> -->
-  </Hero2>
+  </Hero3>
 
   <!-- Note Widget ******************* -->
 
@@ -272,7 +286,7 @@ const metadata = {
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/beaufort/tour1",
         },
       },
       {
@@ -312,7 +326,7 @@ const metadata = {
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/beaufort/tour2",
         },
         hasRibbon: true,
         ribbonTitle: "popular",
@@ -354,7 +368,7 @@ const metadata = {
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/beaufort/tour3",
         },
       },
     ]}
