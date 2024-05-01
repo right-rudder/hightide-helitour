@@ -8,7 +8,16 @@ module.exports = {
         "southport-tour": "url('~/assets/images/IMG_0652.jpg')",
         "simons-tour": "url('~/assets/images/IMG_0762.jpg')",
         "beaufort-tour": "url('~/assets/images/IMG_0730.jpg')",
+        "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
       },
+      height: (theme) => ({
+        "screen-1/2": "50vh",
+        "screen-2/3": "66vh",
+        "screen-1/3": "calc(100vh / 3)",
+        "screen-3/4": "75vh",
+        "screen-4/5": "80vh",
+        "screen-mobile": "92vh", //depends on menu height
+      }),
       colors: {
         primary: "var(--aw-color-primary)",
         secondary: "var(--aw-color-secondary)",
