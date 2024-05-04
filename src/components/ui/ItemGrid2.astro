@@ -4,12 +4,7 @@ import { Icon } from "astro-icon/components";
 import { twMerge } from "tailwind-merge";
 import Button from "./Button.astro";
 
-const {
-  items = [],
-  columns,
-  defaultIcon = "",
-  classes = {},
-} = Astro.props;
+const { items = [], columns, defaultIcon = "", classes = {} } = Astro.props;
 
 const {
   container: containerClass = "",
@@ -29,10 +24,10 @@ const {
           columns === 4
             ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
             : columns === 3
-            ? "lg:grid-cols-3 sm:grid-cols-2"
-            : columns === 2
-            ? "sm:grid-cols-2 "
-            : ""
+              ? "lg:grid-cols-3 sm:grid-cols-2"
+              : columns === 2
+                ? "sm:grid-cols-2 "
+                : ""
         }`,
         containerClass
       )}
@@ -52,18 +47,18 @@ const {
               itemClasses?.panel
             )}
           >
-          <div class="absolute top-0 left-0 w-full h-full bg-white/60 dark:bg-slate-800/60 -z-10"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-white/60 dark:bg-slate-800/60 -z-10" />
 
-          {(icon || defaultIcon) && (
-            <Icon
-            name={icon || defaultIcon}
-            class={twMerge(
-              "mb-2 w-10 h-10 mx-auto",
-              defaultIconClass,
-              itemClasses?.icon
+            {(icon || defaultIcon) && (
+              <Icon
+                name={icon || defaultIcon}
+                class={twMerge(
+                  "mb-2 w-10 h-10 mx-auto",
+                  defaultIconClass,
+                  itemClasses?.icon
+                )}
+              />
             )}
-            />
-          )}
             <div
               class={twMerge(
                 "text-xl font-bold mx-auto text-center",
