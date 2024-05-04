@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "southport-tour": "url('~/assets/images/IMG_0652.jpg')",
-        "simons-tour": "url('~/assets/images/IMG_0762.jpg')",
-        "beaufort-tour": "url('~/assets/images/IMG_0730.jpg')",
+        "southport-tour": "url('~/assets/images/IMG_1676.jpg')",
+        "simons-tour": "url('~/assets/images/happy-high-tide-student.jpg')",
+        "beaufort-tour": "url('~/assets/images/IMG_9916.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
       },
       height: (theme) => ({
