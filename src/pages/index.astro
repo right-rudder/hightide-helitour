@@ -1,24 +1,33 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from "~/layouts/PageLayout.astro";
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import { Icon } from 'astro-icon/components';
-
+import Hero from "~/components/widgets/Hero.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Content from "~/components/widgets/Content.astro";
+import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import { Icon } from "astro-icon/components";
 
 const metadata = {
-  title: 'Helitours | High Tide Aviation',
+  title: "Helitours | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
+
+const cities = ["Southport", "St Simons Island", "Beaufort"];
+
+let city = "";
+
+function randomCity() {
+  city = cities[Math.floor(Math.random() * cities.length)];
+}
+
+randomCity();
 ---
 
 <Layout metadata={metadata}>
@@ -27,20 +36,25 @@ const metadata = {
   <Hero
     actions={[
       {
-        variant: 'primary',
-        text: 'Choose Location',
-        href: '/locations',
-        target: '_self',
-        icon: 'tabler:map-pin',
+        variant: "primary",
+        text: "Choose Location",
+        href: "/#locations",
+        target: "_self",
+        icon: "tabler:map-pin",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
-    image={{ src: '~/assets/images/IMG_0743.jpg', alt: 'Helicopter on the ground ready to take off' }}
+    image={{
+      src: "~/assets/images/IMG_0637.jpg",
+      alt: "Helicopter on the ground ready to take off",
+    }}
   >
     <Fragment slot="title">
       Let's Fly Above
-      <br>
-      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight">Southport</span>
+      <br />
+      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight"
+        >{city}</span
+      >
     </Fragment>
 
     <!-- <Fragment slot="subtitle">
@@ -58,57 +72,63 @@ const metadata = {
 
   <Features2
     id="locations"
-    title="From Our Locations"
-    tagline="Select a City"
+    title="High Tide Tour Locations"
+    tagline="Select a Coastline"
     columns={3}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
-        title: 'Southport, NC',
-        description: 'Open Fri-Sun',
-        icon: 'tabler:map-pin',
+        title: "Southport, NC",
+        description: "Airplane + Helicopter",
+        icon: "tabler:map-pin",
         callToAction: {
-          variant: 'secondary',
-          text: 'Explore',
-          href: '#',
+          variant: "secondary",
+          text: "Explore",
+          href: "/southport",
         },
         classes: {
-          panel: 'bg-southport-tour bg-cover bg-center',
-          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
-          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
-          icon: 'text-slate-700 dark:text-white',
+          panel: "bg-southport-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-md lg:text-lg uppercase dark:text-white",
+          icon: "text-slate-700 dark:text-white",
         },
       },
       {
-        title: 'St. Simons Island, GA',
-        description: 'Open Fri-Sun',
-        icon: 'tabler:map-pin',
+        title: "St Simons Island, GA",
+        description: "Airplane Only",
+        icon: "tabler:map-pin",
         callToAction: {
-          variant: 'secondary',
-          text: 'Explore',
-          href: '#',
+          variant: "secondary",
+          text: "Explore",
+          href: "st-simons-island",
         },
         classes: {
-          panel: 'bg-simons-tour bg-cover bg-center',
-          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
-          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
-          icon: 'text-slate-700',
+          panel: "bg-simons-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
+          icon: "text-slate-700",
         },
       },
       {
-        title: 'Beaufort, SC',
-        description: 'Open Fri-Sun',
-        icon: 'tabler:map-pin',
+        title: "Beaufort, SC",
+        description: "Airplane Only",
+        icon: "tabler:map-pin",
         callToAction: {
-          variant: 'secondary',
-          text: 'Explore',
-          href: '#',
+          variant: "secondary",
+          text: "Explore",
+          href: "beaufort",
         },
         classes: {
-          panel: 'bg-beaufort-tour bg-cover bg-center',
-          title: 'text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white',
-          description: 'text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white',
-          icon: 'text-slate-700',
+          panel: "bg-beaufort-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
+          icon: "text-slate-700",
         },
       },
     ]}
@@ -119,81 +139,84 @@ const metadata = {
   <Steps
     title="Ready to Fly?"
     tagline="4 Simple Steps"
-    subtitle='Booking and flying on a helicopter tour is easier than you think. Book online in just a few easy steps or stop by one of our locations.'
+    subtitle=`Booking and flying on a High Tide Aviation aerial tour is easier than you think. Book online in just a few easy steps or stop by one of <a href="#locations" class="text-sky-500">our locations</a>.`
     items={[
       {
         title: 'Step 1: <span class="font-medium">Select a location</span>',
         description:
-          "Head over tour our tour location page where you can pick a state and city.",
-        icon: 'tabler:map-pin',
+          "Choose which coastline you’d like to fly over, from North Carolina to South Carolina to Georgia.",
+        icon: "tabler:map-pin",
         classes: {
-          icon: 'text-gray-500',
-        }
+          icon: "text-gray-500",
+        },
       },
       {
         title: 'Step 2: <span class="font-medium">Pick a tour</em>',
-        description:
-          `Each location usually has around three to five tour options. Read through each route and select the view you’d like most.`,
-        icon: 'tabler:checklist',
+        description: `Each location has between three and six tour options. Read through each route and select the view you’d like most.`,
+        icon: "tabler:checklist",
         classes: {
-          icon: 'text-gray-500',
-        }
+          icon: "text-gray-500",
+        },
       },
       {
         title: 'Step 3: <span class="font-medium">Add passengers</span>',
         description:
-        'We require a minimum of two passengers to fly. Per trip, we can take up to three passengers. If you are a party of more than 3 we can divide your party into equal groups.',
-        icon: 'tabler:users-plus',
+          "There is no minimum passenger count for airplane tour bookings, but we do require a minimum of two passengers for helicopter tour bookings. Add and subtract passengers via the booking link once at checkout.",
+        icon: "tabler:users-plus",
         classes: {
-          icon: 'text-gray-500',
-        }
+          icon: "text-gray-500",
+        },
       },
       {
         title: 'Step 4: <span class="font-medium">Get ready to fly</span>',
         description: `Add your payment method & start the countdown to your flight! Upon checkout, you will receive an email confirmation and your tickets.`,
-        icon: 'tabler:check',
+        icon: "tabler:check",
         classes: {
-          icon: 'text-gray-500',
-        }
+          icon: "text-gray-500",
+        },
       },
     ]}
     image={{
-      src: '~/assets/images/IMG_0470.jpg', alt: 'Helicopter on the ground ready to take off'
+      src: "~/assets/images/IMG_0470.jpg",
+      alt: "Helicopter on the ground ready to take off",
     }}
   />
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from Real Customers"
+    title="Words from Our Guests"
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
-        },
+        testimonial: `Never been in a helicopter before, but this was one of the best experiences of my life! Our pilot, Paige, was super friendly, explained everything as it was happening, and gave me an AMAZING experience by letting me take part in controlling some of the flight - definitely recommend the Discovery add-on! I'd love to do this again if I visit the area in the future, and will be talking it up to family and friends!`,
+        name: "Esther Zimmerman",
+        job: "Cape Fear Discovery Tour",
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
-        image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
-        },
+        testimonial: `My Granddaughter and myself had an Awesome experience. The female pilot we had was great and allowed my Granddaughter to fly the Plane , I believe this will be an experience.That she will never forget. Thanks for making it a special  moment!!!`,
+        name: "Steve Gamble",
+        job: "St Simons Island Tour",
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
-        image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
-        },
+        testimonial: `A perfect way to celebrate a special occasion! We have done a helicopter tour and most recently a discovery flight (mini-flight lesson). All the staff have been excellent, made us feel very safe- lots of “checks” and careful attention to detail. There’s nothing like seeing our favorite island from a helicopter view! Spectacular!`,
+        name: "Casey Berkshire",
+        job: "Southport Discovery Flight",
+      },
+      {
+        testimonial: `I had a really great experience with High Tide Aviation. Getting there was easy and we were able to get on our plane within minutes. Justin was our pilot and he was very sweet and knowledgeable. We did the Bald Head Island tour which was about 20 minutes- Justin told us everything about the island and surrounding areas which was cool. The flight was very smooth and comfortable as well. I would love to do this again. Thank you Justin!`,
+        name: "Sarah Keles",
+        job: " Bald Head Island Tour",
+      },
+      {
+        testimonial: `My sister and I have always wanted to take a helicopter ride. It was a quick decision as we were coming up on the airport. We both were so glad that we decided to do it. It was so much fun. The pilot was awesome! He explained everything to us and told us what to expect. He also pointed out things around the area which was great! We have decided to go back and do it again when we go back to Oak Island on our next beach trip.`,
+        name: "Eloise Hollar",
+        job: "Southport Helicopter Tour",
+      },
+      {
+        testimonial: `What a wonderful way to spend a very special Valentine's Day. The entire staff was friendly and our pilot Lauren was absolutely darling! I highly recommend the experience.  We did the Beach Lovers flight.`,
+        name: "Christa Cullen",
+        job: "Beach Lovers Tour",
       },
     ]}
   />
@@ -201,13 +224,16 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    actions={[{
-      variant: "primary",
-      text: 'View Gift Cards',
-      href: '/',
-    }]}
+    actions={[
+      {
+        variant: "primary",
+        text: "View Gift Cards",
+        target: "_blank",
+        href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/350303/?full-items=yes&back=https://flyhightide.com/&flow=621000&g4=yes",
+      },
+    ]}
     title=" Gift Cards Available"
-    subtitle="Give the gift of flight with a helicopter tour gift card. Perfect for any occasion."
+    subtitle="Give the gift of a flight tour with a High Tide gift card."
     bg='<div class="absolute inset-0 bg-beaufort-tour bg-cover bg-center" aria-hidden="true"></div>'
   />
 
@@ -218,20 +244,20 @@ const metadata = {
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
     bg='<div class="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
-    classes={{ container: 'max-w-6xl' }}
+    classes={{ container: "max-w-6xl" }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: "Why AstroWind?",
         description:
           "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
       },
       {
-        title: 'What do I need to start?',
+        title: "What do I need to start?",
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: "How to install the Astro + Tailwind CSS template?",
         description:
           "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
       },
@@ -241,12 +267,13 @@ const metadata = {
           "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: "What is something that you would like to try again?",
         description:
           "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title:
+          "If you could only ask one question to each person you meet, what would that question be?",
         description:
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
