@@ -1,7 +1,7 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 
-import Hero2 from "~/components/widgets/Hero2.astro";
+import Hero3 from "~/components/widgets/Hero3.astro";
 import Note from "~/components/widgets/Note.astro";
 import FAQs from "~/components/widgets/FAQs.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
@@ -11,7 +11,7 @@ import Image from "~/components/common/Image.astro";
 import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
-  title: "St. Simons Island | High Tide Aviation",
+  title: "Southport | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -19,7 +19,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero2
+  <Hero3
     actions={[
       {
         variant: "primary",
@@ -29,29 +29,47 @@ const metadata = {
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
+    openHours={[
+      {
+        weekday: "Monday - Saturday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Sunday",
+        time: "Closed",
+      },
+    ]}
     image={{
-      src: "~/assets/images/IMG_1676.jpg",
+      src: "~/assets/images/IMG_9901.jpg",
       alt: "Helicopter on the ground ready to take off",
     }}
   >
     <Fragment slot="title">
       Let's Fly Above
       <br />
-      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight"
-        >St. Simons Island</span
+      <span class="text-sky-400 text-6xl lg:text-7xl dark:text-white highlight"
+        >St Simons Island</span
       >
     </Fragment>
 
-    <!-- <Fragment slot="subtitle">
-      <div class="dark:text-white bg-gray-200/70 text-primary rounded px-2 py-5">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a, quae sunt obcaecati placeat illo expedita praesentium ab blanditiis esse exercitationem!
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from McKinnon-St Simons Island Airport (KSSI)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >1759 Demere Road – St Simons Island, GA</span
+      >
+    </Fragment>
+    <Fragment slot="subtitle">
+      <div class="dark:text-white text-primary text-2xl font-bold px-2 py-5">
+        Airplane Only Tours
       </div>
-    </Fragment> -->
-  </Hero2>
+    </Fragment>
+  </Hero3>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <Note description="Airplane tours only at this location." />
 
   <!-- Roadmap Widget **************** -->
   <section id="beaufort-roadmap">
@@ -61,18 +79,18 @@ const metadata = {
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto w-full lg:mx-0">
           <h2
-            class="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center"
+            class="xl:text-5xl text-4xl font-bold tracking-tight text-main-red text-center"
           >
-            Steps to Fly Above St. Simons Island
+            The High Tide Aviation Experience
           </h2>
           <p
             class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
           >
-            Cross the skies of St. Simons Island and experience the thrill of
-            helicopter
+            Discover St Simons Island from the air, featuring historical
+            insights and stunning natural landscapes
           </p>
         </div>
-        <div>
+        <div class="py-8">
           <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
             <div
               class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
@@ -86,16 +104,15 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lift Off in St. Simons Island Airport
+                  Lift off from McKinnon-St Simons Island Airport
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  Your tour starts at <strong
+                    >McKinnon-St Simons Island Airport (KSSI)</strong
+                  >. Get acquainted with your pilot, board the aircraft, and
+                  prepare for an enlightening aerial experience.
                 </p>
               </div>
             </div>
@@ -125,16 +142,15 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Lighthouse and Historical Sites
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  Fly over the <strong>St Simons Lighthouse</strong> and the remnants
+                  of <strong>Fort Frederica</strong>. These landmarks highlight
+                  the historical significance of the island and its role in
+                  Georgia’s colonial history.
                 </p>
               </div>
             </div>
@@ -162,16 +178,16 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Natural Scenery and Wildlife
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  View the island's diverse ecosystems, including marshes and
+                  shorelines. Keep an eye out for local wildlife such as <strong
+                    >sea turtles</strong
+                  > and <strong>migratory birds</strong>, often visible from
+                  above.
                 </p>
               </div>
             </div>
@@ -201,16 +217,18 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Golden Isles Exploration
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  End your flight with a tour of the broader<strong
+                    >Golden Isles</strong
+                  > area, including <strong>Jekyll Island</strong>
+                  and <strong>Sea Island</strong>. These regions are celebrated
+                  for their serene landscapes and luxurious resorts. Return
+                  knowing you’ve seen the best of St Simons and its
+                  surroundings.
                 </p>
               </div>
             </div>
@@ -238,130 +256,116 @@ const metadata = {
     prices={[
       {
         image: {
-          src: "~/assets/images/IMG_1676.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_3331.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
-        city: "St. Simons Island",
-        title: "Quick Hop",
+        city: "St Simons Island",
+        title: "Lighthouse Tour",
         subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 55,
+          "Fly past St Simons Island's historic lighthouse and coastline.",
+        price: 80,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "15 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "17 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327792/?full-items=yes&flow=615647",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/st-simons-island/lighthouse-tour",
         },
       },
       {
         image: {
-          src: "~/assets/images/IMG_0722.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_9901.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
-        city: "St. Simons Island",
-        title: "Pro Tour",
-        subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 95,
+        city: "St Simons Island",
+        title: "Jekyll Island",
+        subtitle: "Explore Jekyll Island’s historical and natural beauty.",
+        price: 100,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "20 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "25 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327860/?full-items=yes&flow=615647",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/st-simons-island/jekyll-island",
         },
-        hasRibbon: true,
-        ribbonTitle: "popular",
       },
       {
         image: {
-          src: "~/assets/images/IMG_0762.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_7131.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
-        city: "St. Simons Island",
-        title: "All in Tour",
+        city: "St Simons Island",
+        title: "Golden Isles Passport",
         subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 145,
+          "Comprehensive aerial tour of the Golden Isles’ key attractions.",
+        price: 140,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "40 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327864/?full-items=yes&flow=615647",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "#",
+          href: "/st-simons-island/golden-isles-passport",
         },
       },
     ]}
   />
 
-  <section id="location" class="w-full">
+  <!-- Location *********** -->
+  <!-- <section id="location" class="w-full">
     <div
       class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
     >
@@ -394,9 +398,9 @@ const metadata = {
               <dl
                 class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
               >
-                <!-- <div class="relative">
-              <a href="#" class="btn-red">Meet the Team</a>
-            </div> -->
+                <div class="relative">
+                  <a href="#" class="btn-red">Meet the Team</a>
+                </div>
               </dl>
             </div>
           </div>
@@ -414,11 +418,10 @@ const metadata = {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonials Widget *********** -->
-
-  <Testimonials
+  <!-- <Testimonials
     title="Words from Real Customers"
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     testimonials={[
@@ -450,11 +453,10 @@ const metadata = {
         },
       },
     ]}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
-
-  <FAQs
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -493,5 +495,5 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /> -->
 </Layout>
