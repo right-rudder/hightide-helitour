@@ -24,19 +24,15 @@ export const headerData = {
       href: getPermalink("/high-tide-experience"),
     },
     {
-      text: "Other Packages",
+      text: "Other Services",
       links: [
         {
           text: "Book a Custom Tour!",
           href: getPermalink("/packages/custom-tour"),
         },
         {
-          text: "Aerial Photography",
+          text: "Aerial Photography - Videography",
           href: getPermalink("/packages/aerial-photography"),
-        },
-        {
-          text: "Aerial Videography",
-          href: getPermalink("/packages/aerial-videography"),
         },
       ],
     },
