@@ -11,7 +11,7 @@ import Image from "~/components/common/Image.astro";
 import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
-  title: "Beaufort | High Tide Aviation",
+  title: "Southport | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,8 +22,8 @@ const metadata = {
   <Hero3
     actions={[
       {
-        variant: "custom",
-        text: "View Rides",
+        variant: "primary",
+        text: "Choose a Tour",
         href: "#tours",
         target: "_self",
       },
@@ -31,41 +31,49 @@ const metadata = {
     ]}
     openHours={[
       {
-        weekday: "Monday - Tuesday",
+        weekday: "Monday - Thursday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Friday - Saturday",
+        time: "10:00 AM - 6:00 PM",
+      },
+      {
+        weekday: "Sunday",
         time: "Closed",
-      },
-      {
-        weekday: "Wednesday - Friday",
-        time: "9:00 AM - 5:00 PM",
-      },
-      {
-        weekday: "Saturday - Sunday",
-        time: "9:00 AM - 3:00 PM",
       },
     ]}
     image={{
-      src: "~/assets/images/IMG_1676.jpg",
+      src: "~/assets/images/Tour-couple.jpg",
       alt: "Helicopter on the ground ready to take off",
     }}
   >
     <Fragment slot="title">
       Let's Fly Above
       <br />
-      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight"
+      <span class="text-sky-400 text-6xl lg:text-7xl dark:text-white highlight"
         >Beaufort</span
       >
     </Fragment>
 
-    <!-- <Fragment slot="subtitle">
-      <div class="dark:text-white bg-gray-200/70 text-primary rounded px-2 py-5">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a, quae sunt obcaecati placeat illo expedita praesentium ab blanditiis esse exercitationem!
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from Beaufort Executive Airport (KZJX)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >39 Airport Circle - Beaufort, SC</span
+      >
+    </Fragment>
+    <Fragment slot="subtitle">
+      <div class="dark:text-white text-primary text-2xl font-bold px-2 py-5">
+        Airplane Only Tours
       </div>
-    </Fragment> -->
+    </Fragment>
   </Hero3>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <Note description="Our Beaufort tours are only available via airplane." />
 
   <!-- Roadmap Widget **************** -->
   <section id="beaufort-roadmap">
@@ -75,17 +83,18 @@ const metadata = {
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto w-full lg:mx-0">
           <h2
-            class="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center"
+            class="xl:text-5xl text-4xl font-bold tracking-tight text-main-red text-center"
           >
-            Steps to Fly Above Beaufort
+            The High Tide Aviation Experience
           </h2>
           <p
             class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
           >
-            Cross the skies of Beaufort and experience the thrill of helicopter
+            Fly over Beaufort and experience airplane tours showcasing the
+            region's landscapes and historic sites
           </p>
         </div>
-        <div>
+        <div class="py-8">
           <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
             <div
               class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
@@ -99,16 +108,16 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lift Off in Beaufort Airport
+                  Lift off from Beaufort Executive Airport
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  Begin your tour at <strong
+                    >Beaufort Executive Airport (KZJX)</strong
+                  >. Meet your pilot, board the plane, and prepare for takeoff.
+                  Our Cessna 172s are equipped for comfort and safety, ensuring
+                  a smooth start to your aerial adventure.
                 </p>
               </div>
             </div>
@@ -138,16 +147,17 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Explore Historic Sites
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  Fly over important landmarks such as <strong
+                    >Fort Fremont</strong
+                  > and <strong>Fort Pulaski</strong>. These sites provide
+                  insight into America’s coastal defense history and the
+                  strategic military value of Beaufort during historical
+                  conflicts.
                 </p>
               </div>
             </div>
@@ -175,16 +185,16 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Natural Wonders
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  Observe the Lowcountry’s ecosystems from above. The tour
+                  includes views of extensive marshlands and intricate
+                  waterways. Look for wildlife such as <strong>dolphins</strong>
+                  and <strong>birds</strong>, which are common sights in these
+                  habitats.
                 </p>
               </div>
             </div>
@@ -214,16 +224,18 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lorem ipsum dolor sit amet.
+                  Stunning Coastlines
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Lorem ipsum dolor sit amet<strong>
-                    consectetur
-                  </strong>adipisicing elit. Vel aliquam<strong>
-                    assumenda corporis
-                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                  The tour concludes with a route along Beaufort’s coastlines.
+                  Fly past <strong>Hunting Island State Park</strong>,<strong>
+                    Fripp Island</strong
+                  > and<strong> Hilton Head Island</strong>. These areas are
+                  known for their pristine beaches and tranquil beauty. Return
+                  to the airport with memories of the spectacular coastal
+                  scenery.
                 </p>
               </div>
             </div>
@@ -251,130 +263,115 @@ const metadata = {
     prices={[
       {
         image: {
-          src: "~/assets/images/IMG_1676.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_3397.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "Quick Hop",
+        title: "Low Country Passport",
         subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 55,
+          "Discover the vast landscapes and history of the Low Country.",
+        price: 200,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "60 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "60 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour1",
+          href: "/beaufort/low-country-passport",
         },
       },
       {
         image: {
-          src: "~/assets/images/IMG_0722.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_7131.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "Pro Tour",
-        subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 95,
+        title: "Hilton Head Tour",
+        subtitle: "Get up close with Hilton Head Island’s famous sites.",
+        price: 140,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "40 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491353/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour2",
+          href: "/beaufort/hilton-head",
         },
-        hasRibbon: true,
-        ribbonTitle: "popular",
       },
       {
         image: {
-          src: "~/assets/images/IMG_0762.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_3331.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "All in Tour",
-        subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 145,
+        title: "Barrier Island Tour",
+        subtitle: "Explore the serene Barrier Islands for a peaceful retreat.",
+        price: 120,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "30 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "40 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491350/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour3",
+          href: "/beaufort/barrier-island",
         },
       },
     ]}
   />
 
-  <section id="location" class="w-full">
+  <!-- Location *********** -->
+  <!-- <section id="location" class="w-full">
     <div
       class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
     >
@@ -407,9 +404,9 @@ const metadata = {
               <dl
                 class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
               >
-                <!-- <div class="relative">
-              <a href="#" class="btn-red">Meet the Team</a>
-            </div> -->
+                <div class="relative">
+                  <a href="#" class="btn-red">Meet the Team</a>
+                </div>
               </dl>
             </div>
           </div>
@@ -427,11 +424,10 @@ const metadata = {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Testimonials Widget *********** -->
-
-  <Testimonials
+  <!-- <Testimonials
     title="Words from Real Customers"
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     testimonials={[
@@ -463,11 +459,10 @@ const metadata = {
         },
       },
     ]}
-  />
+  /> -->
 
   <!-- FAQs Widget ******************* -->
-
-  <FAQs
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -506,5 +501,5 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /> -->
 </Layout>
