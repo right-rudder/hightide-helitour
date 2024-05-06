@@ -25,7 +25,7 @@ const {
 ---
 
 <section
-  class="relative lg:h-screen-1/2 md:-mt-[76px] not-prose overflow-hidden"
+  class="relative h-screen-1/2 md:-mt-[76px] not-prose overflow-hidden"
   {...id ? { id } : {}}
 >
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
@@ -61,14 +61,14 @@ const {
       <div
         class="flex flex-col pt-24 justify-center align-middle items-center text-center max-w-5xl mx-auto"
       >
-        <!-- {
+        {
           tagline && (
             <p
               class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
               set:html={tagline}
             />
           )
-        } -->
+        }
         {
           title && (
             <h1
