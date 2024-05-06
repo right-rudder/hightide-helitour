@@ -1,6 +1,6 @@
 site:
   name: High Tide Aviation
-  site: "https://astrowind.vercel.app"
+  site: "https://flyhightide.com"
   base: "/"
   trailingSlash: false
 
