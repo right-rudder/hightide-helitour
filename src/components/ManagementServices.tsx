@@ -53,19 +53,19 @@ const ManagementServices = () => {
       >
         {managementServices.map((item) => (
           <div
-            className="p-7 bg-gray-100 rounded flex flex-row-reverse items-center justify-between shadow-lg group hover:bg-slate-500 duration-700 cursor-pointer"
+            className="p-7 bg-gray-100 dark:bg-slate-700 rounded flex flex-row-reverse items-center justify-between shadow-lg group hover:bg-slate-500 duration-700 cursor-pointer"
             onClick={handleClick}
             key={item.title}
             id={item.title}
           >
             <div className="flex gap-5 flex-row-reverse items-center">
-              <item.icon className="size-12 text-medium-blue group-hover:text-sky-600 duration-700" />
-              <h3 className="text-slate-500 group-hover:text-sky-600 duration-700 font-medium text-lg">
+              <item.icon className="size-12 text-sky-900 dark:text-sky-300 group-hover:text-sky-600 group-hover:dark:text-sky-500 duration-700" />
+              <h3 className="text-slate-900 dark:text-slate-400 group-hover:text-sky-600 group-hover:dark:text-sky-500 duration-700 font-medium text-lg">
                 {item.title}
               </h3>
             </div>
-            <div className="bg-medium-blue/20 p-3 rounded-full group-hover:bg-mustard-yellow duration-700">
-              <IoIosArrowBack className="text-slate-500 group-hover:text-sky-600 duration-700" />
+            <div className="bg-sky-900/20 p-3 rounded-full group-hover:bg-sky-300 duration-700">
+              <IoIosArrowBack className="text-slate-900 group-hover:text-sky-600 group-hover:dark:text-sky-500 duration-700" />
             </div>
           </div>
         ))}
@@ -77,16 +77,19 @@ const ManagementServices = () => {
           onClick={handleBackClick}
           className="flex gap-3 items-center cursor-pointer group self-end"
         >
-          <div className="p-3 bg-light-blue/15 rounded-full group-hover:bg-medium-blue duration-700">
-            <IoIosArrowRoundForward className="text-slate-500 size-6 group-hover:text-sky-600 duration-700" />
-          </div>
-          <p className="text-medium-blue text-sm uppercase font-medium tracking-widest">
+          <p className="text-sky-800 text-sm uppercase font-medium tracking-widest">
             Back
           </p>
+          <div className="p-3 bg-light-blue/15 rounded-full group-hover:bg-sky-900 duration-700">
+            <IoIosArrowRoundForward className="text-slate-900 size-6 group-hover:text-sky-600 group-hover:dark:text-sky-500 duration-700" />
+          </div>
         </button>
         <div className="flex flex-col gap-3">
           {description.map((item, index) => (
-            <p key={index} className="leading-loose text-gray-600">
+            <p
+              key={index}
+              className="leading-loose text-gray-600 dark:text-gray-100"
+            >
               {item}
             </p>
           ))}

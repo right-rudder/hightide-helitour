@@ -173,13 +173,64 @@ const metadata = {
             </div>
           </div>
           <div
-            class="h-full w-full flex justify-center align-middle items-center"
+            class="h-full w-full flex flex-col justify-center align-middle items-center"
           >
             <Image
-              class="rounded shadow-lg"
-              src="~/assets/images/HTA-map-southport.jpg"
+              class="rounded shadow-lg w-full"
+              src="~/assets/images/southport-nc-tour-map-high-tide-aviation-aerial-tours.jpg"
               alt="tour-map-route"
             />
+            <div
+              class="mt-3 flex justify-center bg-gray-100 dark:bg-gray-900 rounded p-6 shadow-lg w-full lg:w-1/2"
+            >
+              <ul role="list" class="space-y-3">
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#f46536] text-gray-800 dark:text-gray-200"
+                    href="/southport/beach-lover"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#F44336]"></div>
+                    <span>Beach Lover</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#2196F3] text-gray-800 dark:text-gray-200"
+                    href="/southport/oak-island"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#2196F3]"></div>
+                    <span>Oak Island</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#E91E63] text-gray-800 dark:text-gray-200"
+                    href="/southport/lighthouse-tour"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#E91E63]"></div>
+                    <span>Lighthouse Tour</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#FFEB3B] text-gray-800 dark:text-gray-200"
+                    href="/southport/bald-head-island"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#FFEB3B]"></div>
+                    <span>Bald Head Island</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#00BCD4] text-gray-800 dark:text-gray-200"
+                    href="/southport/cape-fear-passport"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#00BCD4]"></div>
+                    <span>Cape Fear Passport</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -471,6 +522,8 @@ const metadata = {
           src: "~/assets/images/IMG_1676.jpg",
           alt: "Helicopter on the ground ready to take off",
         },
+        hasRibbon: true,
+        ribbonTitle: "popular",
         city: "Southport",
         title: "Cape Fear Passport",
         subtitle: "Comprehensive aerial tour of Southport's landmarks.",

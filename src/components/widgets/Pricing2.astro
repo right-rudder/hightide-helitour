@@ -42,6 +42,7 @@ const {
               items,
               callToAction,
               callToAction2,
+              btnSpace,
               hasRibbon = false,
               ribbonTitle,
             }) => (
@@ -74,12 +75,12 @@ const {
                         </h3>
                       )}
                       {title && (
-                        <h3 class="text-center text-4xl font-black text-sky-600 dark:text-sky-300 uppercase leading-9 tracking-wider mb-2">
+                        <h3 class="text-center text-4xl font-black text-sky-600 dark:text-sky-300 uppercase leading-7 tracking-tight mb-2">
                           {title}
                         </h3>
                       )}
                       {callToAction && (
-                      <div class={`mt-44 w-full flex justify-center`}>
+                      <div class={`${btnSpace ? 'mt-[154px]' : 'mt-[183px]'} w-full flex justify-center`}>
                         {typeof callToAction === "string" ? (
                           <Fragment set:html={callToAction} />
                         ) : (
@@ -98,14 +99,15 @@ const {
                         </p>
                       )}
                       {items && (
+                        <div class="flex justify-center items-center align-middle">
                         <ul
                           role="list"
-                          class="my-8 md:my-10 space-y-2 text-center"
+                          class="my-8 md:my-10 space-y-2 text-left"
                         >
                           {items.map(
                             ({ description, icon }) =>
                               description && (
-                                <li class="mb-1.5 flex justify-center items-center space-x-3 leading-7">
+                                <li class="mb-1.5 flex justify-start items-center space-x-3 leading-7">
                                   <div class="rounded-full bg-primary mt-1">
                                     <Icon
                                       name={icon ? icon : "tabler:check"}
@@ -117,6 +119,7 @@ const {
                               )
                           )}
                         </ul>
+                        </div>
                       )}
                       <div class="my-8">
                         <div class="mx-auto flex items-center w-1/2 py-5 justify-center text-center mb-1 bg-sky-500 dark:bg-sky-700 rounded-lg">

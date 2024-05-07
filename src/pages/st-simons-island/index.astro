@@ -330,6 +330,8 @@ const metadata = {
           src: "~/assets/images/IMG_7131.jpg",
           alt: "happy woman looking out of an airplane window",
         },
+        hasRibbon: true,
+        ribbonTitle: "popular",
         city: "St Simons Island",
         title: "Golden Isles Passport",
         subtitle:
@@ -365,7 +367,7 @@ const metadata = {
   />
 
   <!-- Location *********** -->
-  <!-- <section id="location" class="w-full">
+  <section id="location" class="w-full">
     <div
       class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
     >
@@ -380,34 +382,36 @@ const metadata = {
               <h2
                 class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
               >
-                Come to Fly
+                Come Fly Over
               </h2>
               <p
                 class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
               >
-                Location
+                St Simons Island, GA
               </p>
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, tempore impedit et asperiores excepturi tempora
-                numquam. Eius, voluptatem incidunt dicta assumenda fugiat
-                consequuntur ducimus adipisci quae minima?
+                Our St Simons Island location is located at the McKinnon-St
+                Simons Island Airport (KSSI) in St Simons Island, Georgia. Here,
+                you’ll find our airplane tours and our world-class flight school
+                training local pilots across the southeastern coast. <strong
+                  >Come visit us today!</strong
+                >
               </p>
               <dl
                 class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
               >
-                <div class="relative">
-                  <a href="#" class="btn-red">Meet the Team</a>
-                </div>
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
               </dl>
             </div>
           </div>
           <div class="h-full w-full flex justify-center align-middle">
             <iframe
               class="rounded"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.308243855036!2d-80.63734772424385!3d32.41090037381882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc0d96cfb61a4b%3A0x682bf86deda375d2!2sHigh%20Tide%20Aviation%20Lowcountry%20Air%20Tours!5e0!3m2!1sen!2sco!4v1713557201227!5m2!1sen!2sco"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1748191.0484641409!2d-83.82412314375001!3d31.153184299999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e4db2855161e87%3A0xa28de7768105440a!2sHigh%20Tide%20Aviation%20Air%20Tours!5e0!3m2!1sen!2sco!4v1714947945708!5m2!1sen!2sco"
               width="600"
               height="450"
               style="border:0;"
@@ -418,82 +422,5 @@ const metadata = {
         </div>
       </div>
     </div>
-  </section> -->
-
-  <!-- Testimonials Widget *********** -->
-  <!-- <Testimonials
-    title="Words from Real Customers"
-    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
-    testimonials={[
-      {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: "Emily Kennedy",
-        job: "Front-end developer",
-        image: {
-          src: "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80",
-          alt: "Emily Kennedy Image",
-        },
-      },
-      {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: "Sarah Hansen",
-        job: "Photographer",
-        image: {
-          src: "https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
-          alt: "Sarah Hansen Image",
-        },
-      },
-      {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: "Mark Wilkinson",
-        job: "Small business owner",
-        image: {
-          src: "https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80",
-          alt: "Mark Wilkinson Image",
-        },
-      },
-    ]}
-  /> -->
-
-  <!-- FAQs Widget ******************* -->
-  <!-- <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
-    tagline="FAQs"
-    bg='<div class="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
-    classes={{ container: "max-w-6xl" }}
-    items={[
-      {
-        title: "Why AstroWind?",
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: "What do I need to start?",
-        description:
-          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
-      },
-      {
-        title: "How to install the Astro + Tailwind CSS template?",
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: "What is something that you would like to try again?",
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title:
-          "If you could only ask one question to each person you meet, what would that question be?",
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  /> -->
+  </section>
 </Layout>

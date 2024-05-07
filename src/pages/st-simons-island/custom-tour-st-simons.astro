@@ -11,7 +11,7 @@ import Image from "~/components/common/Image.astro";
 import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
-  title: "Barrier Island Tour | High Tide Aviation",
+  title: "Custom Tour | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,7 +25,7 @@ const metadata = {
       {
         variant: "custom",
         text: "Book Now",
-        href: "https://fareharbor.com/embeds/book/flyhightide/items/491350/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         target: "_blank",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
@@ -44,7 +44,7 @@ const metadata = {
         time: "Closed",
       },
     ]}
-    price={120}
+    price={200}
     image={{
       src: "~/assets/images/happy-high-tide-student.jpg",
       alt: "happy couple on a helicopter tour",
@@ -55,8 +55,7 @@ const metadata = {
       <br />
       <span
         class="text-sky-400 text-5xl lg:text-7xl dark:text-sky-600 highlight"
-      >
-        Barrier Island</span
+        >Custom Tour</span
       >
     </Fragment>
     <Fragment slot="airport">
@@ -98,15 +97,16 @@ const metadata = {
               <p
                 class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-500 text-4xl w-full"
               >
-                Barrier Island Tour
+                Low Country Passport
               </p>
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
               >
-                Discover the serene beauty of the Barrier Islands on this scenic
-                flight. Fly over Morgan Island, Harbor Island, Hunting Island,
-                and St. Philip's Island, capturing the untouched splendor of
-                these coastal gems.
+                Experience the ultimate aerial tour of the Low Country. This
+                expansive tour covers key sites such as Morgan Island, Harbor
+                Island, Hunting Island State Park, Parris Island, and more,
+                providing a comprehensive look at the rich history and
+                breathtaking landscapes of the region.
               </p>
               <div
                 class="flex flex-col justify-center items-center align-middle"
@@ -143,14 +143,74 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:beach" />
-                    <span class="ml-2 font-medium">Bull Point Beach</span>
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Parris Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Parris Island Lighthouse</span
+                    >
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">St. Philip's Island</span>
+                    <span class="ml-2 font-medium">Fripp Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Head Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Dafuskie Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:map-pin" />
+                    <span class="ml-2 font-medium">Bloody Point</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">Savannah River</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Tybee Island Light Station</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Cockspur Island Lighthouse</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Pulaski</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Harbor Town Lighthouse</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -173,7 +233,7 @@ const metadata = {
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">40 miles | 30 minutes</span
+                      <span class="ml-2 font-medium">80 miles | 60 minutes</span
                       >
                     </li>
                     <li
@@ -200,51 +260,193 @@ const metadata = {
             </div>
           </div>
           <div
-            class="h-full w-full flex flex-col justify-center align-middle items-center"
+            class="h-full w-full flex justify-center align-middle items-center"
           >
             <Image
               class="rounded shadow-lg"
               src="~/assets/images/beaufort-sc-tour-map-high-tide-aviation-aerial-tours.jpg"
               alt="tour-map-route"
             />
-            <div
-              class="mt-3 flex justify-center bg-gray-100 dark:bg-gray-900 font-semibold rounded p-6 shadow-lg w-full lg:w-1/2"
-            >
-              <ul role="list" class="space-y-3">
-                <li>
-                  <a
-                    class="flex align-middle items-center hover:underline hover:text-[#FF9800] text-gray-800 dark:text-gray-200"
-                    href="/beaufort/barrier-island"
-                  >
-                    <div class="mr-2 rounded h-5 w-5 bg-[#FF9800]"></div>
-                    <span>Barrier Island</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="flex align-middle items-center hover:underline hover:text-[#F44336] text-gray-800 dark:text-gray-200"
-                    href="/beaufort/hilton-head"
-                  >
-                    <div class="mr-2 rounded h-5 w-5 bg-[#F44336]"></div>
-                    <span>Hilton Head Tour</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="flex align-middle items-center hover:underline hover:text-[#4CAF50] text-gray-800 dark:text-gray-200"
-                    href="/beaufort/low-country-passport"
-                  >
-                    <div class="mr-2 rounded h-5 w-5 bg-[#4CAF50]"></div>
-                    <span>Low Country Passport</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Roadmap Widget **************** -->
+  <!-- <section id="beaufort-roadmap">
+    <div
+      class="bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <h2
+            class="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center"
+          >
+            Iconic Sightseeing Tour
+          </h2>
+          <p
+            class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
+          >
+            Enjoy this landmark tour of Beaufort, SC. You will see the following
+          </p>
+        </div>
+        <div>
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                1
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lift Off in Beaufort Airport
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="certified-instructor-explaining-instrument-training"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                2
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="certified-instructor-delivering-written-exam"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                3
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="a-pilot-giving-thumbs-up-in-cabin-in-flight"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                4
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lorem ipsum dolor sit amet.
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Lorem ipsum dolor sit amet<strong>
+                    consectetur
+                  </strong>adipisicing elit. Vel aliquam<strong>
+                    assumenda corporis
+                  </strong>nesciunt ipsam recusandae asperiores ullam enim.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/IMG_0730.jpg"
+                alt="a-happy-pilot-next-to-aircraft"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <!-- Location *********** -->
   <section id="location" class="w-full">
@@ -304,6 +506,48 @@ const metadata = {
     </div>
   </section>
 
+  <!-- FAQs Widget ******************* -->
+  <!-- <FAQs
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    tagline="FAQs"
+    bg='<div class="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    classes={{ container: "max-w-6xl" }}
+    items={[
+      {
+        title: "Why AstroWind?",
+        description:
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+      },
+      {
+        title: "What do I need to start?",
+        description:
+          "Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.",
+      },
+      {
+        title: "How to install the Astro + Tailwind CSS template?",
+        description:
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+      },
+      {
+        title: "What's something that you don't understand?",
+        description:
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+      },
+      {
+        title: "What is something that you would like to try again?",
+        description:
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      },
+      {
+        title:
+          "If you could only ask one question to each person you meet, what would that question be?",
+        description:
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      },
+    ]}
+  /> -->
+
   <!-- Pricing Widget ******************* -->
 
   <Pricing2
@@ -316,8 +560,6 @@ const metadata = {
           src: "~/assets/images/IMG_3397.jpg",
           alt: "happy woman looking out of an airplane window",
         },
-        hasRibbon: true,
-        ribbonTitle: "popular",
         city: "Beaufort",
         title: "Low Country Passport",
         subtitle:

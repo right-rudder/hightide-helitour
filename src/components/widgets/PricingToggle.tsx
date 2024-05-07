@@ -57,7 +57,7 @@ export default function PricingTable(props: PricingTabProps) {
             <a
               target="_blank"
               href={props.planeLink}
-              className="w-1/2 px-16 py-6 sm:mb-0 font-black uppercase text-3xl italic shadow-lg duration-300 rounded-md bg-gradient-to-br from-sky-600 to-sky-300 dark:from-slate-800 dark:to-sky-600 text-white"
+              className="w-3/4 lg:w-1/2 px-16 py-6 sm:mb-0 font-black uppercase text-3xl italic shadow-lg duration-300 rounded-md bg-gradient-to-br from-sky-600 to-sky-300 dark:from-slate-800 dark:to-sky-600 text-white"
             >
               Book Now
             </a>
@@ -80,12 +80,12 @@ export default function PricingTable(props: PricingTabProps) {
             <a
               target="_blank"
               href={props.helicopterLink}
-              className="w-1/2 px-16 py-6 sm:mb-0 font-black uppercase text-3xl italic shadow-lg duration-300 rounded-md bg-gradient-to-br from-sky-600 to-sky-300 dark:from-slate-800 dark:to-sky-600 text-white"
+              className="w-3/4 lg:w-1/2 px-16 py-6 sm:mb-0 font-black uppercase text-3xl italic shadow-lg duration-300 rounded-md bg-gradient-to-br from-sky-600 to-sky-300 dark:from-slate-800 dark:to-sky-600 text-white"
             >
               Book Now
             </a>
           </div>
-          <p className="italic text-sm">
+          <p className="mt-3 italic text-muted text-sm">
             Please note our helicopter tours require a minimum purchase of two
             passengers to operate.
           </p>

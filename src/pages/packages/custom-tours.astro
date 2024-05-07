@@ -11,7 +11,7 @@ import Image from "~/components/common/Image.astro";
 import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
-  title: "Beaufort - Tour 1 | High Tide Aviation",
+  title: "Custom Tour | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,47 +25,47 @@ const metadata = {
       {
         variant: "custom",
         text: "Book Now",
-        href: "#tours",
-        target: "_self",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+        target: "_blank",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
     openHours={[
       {
-        weekday: "Monday - Tuesday",
+        weekday: "Monday - Thursday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Friday - Saturday",
+        time: "10:00 AM - 6:00 PM",
+      },
+      {
+        weekday: "Sunday",
         time: "Closed",
       },
-      {
-        weekday: "Wednesday - Friday",
-        time: "9:00 AM - 5:00 PM",
-      },
-      {
-        weekday: "Saturday - Sunday",
-        time: "9:00 AM - 3:00 PM",
-      },
     ]}
-    price={55}
+    price={200}
     image={{
-      src: "~/assets/images/Tour-couple.jpg",
+      src: "~/assets/images/happy-high-tide-student.jpg",
       alt: "happy couple on a helicopter tour",
     }}
   >
     <Fragment slot="title">
-      Let's Fly Above
+      All Locations
       <br />
       <span
-        class="text-sky-400 text-7xl lg:text-9xl dark:text-sky-600 highlight"
-        >Beaufort</span
+        class="text-sky-400 text-5xl lg:text-7xl dark:text-sky-600 highlight"
+        >Custom Tour</span
       >
     </Fragment>
-    <Fragment slot="airport">
+    <!-- <Fragment slot="airport">
       <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
-        >Beaufort Airport KTTN</span
+        >Beaufort Executive Airport (KZJX)</span
       ><br />
       <span class="text-gray-700 text-base dark:text-gray-100 highlight"
-        >1234 Street - Beaufort, SC</span
+        >39 Airport Circle - Beaufort, SC</span
       >
-    </Fragment>
+    </Fragment> -->
 
     <!-- <Fragment slot="subtitle">
       <div class="dark:text-white bg-gray-200/70 text-primary rounded px-2 py-5">
@@ -75,8 +75,7 @@ const metadata = {
   </Hero3>
 
   <!-- Note Widget ******************* -->
-
-  <Note />
+  <Note description="Our Beaufort tours are only available via airplane." />
 
   <section id="tour-info" class="w-full">
     <div
@@ -93,24 +92,21 @@ const metadata = {
               <h2
                 class="text-2xl text-center text-gray-700 dark:text-gray-300 font-semibold leading-7 w-full"
               >
-                Lorem ipsum dolor sit.
+                Airplane Only
               </h2>
               <p
                 class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-500 text-4xl w-full"
               >
-                Tour Name
+                Low Country Passport
               </p>
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, tempore impedit et asperiores excepturi tempora
-                numquam. Eius, voluptatem incidunt dicta assumenda fugiat
-                consequuntur ducimus adipisci quae minima? Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Blanditiis, tempore impedit
-                et asperiores excepturi tempora numquam. Eius, voluptatem
-                incidunt dicta assumenda fugiat consequuntur ducimus adipisci
-                quae minima?
+                Experience the ultimate aerial tour of the Low Country. This
+                expansive tour covers key sites such as Morgan Island, Harbor
+                Island, Hunting Island State Park, Parris Island, and more,
+                providing a comprehensive look at the rich history and
+                breathtaking landscapes of the region.
               </p>
               <div
                 class="flex flex-col justify-center items-center align-middle"
@@ -121,32 +117,112 @@ const metadata = {
                   Included
                 </h3>
                 <p class="mt-0 text-lg text-slate-500 font-semibold">
-                  What to expect on your flight.
+                  Notable tour sights
                 </p>
                 <ul class="mt-4 space-y-1">
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:building-stadium" />
-                    <span class="ml-2 font-medium">Stadium lorem</span>
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Morgan Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:building-bridge" />
-                    <span class="ml-2 font-medium">Bridge ipsum</span>
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Harbor Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:building-skyscraper" />
-                    <span class="ml-2 font-medium">Dolor building</span>
+                    <Icon class="w-5 h-5" name="tabler:plant-2" />
+                    <span class="ml-2 font-medium"
+                      >Hunting Island State Park</span
+                    >
                   </li>
                   <li
-                    class="flex justify-center align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:building-monument" />
-                    <span class="ml-2 font-medium">Ipsum monument</span>
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Parris Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Parris Island Lighthouse</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Fripp Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Head Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Dafuskie Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:map-pin" />
+                    <span class="ml-2 font-medium">Bloody Point</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">Savannah River</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Tybee Island Light Station</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Cockspur Island Lighthouse</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Pulaski</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Harbor Town Lighthouse</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Parris Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Frederick</span>
                   </li>
                 </ul>
                 <div
@@ -157,34 +233,38 @@ const metadata = {
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium"
-                        >10 miles total flight distance</span
+                      <span class="ml-2 font-medium">80 miles | 60 minutes</span
                       >
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium"
-                        >500 - 1,000 feet in the air</span
-                      >
+                      <span class="ml-2 font-medium">Narrated by pilot</span>
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">100+ MPH travel speed</span
-                      >
+                      <span class="ml-2 font-medium">Historic landmarks</span>
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Wildlife sightings</span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="h-full w-full flex justify-center align-middle">
+          <div
+            class="h-full w-full flex justify-center align-middle items-center"
+          >
             <Image
-              class="object-cover rounded shadow-lg"
-              src="~/assets/images/beaufort-tour1.png"
+              class="rounded shadow-lg"
+              src="~/assets/images/beaufort-sc-tour-map-high-tide-aviation-aerial-tours.jpg"
               alt="tour-map-route"
             />
           </div>
@@ -194,7 +274,7 @@ const metadata = {
   </section>
 
   <!-- Roadmap Widget **************** -->
-  <section id="beaufort-roadmap">
+  <!-- <section id="beaufort-roadmap">
     <div
       class="bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
     >
@@ -366,7 +446,7 @@ const metadata = {
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Location *********** -->
   <section id="location" class="w-full">
@@ -384,20 +464,22 @@ const metadata = {
               <h2
                 class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
               >
-                Come to Fly
+                Come Fly Over
               </h2>
               <p
                 class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
               >
-                Location
+                Beaufort, SC
               </p>
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Blanditiis, tempore impedit et asperiores excepturi tempora
-                numquam. Eius, voluptatem incidunt dicta assumenda fugiat
-                consequuntur ducimus adipisci quae minima?
+                Our Beaufort location is located at the Beaufort Executive
+                Aiport (KZJX) in Beaufort, South Carolina. Here, you’ll have
+                access to all our airplane tours and further passage to the
+                Hilton Head region of South Carolina. <strong
+                  >Come visit us today!</strong
+                >
               </p>
               <dl
                 class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
@@ -410,8 +492,8 @@ const metadata = {
           </div>
           <div class="h-full w-full flex justify-center align-middle">
             <iframe
-              class="rounded"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.308243855036!2d-80.63734772424385!3d32.41090037381882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc0d96cfb61a4b%3A0x682bf86deda375d2!2sHigh%20Tide%20Aviation%20Lowcountry%20Air%20Tours!5e0!3m2!1sen!2sco!4v1713557201227!5m2!1sen!2sco"
+              class="rouded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.308246374628!2d-80.63964371586971!3d32.41090030631239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fc0d96cfb61a4b%3A0x682bf86deda375d2!2sHigh%20Tide%20Aviation%20Lowcountry%20Air%20Tours!5e0!3m2!1sen!2sco!4v1714956353392!5m2!1sen!2sco"
               width="600"
               height="450"
               style="border:0;"
@@ -425,8 +507,7 @@ const metadata = {
   </section>
 
   <!-- FAQs Widget ******************* -->
-
-  <FAQs
+  <!-- <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -465,7 +546,7 @@ const metadata = {
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
-  />
+  /> -->
 
   <!-- Pricing Widget ******************* -->
 
@@ -476,124 +557,108 @@ const metadata = {
     prices={[
       {
         image: {
-          src: "~/assets/images/IMG_1676.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_3397.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "Quick Hop",
+        title: "Low Country Passport",
         subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 55,
+          "Discover the vast landscapes and history of the Low Country.",
+        price: 200,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "60 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "60 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour1",
+          href: "/beaufort/low-country-passport",
         },
       },
       {
         image: {
-          src: "~/assets/images/IMG_0722.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_7131.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "Pro Tour",
-        subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 95,
+        title: "Hilton Head Tour",
+        subtitle: "Get up close with Hilton Head Island’s famous sites.",
+        price: 140,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "40 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491353/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour2",
+          href: "/beaufort/hilton-head",
         },
-        hasRibbon: true,
-        ribbonTitle: "popular",
       },
       {
         image: {
-          src: "~/assets/images/IMG_0762.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/IMG_3331.jpg",
+          alt: "happy woman looking out of an airplane window",
         },
         city: "Beaufort",
-        title: "All in Tour",
-        subtitle:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum delectus dolorem assumenda officia officiis architecto a.",
-        price: 145,
+        title: "Barrier Island Tour",
+        subtitle: "Explore the serene Barrier Islands for a peaceful retreat.",
+        price: 120,
         period: "per person",
         items: [
           {
-            description: "25 miles of flight",
+            description: "30 minutes of flight",
             icon: "tabler:hourglass",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:helicopter",
+            description: "40 miles of coastline",
+            icon: "tabler:ripple",
           },
           {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-skyscraper",
-          },
-          {
-            description: "Lorem ipsum dolor..",
-            icon: "tabler:building-monument",
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
           },
         ],
         callToAction: {
-          target: "_self",
+          target: "_blank",
           text: "Book Now",
-          href: "#",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491350/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
         },
         callToAction2: {
           target: "_self",
           text: "More Details",
-          href: "/beaufort/tour3",
+          href: "/beaufort/barrier-island",
         },
       },
     ]}
