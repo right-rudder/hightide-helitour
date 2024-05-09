@@ -61,16 +61,6 @@ const {
         }
         <div class="max-w-3xl mx-auto lg:max-w-none">
           {
-            subtitle && (
-              <>
-                <p
-                  class="text-xl text-muted mb-6 dark:text-slate-300"
-                  set:html={subtitle}
-                />
-              </>
-            )
-          }
-          {
             airport && (
               <div class="mt-6 dark:text-gray-300">
                 <p>Departs from</p>
@@ -129,6 +119,16 @@ const {
                   <Fragment set:html={actions} />
                 )}
               </div>
+            )
+          }
+          {
+            subtitle && (
+              <>
+                <p
+                  class="text-xl text-muted mb-6 dark:text-slate-300"
+                  set:html={subtitle}
+                />
+              </>
             )
           }
         </div>

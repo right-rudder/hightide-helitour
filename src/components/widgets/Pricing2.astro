@@ -47,7 +47,6 @@ const {
               ribbonTitle,
             }) => (
               <div class="relative col-span-3 mx-auto flex w-full sm:col-span-1 md:col-span-1 lg:col-span-1 xl:col-span-1">
-                {price && period && (
                   <div class="rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow px-6 py-8 flex w-full max-w-sm flex-col justify-between text-center overflow-hidden">
                     {image && (
                       <div class="absolute inset-0 bg-gradient-to-b from-gray-50/60 to-gray-300/5 -z-0 dark:from-slate-600/80 dark:to-slate-900/5"></div>
@@ -121,10 +120,12 @@ const {
                         </ul>
                         </div>
                       )}
-                      <div class="my-8">
+                      <div class="my-3">
                         <div class="mx-auto flex items-center w-1/2 py-5 justify-center text-center mb-1 bg-sky-500 dark:bg-sky-700 rounded-lg">
                           <span class="text-3xl">$</span>
+                        {price && (
                           <span class="text-4xl font-extrabold dark:text-slate-50">{price}</span>
+                        )}
                         </div>
                         <small class="text-base leading-6 lowercase text-sky-600 dark:text-sky-700">
                           {period}
@@ -147,7 +148,6 @@ const {
                     )}
                     </div>
                   </div>
-                )}
               </div>
             )
           )
