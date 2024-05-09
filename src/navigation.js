@@ -94,10 +94,6 @@ export const footerData = {
           text: "Oak Island",
           href: getPermalink("/southport/oak-island"),
         },
-        {
-          text: "Custom Tour Southport",
-          href: getPermalink("/southport/custom-tour-southport"),
-        },
       ],
     },
     {
@@ -115,10 +111,6 @@ export const footerData = {
           text: "Low Country Passport",
           href: getPermalink("/beaufort/low-country-passport"),
         },
-        {
-          text: "Custom Tour Beaufort",
-          href: getPermalink("/beaufort/custom-tour-beaufort"),
-        },
       ],
     },
     {
@@ -135,10 +127,6 @@ export const footerData = {
         {
           text: "Golden Isles Passport",
           href: getPermalink("/st-simons-island/golden-isles-passport"),
-        },
-        {
-          text: "Custom Tour St Simons Island",
-          href: getPermalink("/st-simons-island/custom-tour-st-simons"),
         },
       ],
     },
