@@ -42,7 +42,7 @@ export const headerData = {
     },
     {
       text: "Gift Cards",
-      href: getPermalink("/gift-cards"),
+      href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/350303/?full-items=yes&back=https://flyhightide.com/&flow=621000&g4=yes",
     },
     {
       text: "About Us",
