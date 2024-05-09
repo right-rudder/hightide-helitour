@@ -7,8 +7,11 @@ module.exports = {
       backgroundImage: {
         "southport-tour": "url('~/assets/images/IMG_1676.jpg')",
         "simons-tour": "url('~/assets/images/happy-high-tide-student.jpg')",
-        "beaufort-tour": "url('~/assets/images/IMG_9916.jpg')",
+        "beaufort-tour":
+          "url('~/assets/images/high-tide-tour-guests-at-beafort-sc-location.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
+        "gift-card":
+          "url('~/assets/images/high-tide-tour-coastline-sunset.jpg')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
