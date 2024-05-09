@@ -45,8 +45,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: "~/assets/images/happy-high-tide-student.jpg",
-      alt: "happy couple on a helicopter tour",
+      src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
+      alt: "R44-on-flight-tour-in-southport-nc",
     }}
   >
     <Fragment slot="title">
@@ -75,7 +75,7 @@ const metadata = {
   </Hero3>
 
   <!-- Note Widget ******************* -->
-  <Note description="Our Beaufort tours are only available via airplane." />
+  <Note />
 
   <section id="tour-info" class="w-full">
     <div
@@ -127,14 +127,52 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Caswell</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Old Baldy Lighthouse</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
                     <span class="ml-2 font-medium">Bald Head Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
+                    <Icon class="w-5 h-5" name="tabler:building-carousel" />
+                    <span class="ml-2 font-medium">Cape Fear</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:fish" />
+                    <span class="ml-2 font-medium"
+                      >Frying Pan Shoals (Shark Spotting!)</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
                     <Icon class="w-5 h-5" name="tabler:building-fortress" />
-                    <span class="ml-2 font-medium">Fort Caswell</span>
+                    <span class="ml-2 font-medium">Fort Fisher</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Kure Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Carolina Beach</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -147,30 +185,6 @@ const metadata = {
                   >
                     <Icon class="w-5 h-5" name="tabler:ripple" />
                     <span class="ml-2 font-medium">Southport Waterfront</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:ripple" />
-                    <span class="ml-2 font-medium">Intracoastal Waterway</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:beach" />
-                    <span class="ml-2 font-medium">Carolina Beach</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:beach" />
-                    <span class="ml-2 font-medium">Kure Beach</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:ripple" />
-                    <span class="ml-2 font-medium">Wilmington Riverfront</span>
                   </li>
                 </ul>
                 <div
@@ -330,11 +344,47 @@ const metadata = {
     prices={[
       {
         image: {
-          src: "~/assets/images/high-tide-tour-coastline-sunset.jpg",
-          alt: "beach view from airplane window",
+          src: "~/assets/images/beach-of-beaufort-sc.jpg",
+          alt: "Helicopter on the ground ready to take off",
         },
+        city: "Southport",
+        title: "Cape Fear Passport",
+        btnSpace: true,
+        subtitle: "Comprehensive aerial tour of Southport's landmarks.",
+        price: 280,
+        period: "per person",
         hasRibbon: true,
         ribbonTitle: "popular",
+        items: [
+          {
+            description: "35 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane or helicopter",
+            icon: "tabler:cloud-heart",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32454/calendar/2024/05/?full-items=yes&flow=335644",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/cape-fear-passport",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/high-tide-aviation-beach-lover-tour.jpg",
+          alt: "beach view from airplane window",
+        },
         city: "Southport",
         title: "Beach Lover",
         subtitle: "Extensive tour of over 50 miles of beautiful beaches.",
@@ -367,43 +417,8 @@ const metadata = {
       },
       {
         image: {
-          src: "~/assets/images/IMG_0722.jpg",
-          alt: "Helicopter on the ground ready to take off",
-        },
-        city: "Southport",
-        title: "Oak Island",
-        subtitle: "Aerial views of Oak Island’s lighthouses and shipwrecks.",
-        price: 178,
-        period: "per person",
-        items: [
-          {
-            description: "20 minutes of flight",
-            icon: "tabler:hourglass",
-          },
-          {
-            description: "30 miles of coastline",
-            icon: "tabler:ripple",
-          },
-          {
-            description: "Helicopter only",
-            icon: "tabler:helicopter",
-          },
-        ],
-        callToAction: {
-          target: "_blank",
-          text: "Book Now",
-          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32463/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
-        },
-        callToAction2: {
-          target: "_self",
-          text: "More Details",
-          href: "/southport/oak-island",
-        },
-      },
-      {
-        image: {
-          src: "~/assets/images/IMG_0762.jpg",
-          alt: "Helicopter on the ground ready to take off",
+          src: "~/assets/images/marshes-and-lighthouse-in-southport-nc.jpg",
+          alt: "marshes-and-lighthouse-in-southport-nc",
         },
         city: "Southport",
         title: "Bald Head Island",
@@ -421,7 +436,7 @@ const metadata = {
             icon: "tabler:ripple",
           },
           {
-            description: "Helicopter only",
+            description: "Helicopter or airplane",
             icon: "tabler:helicopter",
           },
         ],
@@ -434,6 +449,111 @@ const metadata = {
           target: "_self",
           text: "More Details",
           href: "/southport/bald-head-island",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/southport-lighthouse-tour-high-tide-aviation.jpg",
+          alt: "southport-lighthouse-tour-high-tide-aviation",
+        },
+        city: "Southport",
+        title: "Lighthouse",
+        subtitle: "Discover historic lighthouses of Southport.",
+        price: 60,
+        period: "per person",
+        items: [
+          {
+            description: "12 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "15 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32464/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/lighthouse-tour",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/marshes-and-inter-coastal-southport-nc.jpg",
+          alt: "marshes-and-inter-coastal-southport-nc",
+        },
+        city: "Southport",
+        title: "Oak Island",
+        subtitle: "Aerial views of Oak Island’s lighthouses and shipwrecks.",
+        price: 178,
+        period: "per person",
+        items: [
+          {
+            description: "20 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "30 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32463/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/oak-island",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
+          alt: "R44-on-flight-tour-in-southport-nc",
+        },
+        city: "Southport",
+        title: "Custom Tour",
+        subtitle:
+          "Create your own adventure over Southport’s diverse landscapes",
+        period: "Based on custom tour details",
+        items: [
+          {
+            description: "Custom flight time",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "Custom mileage",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Contact Us",
+          href: "/contact",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/custom-tour-southport",
         },
       },
     ]}

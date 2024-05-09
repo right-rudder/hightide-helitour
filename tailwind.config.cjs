@@ -10,8 +10,7 @@ module.exports = {
         "beaufort-tour":
           "url('~/assets/images/high-tide-tour-guests-at-beafort-sc-location.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
-        "gift-card":
-          "url('~/assets/images/high-tide-tour-coastline-sunset.jpg')",
+        "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",

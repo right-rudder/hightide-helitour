@@ -4,6 +4,7 @@ import Hero3 from "~/components/widgets/Hero3.astro";
 import Note from "~/components/widgets/Note.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import SimpleHero from "~/components/widgets/SimpleHero.astro";
+import Pricing2 from "~/components/widgets/Pricing2.astro";
 
 const metadata = {
   title: "Custom Tour | High Tide Aviation",
@@ -83,6 +84,448 @@ const metadata = {
           description:
             "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
           icon: "text-slate-700 dark:text-white",
+        },
+      },
+    ]}
+  />
+
+  <Pricing2
+    id="tours"
+    title="Select from the tours below"
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    prices={[
+      {
+        image: {
+          src: "~/assets/images/beach-of-beaufort-sc.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
+        city: "Southport",
+        title: "Cape Fear Passport",
+        btnSpace: true,
+        subtitle: "Comprehensive aerial tour of Southport's landmarks.",
+        price: 280,
+        period: "per person",
+        hasRibbon: true,
+        ribbonTitle: "popular",
+        items: [
+          {
+            description: "35 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane or helicopter",
+            icon: "tabler:cloud-heart",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32454/calendar/2024/05/?full-items=yes&flow=335644",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/cape-fear-passport",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/high-tide-aviation-beach-lover-tour.jpg",
+          alt: "beach view from airplane window",
+        },
+        city: "Southport",
+        title: "Beach Lover",
+        subtitle: "Extensive tour of over 50 miles of beautiful beaches.",
+        price: 450,
+        period: "per person",
+        items: [
+          {
+            description: "60 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "85 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane or helicopter",
+            icon: "tabler:cloud-heart",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32452/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/beach-lover",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_0762.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
+        city: "Southport",
+        title: "Bald Head Island",
+        btnSpace: true,
+        subtitle: "Tour the serene Bald Head Island from above.",
+        price: 178,
+        period: "per person",
+        items: [
+          {
+            description: "20 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "30 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32461/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/bald-head-island",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/beach-shoals-at-high-tide-tours.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
+        city: "Southport",
+        title: "Lighthouse",
+        subtitle: "Discover historic lighthouses of Southport.",
+        price: 60,
+        period: "per person",
+        items: [
+          {
+            description: "12 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "15 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32464/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/lighthouse-tour",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_0722.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
+        city: "Southport",
+        title: "Oak Island",
+        subtitle: "Aerial views of Oak Island’s lighthouses and shipwrecks.",
+        price: 178,
+        period: "per person",
+        items: [
+          {
+            description: "20 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "30 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/32463/?full-items=yes&flow=335644&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Ffly-with-us-southport-nc%2Fscenic-air-tours%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/oak-island",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/high-tide-aviation-beach-lover-tour.jpg",
+          alt: "Helicopter on the ground ready to take off",
+        },
+        city: "Southport",
+        title: "Custom Tour",
+        subtitle:
+          "Create your own adventure over Southport’s diverse landscapes",
+        period: "Based on custom tour details",
+        items: [
+          {
+            description: "Custom flight time",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "Custom mileage",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Helicopter or airplane",
+            icon: "tabler:helicopter",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Contact Us",
+          href: "/contact",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/southport/custom-tour-southport",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_3331.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        city: "St Simons Island",
+        title: "Lighthouse Tour",
+        btnSpace: true,
+        subtitle:
+          "Fly past St Simons Island's historic lighthouse and coastline.",
+        price: 80,
+        period: "per person",
+        items: [
+          {
+            description: "15 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "17 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327792/?full-items=yes&flow=615647",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/st-simons-island/lighthouse-tour",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_9901.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        city: "St Simons Island",
+        title: "Jekyll Island",
+        subtitle: "Explore Jekyll Island’s historical and natural beauty.",
+        price: 100,
+        period: "per person",
+        items: [
+          {
+            description: "20 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "25 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327860/?full-items=yes&flow=615647",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/st-simons-island/jekyll-island",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_7131.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        hasRibbon: true,
+        ribbonTitle: "popular",
+        city: "St Simons Island",
+        title: "Golden Isles Passport",
+        btnSpace: true,
+        subtitle:
+          "Comprehensive aerial tour of the Golden Isles’ key attractions.",
+        price: 140,
+        period: "per person",
+        items: [
+          {
+            description: "40 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327864/?full-items=yes&flow=615647",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/st-simons-island/golden-isles-passport",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_3397.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        city: "Beaufort",
+        title: "Low Country Passport",
+        btnSpace: true,
+        subtitle:
+          "Discover the vast landscapes and history of the Low Country.",
+        price: 200,
+        period: "per person",
+        items: [
+          {
+            description: "60 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "60 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/beaufort/low-country-passport",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_7131.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        city: "Beaufort",
+        title: "Hilton Head Tour",
+        btnSpace: true,
+        subtitle: "Get up close with Hilton Head Island’s famous sites.",
+        price: 140,
+        period: "per person",
+        items: [
+          {
+            description: "40 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "50 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491353/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/beaufort/hilton-head",
+        },
+      },
+      {
+        image: {
+          src: "~/assets/images/IMG_3331.jpg",
+          alt: "happy woman looking out of an airplane window",
+        },
+        city: "Beaufort",
+        title: "Barrier Island Tour",
+        btnSpace: true,
+        subtitle: "Explore the serene Barrier Islands for a peaceful retreat.",
+        price: 120,
+        period: "per person",
+        items: [
+          {
+            description: "30 minutes of flight",
+            icon: "tabler:hourglass",
+          },
+          {
+            description: "40 miles of coastline",
+            icon: "tabler:ripple",
+          },
+          {
+            description: "Airplane only",
+            icon: "tabler:plane-departure",
+          },
+        ],
+        callToAction: {
+          target: "_blank",
+          text: "Book Now",
+          href: "https://fareharbor.com/embeds/book/flyhightide/items/491350/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+        },
+        callToAction2: {
+          target: "_self",
+          text: "More Details",
+          href: "/beaufort/barrier-island",
         },
       },
     ]}

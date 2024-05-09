@@ -57,11 +57,15 @@ export const headerData = {
         },
       ],
     },
+    {
+      text: "Shop",
+      href: "https://shop.flyhightide.com/",
+    },
   ],
   actions: [
     {
       text: "Book a Tour",
-      href: "#",
+      href: getPermalink("/packages/custom-tours"),
       target: "_self",
     },
   ],
