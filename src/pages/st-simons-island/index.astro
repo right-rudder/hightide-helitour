@@ -9,6 +9,7 @@ import Testimonials from "~/components/widgets/Testimonials.astro";
 import beaufortRoadmap from "~/components/common/beaufortRoadmap.astro";
 import Image from "~/components/common/Image.astro";
 import Pricing2 from "~/components/widgets/Pricing2.astro";
+import StSimonsTours from "~/components/tours/StSimonsTours.astro";
 
 const metadata = {
   title: "Southport | High Tide Aviation",
@@ -159,8 +160,8 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/st-simons-island-bridge.jpg"
-                alt="st-simons-island-bridge"
+                src="~/assets/images/lighthouse-st-simons-island-ga.jpg"
+                alt="lighthouse-st-simons-island-ga"
               />
             </div>
           </div>
@@ -196,8 +197,8 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/st-simons-island-beach-from-above.jpg"
-                alt="st-simons-island-beach-from-above"
+                src="~/assets/images/st-simons-island-inner-waters-on-a-tour.jpg"
+                alt="st-simons-island-inner-waters-on-a-tour"
               />
             </div>
           </div>
@@ -237,8 +238,8 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/high-tide-guest-in-cockpit-following-tour.jpg"
-                alt="high-tide-guest-in-cockpit-following-tour"
+                src="~/assets/images/mckinnon-st-simons-island-airport.jpg"
+                alt="mckinnon-st-simons-island-airport"
               />
             </div>
           </div>
@@ -248,123 +249,7 @@ const metadata = {
   </section>
 
   <!-- Pricing Widget ******************* -->
-
-  <Pricing2
-    id="tours"
-    title="Select from the tours below"
-    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
-    prices={[
-      {
-        image: {
-          src: "~/assets/images/IMG_3331.jpg",
-          alt: "happy woman looking out of an airplane window",
-        },
-        city: "St Simons Island",
-        title: "Lighthouse Tour",
-        subtitle:
-          "Fly past St Simons Island's historic lighthouse and coastline.",
-        price: 80,
-        period: "per person",
-        items: [
-          {
-            description: "15 minutes of flight",
-            icon: "tabler:hourglass",
-          },
-          {
-            description: "17 miles of coastline",
-            icon: "tabler:ripple",
-          },
-          {
-            description: "Airplane only",
-            icon: "tabler:plane-departure",
-          },
-        ],
-        callToAction: {
-          target: "_blank",
-          text: "Book Now",
-          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327792/?full-items=yes&flow=615647",
-        },
-        callToAction2: {
-          target: "_self",
-          text: "More Details",
-          href: "/st-simons-island/lighthouse-tour",
-        },
-      },
-      {
-        image: {
-          src: "~/assets/images/IMG_9901.jpg",
-          alt: "happy woman looking out of an airplane window",
-        },
-        city: "St Simons Island",
-        title: "Jekyll Island",
-        subtitle: "Explore Jekyll Island’s historical and natural beauty.",
-        price: 100,
-        period: "per person",
-        items: [
-          {
-            description: "20 minutes of flight",
-            icon: "tabler:hourglass",
-          },
-          {
-            description: "25 miles of coastline",
-            icon: "tabler:ripple",
-          },
-          {
-            description: "Airplane only",
-            icon: "tabler:plane-departure",
-          },
-        ],
-        callToAction: {
-          target: "_blank",
-          text: "Book Now",
-          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327860/?full-items=yes&flow=615647",
-        },
-        callToAction2: {
-          target: "_self",
-          text: "More Details",
-          href: "/st-simons-island/jekyll-island",
-        },
-      },
-      {
-        image: {
-          src: "~/assets/images/IMG_7131.jpg",
-          alt: "happy woman looking out of an airplane window",
-        },
-        hasRibbon: true,
-        ribbonTitle: "popular",
-        city: "St Simons Island",
-        title: "Golden Isles Passport",
-        subtitle:
-          "Comprehensive aerial tour of the Golden Isles’ key attractions.",
-        price: 140,
-        period: "per person",
-        items: [
-          {
-            description: "40 minutes of flight",
-            icon: "tabler:hourglass",
-          },
-          {
-            description: "50 miles of coastline",
-            icon: "tabler:ripple",
-          },
-          {
-            description: "Airplane only",
-            icon: "tabler:plane-departure",
-          },
-        ],
-        callToAction: {
-          target: "_blank",
-          text: "Book Now",
-          href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327864/?full-items=yes&flow=615647",
-        },
-        callToAction2: {
-          target: "_self",
-          text: "More Details",
-          href: "/st-simons-island/golden-isles-passport",
-        },
-      },
-    ]}
-  />
+  <StSimonsTours />
 
   <!-- Location *********** -->
   <section id="location" class="w-full">

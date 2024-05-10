@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "southport-tour": "url('~/assets/images/IMG_1676.jpg')",
-        "simons-tour": "url('~/assets/images/happy-high-tide-student.jpg')",
-        "beaufort-tour":
-          "url('~/assets/images/high-tide-tour-guests-at-beafort-sc-location.jpg')",
+        "southport-tour": "url('~/assets/images/beach-of-beaufort-sc.jpg')",
+        "simons-tour":
+          "url('~/assets/images/golf-course-st-simons-island.jpg')",
+        "beaufort-tour": "url('~/assets/images/beaufort-sc-waterways.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
         "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
       },

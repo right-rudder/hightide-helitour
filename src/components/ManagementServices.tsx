@@ -71,7 +71,7 @@ const ManagementServices = () => {
         ))}
       </div>
       <div
-        className={`absolute h-full w-full flex flex-col items-start justify-center p-14 gap-7  top-0 duration-700 ease-in-out ${active ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}
+        className={`absolute h-full w-full flex flex-col items-start justify-center p-14 gap-7  top-0 duration-700 ease-in-out ${active ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
       >
         <button
           onClick={handleBackClick}
