@@ -10,7 +10,7 @@ import BeaufortTours from "~/components/tours/BeaufortTours.astro";
 import StSimonsTours from "~/components/tours/StSimonsTours.astro";
 
 const metadata = {
-  title: "Custom Tour | High Tide Aviation",
+  title: "Gift Cards | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
 ---
@@ -18,7 +18,7 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <SimpleHero
-    title="Custom Tours"
+    title="Give the Gift of Flight"
     image={{
       src: "~/assets/images/cape-fear-north-carolina.jpg",
       alt: "cape-fear-north-carolina",
@@ -41,8 +41,8 @@ const metadata = {
         icon: "tabler:map-pin",
         callToAction: {
           variant: "secondary",
-          text: "Explore",
-          href: "/southport/custom-tour-southport",
+          text: "Buy Gift Card",
+          href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/208253/?full-items=yes&flow=335643&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2F&language=en-us",
         },
         classes: {
           panel: "bg-southport-tour bg-cover bg-center",
@@ -60,7 +60,7 @@ const metadata = {
         callToAction: {
           variant: "secondary",
           text: "Explore",
-          href: "/st-simons-island/custom-tour-st-simons",
+          href: "/st-simons-island",
         },
         classes: {
           panel: "bg-simons-tour bg-cover bg-center",
@@ -78,7 +78,7 @@ const metadata = {
         callToAction: {
           variant: "secondary",
           text: "Explore",
-          href: "/beaufort/custom-tour-beaufort",
+          href: "/beaufort",
         },
         classes: {
           panel: "bg-beaufort-tour bg-cover bg-center",
@@ -91,8 +91,4 @@ const metadata = {
       },
     ]}
   />
-
-  <SouthportTours />
-  <BeaufortTours />
-  <StSimonsTours />
 </Layout>

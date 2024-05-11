@@ -43,7 +43,7 @@ export const headerData = {
     },
     {
       text: "Gift Cards",
-      href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/350303/?full-items=yes&back=https://flyhightide.com/&flow=621000&g4=yes",
+      href: getPermalink("/gift-cards"),
     },
     {
       text: "About Us",
@@ -167,7 +167,7 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: "Terms", href: getPermalink("/terms") },
+    /* { text: "Terms", href: getPermalink("/terms") }, */
     { text: "Privacy Policy", href: getPermalink("/privacy") },
   ],
   socialLinks: [
@@ -205,7 +205,7 @@ export const footerData = {
       phone: "(910) 294-5871",
     },
     {
-      city: "St Simons Island, SC",
+      city: "St Simons Island, GA",
       airport: "McKinnon-St Simons Island Airport (KSSI)",
       address: "1759 Demere Road",
       phone: "(912) 434-2937",

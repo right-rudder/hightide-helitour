@@ -52,37 +52,11 @@ const {
   ]}
 >
   <div
-    class="bg-slate-300 dark:bg-dark absolute inset-0 pointer-events-none"
+    class="bg-gradient-to-t from-slate-400 to-gray-200 dark:from-slate-700 dark:to-gray-600 absolute inset-0 pointer-events-none"
     aria-hidden="true"
   >
   </div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div
-      class="flex flex-wrap items-start justify-between px-3 lg:px-16 lg:py-6 py-8"
-    >
-      {
-        links.map(({ title, links }) => (
-          <div class="md:flex-1 py-3">
-            <div class="dark:text-gray-300 font-bold mb-2">{title}</div>
-            {links && Array.isArray(links) && links.length > 0 && (
-              <ul class="text-sm">
-                {links.map(({ text, href, ariaLabel }) => (
-                  <li class="mb-2">
-                    <a
-                      class="text-primary hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
-                      href={href}
-                      aria-label={ariaLabel}
-                    >
-                      <Fragment set:html={text} />
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))
-      }
-    </div>
+  <div class="pt-6 relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <div
       class="lg:max-w-6xl mx-auto flex flex-wrap items-center justify-center lg:justify-between px-4 lg:px-12 py-4 lg:py-8 bg-gray-100 dark:bg-gray-900 rounded-md"
     >
@@ -115,7 +89,35 @@ const {
         ></span
       >
     </div>
-    <div class="mt-8 grid grid-cols-12 gap-2 gap-y-8 sm:gap-4 py-8 md:py-6">
+
+    <div
+      class="flex flex-wrap items-start justify-between px-3 lg:px-16 py-8 lg:py-4"
+    >
+      {
+        links.map(({ title, links }) => (
+          <div class="md:flex-1 py-3">
+            <div class="dark:text-gray-300 font-bold mb-2">{title}</div>
+            {links && Array.isArray(links) && links.length > 0 && (
+              <ul class="text-sm">
+                {links.map(({ text, href, ariaLabel }) => (
+                  <li class="mb-2">
+                    <a
+                      class="text-primary hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
+                      href={href}
+                      aria-label={ariaLabel}
+                    >
+                      <Fragment set:html={text} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="grid grid-cols-12 gap-2 gap-y-8 sm:gap-4">
       <div class="col-span-12">
         <div class="mb-2">
           <a
@@ -132,8 +134,8 @@ const {
             {SITE?.name}</a
           >
         </div>
-        <div class="flex-3 text-sm text-primary">
-          <p class="text-justify text-sm text-muted leading-5">
+        <div class="flex-3 text-sm text-muted">
+          <p class="text-justify text-sm leading-5">
             <Fragment set:text={description} />
           </p>
         </div>
