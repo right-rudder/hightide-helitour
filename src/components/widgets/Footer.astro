@@ -17,6 +17,13 @@ interface Links {
   links: Array<Link>;
 }
 
+interface Location {
+  city: string;
+  airport: string;
+  address: string;
+  phone: string;
+}
+
 export interface Props {
   links: Array<Links>;
   secondaryLinks: Array<Link>;
@@ -24,6 +31,7 @@ export interface Props {
   footNote?: string;
   theme?: string;
   description?: string;
+  locations?: Array<Location>;
 }
 
 const {
@@ -31,6 +39,7 @@ const {
   socialLinks = [],
   secondaryLinks = [],
   links = [],
+  locations = [],
   footNote = "",
   theme = "light",
 } = Astro.props;
@@ -43,45 +52,17 @@ const {
   ]}
 >
   <div
-    class="bg-slate-400 dark:bg-dark absolute inset-0 pointer-events-none"
+    class="bg-slate-300 dark:bg-dark absolute inset-0 pointer-events-none"
     aria-hidden="true"
   >
   </div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
-      <div class="col-span-12 lg:col-span-4">
-        <div class="mb-2">
-          <a class="inline-block font-bold text-2xl" href={getHomePermalink()}>
-            <Image
-              src={logo}
-              alt="High Tide Aviation Logo"
-              class="w-24 aspect-square object-contain"
-              width={120}
-              height={120}
-            />
-            {SITE?.name}</a
-          >
-        </div>
-        <div class="text-sm text-primary">
-          <p class="text-justify text-sm text-muted leading-5">
-            <Fragment set:text={description} />
-          </p>
-        </div>
-        <div class="text-sm text-primary">
-          {
-            secondaryLinks.map(({ text, href }) => (
-              <a
-                class="text-primary hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
-                href={href}
-                set:html={text}
-              />
-            ))
-          }
-        </div>
-      </div>
+    <div
+      class="flex flex-wrap items-start justify-between px-3 lg:px-16 lg:py-6 py-8"
+    >
       {
         links.map(({ title, links }) => (
-          <div class="col-span-6 md:col-span-3 lg:col-span-2">
+          <div class="md:flex-1 py-3">
             <div class="dark:text-gray-300 font-bold mb-2">{title}</div>
             {links && Array.isArray(links) && links.length > 0 && (
               <ul class="text-sm">
@@ -101,6 +82,73 @@ const {
           </div>
         ))
       }
+    </div>
+    <div
+      class="lg:max-w-6xl mx-auto flex flex-wrap items-center justify-center lg:justify-between px-4 lg:px-12 py-4 lg:py-8 bg-gray-100 dark:bg-gray-900 rounded-md"
+    >
+      {
+        locations &&
+          locations.map(({ city, airport, address, phone }) => (
+            <>
+              <div class="py-3 text-sm text-primary text-center mr-4 dark:text-gray-400">
+                <p class="mb-1 text-lg">
+                  <strong>{city}</strong>
+                </p>
+                <p class="mb-1">{airport}</p>
+                <p class="mb-1">{address}</p>
+                <a
+                  href={`tel:${phone}`}
+                  class="text-sky-600 hover:underline flex justify-center items-center"
+                >
+                  <Icon class="w-4 h-4" name="tabler:phone-filled" />
+                  {phone}
+                </a>
+              </div>
+            </>
+          ))
+      }
+      <span
+        class="w-full mt-9 text-center font-semibold text-primary dark:text-gray-400"
+        >For general inquiries, please <a
+          href="/contact"
+          class="text-sky-600 hover:underline">Contact Us.</a
+        ></span
+      >
+    </div>
+    <div class="mt-8 grid grid-cols-12 gap-2 gap-y-8 sm:gap-4 py-8 md:py-6">
+      <div class="col-span-12">
+        <div class="mb-2">
+          <a
+            class="flex justify-start align-middle items-center font-bold text-2xl"
+            href={getHomePermalink()}
+          >
+            <Image
+              src={logo}
+              alt="High Tide Aviation Logo"
+              class="w-24 h-full aspect-square object-contain"
+              width={80}
+              height={80}
+            />
+            {SITE?.name}</a
+          >
+        </div>
+        <div class="flex-3 text-sm text-primary">
+          <p class="text-justify text-sm text-muted leading-5">
+            <Fragment set:text={description} />
+          </p>
+        </div>
+        <div class="text-sm text-primary">
+          {
+            secondaryLinks.map(({ text, href }) => (
+              <a
+                class="text-primary hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
+                href={href}
+                set:html={text}
+              />
+            ))
+          }
+        </div>
+      </div>
     </div>
     <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
       {
@@ -124,7 +172,7 @@ const {
         )
       }
 
-      <div class="text-sm text-white mr-4 dark:text-primary">
+      <div class="text-sm text-slate-900 mr-4 dark:text-primary">
         <Fragment set:html={footNote} />
       </div>
     </div>

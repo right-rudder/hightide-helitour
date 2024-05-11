@@ -3,31 +3,15 @@ import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
 import Note from "~/components/widgets/Note.astro";
-import Features from "~/components/widgets/Features.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import Steps from "~/components/widgets/Steps.astro";
-import Content from "~/components/widgets/Content.astro";
-import BlogLatestPosts from "~/components/widgets/BlogLatestPosts.astro";
-import FAQs from "~/components/widgets/FAQs.astro";
-import Stats from "~/components/widgets/Stats.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
-import { Icon } from "astro-icon/components";
 
 const metadata = {
   title: "Helitours | High Tide Aviation",
   ignoreTitleTemplate: true,
 };
-
-const cities = ["Southport", "St Simons Island", "Beaufort"];
-
-let city = "";
-
-function randomCity() {
-  city = cities[Math.floor(Math.random() * cities.length)];
-}
-
-randomCity();
 ---
 
 <Layout metadata={metadata}>
@@ -49,13 +33,7 @@ randomCity();
       alt: "Helicopter on the ground ready to take off",
     }}
   >
-    <Fragment slot="title">
-      Let's Fly Above
-      <br />
-      <span class="text-sky-400 text-7xl lg:text-9xl dark:text-white highlight"
-        >{city}</span
-      >
-    </Fragment>
+    <Fragment slot="title"> Let's Fly Above </Fragment>
 
     <!-- <Fragment slot="subtitle">
       <div class="dark:text-white bg-gray-200/70 text-primary rounded px-2 py-5">
@@ -139,7 +117,7 @@ randomCity();
   <Steps
     title="Ready to Fly?"
     tagline="4 Simple Steps"
-    subtitle=`Booking and flying on a High Tide Aviation aerial tour is easier than you think. Book online in just a few easy steps or stop by one of <a href="#locations" class="text-sky-500">our locations</a>.`
+    subtitle=`Booking and flying on a High Tide Aviation aerial tour is easier than you think. Book online in just a few easy steps or stop by one of <a href="#locations" class="text-sky-500 hover:underline">our locations</a>.`
     items={[
       {
         title: 'Step 1: <span class="font-medium">Select a location</span>',
@@ -203,7 +181,7 @@ randomCity();
         name: "Casey Berkshire",
         job: "Southport Discovery Flight",
       },
-      {
+      /* {
         testimonial: `I had a really great experience with High Tide Aviation. Getting there was easy and we were able to get on our plane within minutes. Justin was our pilot and he was very sweet and knowledgeable. We did the Bald Head Island tour which was about 20 minutes- Justin told us everything about the island and surrounding areas which was cool. The flight was very smooth and comfortable as well. I would love to do this again. Thank you Justin!`,
         name: "Sarah Keles",
         job: " Bald Head Island Tour",
@@ -217,8 +195,15 @@ randomCity();
         testimonial: `What a wonderful way to spend a very special Valentine's Day. The entire staff was friendly and our pilot Lauren was absolutely darling! I highly recommend the experience.  We did the Beach Lovers flight.`,
         name: "Christa Cullen",
         job: "Beach Lovers Tour",
-      },
+      }, */
     ]}
+    callToAction={{
+      variant: "tertiary",
+      target: "_self",
+      text: "Read more testimonials",
+      href: "/about/testimonials",
+      icon: "tabler:chevron-right",
+    }}
   />
 
   <!-- CallToAction Widget *********** -->

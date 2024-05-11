@@ -11,14 +11,14 @@ metadata:
   title:
     default: High Tide Aviation
     template: "%s — High Tide Aviation"
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "\U0001F680 High Tide Aviation is a full-service aviation company based in Southport, North Carolina. We offer flight training, aircraft rental, and aircraft maintenance services. 🛩️✈️🚁"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: High Tide Aviation
     images:
-      - url: "~/assets/images/IMG_0743.jpg"
+      - url: "~/assets/images/high-tide-aviation-team-southport.jpg"
         width: 1200
         height: 628
     type: website

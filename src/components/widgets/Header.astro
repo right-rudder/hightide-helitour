@@ -8,6 +8,7 @@ import Button from "~/components/ui/Button.astro";
 import { getHomePermalink } from "~/utils/permalinks";
 import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
+import DarkLogo from "./darkLogo.astro";
 
 interface Link {
   text?: string;
@@ -52,7 +53,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    "top-0 z-40 flex-none mx-auto bg-slate-300/95 dark:bg-slate-800/95 w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
+    "top-0 z-40 flex-none mx-auto bg-gray-200/80 dark:bg-slate-900/80 w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
   ]}
   {...isSticky ? { "data-aw-sticky-header": true } : {}}
   {...id ? { id } : {}}
@@ -72,8 +73,13 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         "flex justify-between",
       ]}
     >
-      <a class="flex items-center" href={getHomePermalink()}>
-        <Logo />
+      <a class="flex items-center bg-logo" href={getHomePermalink()}>
+        <div class="hidden dark:block">
+          <DarkLogo />
+        </div>
+        <div class="dark:hidden">
+          <Logo />
+        </div>
       </a>
       <div class="flex items-center md:hidden">
         <ToggleMenu />

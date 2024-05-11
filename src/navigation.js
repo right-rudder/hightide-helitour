@@ -1,3 +1,4 @@
+import { locations } from "./locations";
 import { getPermalink, getBlogPermalink, getAsset } from "./utils/permalinks";
 
 export const headerData = {
@@ -194,6 +195,26 @@ export const footerData = {
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-rrm-icon"></span>
-    Made by <a class="text-blue-900 hover:text-blue-200 hover:underline dark:text-muted" href="https://rightruddermarketing.com/"> Right Rudder Marketing</a> · All rights reserved · 2024.
+    Made by <a class="text-blue-900 hover:text-blue-600 hover:underline dark:text-muted" href="https://rightruddermarketing.com/"> Right Rudder Marketing</a> · All rights reserved · 2024.
   `,
+  locations: [
+    {
+      city: "Southport, NC",
+      airport: "Cape Fear Regional Jetport (KSUT)",
+      address: "4345 Airport Road SE",
+      phone: "(910) 294-5871",
+    },
+    {
+      city: "St Simons Island, SC",
+      airport: "McKinnon-St Simons Island Airport (KSSI)",
+      address: "1759 Demere Road",
+      phone: "(912) 434-2937",
+    },
+    {
+      city: "Beaufort, SC",
+      airport: "Beaufort Executive Airport (KZJX)",
+      address: "39 Airport Circle",
+      phone: "(843) 612-0278 ",
+    },
+  ],
 };

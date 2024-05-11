@@ -5,6 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        logo: "url('~/assets/images/HTA-logo.png')",
+        "logo-dark": "url('~/assets/images/HTA-white-grad-logo.png')",
         "southport-tour": "url('~/assets/images/beach-of-beaufort-sc.jpg')",
         "simons-tour":
           "url('~/assets/images/golf-course-st-simons-island.jpg')",

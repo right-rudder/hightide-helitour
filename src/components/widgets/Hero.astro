@@ -2,6 +2,7 @@
 import Image from "~/components/common/Image.astro";
 import Button from "~/components/ui/Button.astro";
 import type { CallToAction } from "~/types";
+import { TypeAnimation } from "react-type-animation";
 
 export interface Props {
   id?: string;
@@ -25,7 +26,7 @@ const {
 ---
 
 <section
-  class="relative lg:h-screen md:-mt-[76px] not-prose overflow-hidden"
+  class="relative h-screen-3/4 lg:h-screen not-prose overflow-hidden"
   {...id ? { id } : {}}
 >
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
@@ -35,19 +36,22 @@ const {
     <div>
       {
         image && (
-          <div class="absolute inset-0 -z-10 m-auto h-full w-full bg-zoom">
-            {typeof image === "string" ? (
-              <Fragment set:html={image} />
-            ) : (
-              <Image
-                class="object-contain object-center h-full w-full filter brightness-110 dark:brightness-50"
-                widths={[400, 768, 1024, 2040]}
-                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                loading="eager"
-                {...image}
-              />
-            )}
-          </div>
+          <>
+            <div class="absolute bg-gradient-to-b from-gray-200/40 to-transparent dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
+            <div class="absolute inset-0 -z-50 m-auto h-full w-full bg-zoom">
+              {typeof image === "string" ? (
+                <Fragment set:html={image} />
+              ) : (
+                <Image
+                  class="object-contain object-center h-full w-full"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  {...image}
+                />
+              )}
+            </div>
+          </>
         )
       }
     </div>
@@ -64,10 +68,29 @@ const {
         }
         {
           title && (
-            <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200"
-              set:html={title}
-            />
+            <>
+              <h2
+                class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading text-white filter drop-shadow-xl dark:text-gray-300"
+                set:html={title}
+              />
+              <TypeAnimation
+                preRenderFirstString
+                sequence={[
+                  "Beaufort",
+                  1500,
+                  "Southport",
+                  1500,
+                  "St Simons Island",
+                  2000,
+                ]}
+                className="text-sky-400/95 italic font-black text-6xl lg:text-8xl dark:text-gray-200"
+                wrapper="h1"
+                speed={30}
+                deletionSpeed={50}
+                repeat={27}
+                client:visible
+              />
+            </>
           )
         }
         <div class="max-w-3xl mx-auto">
@@ -81,7 +104,7 @@ const {
           }
           {
             actions && (
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+              <div class="mt-8 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
                 {Array.isArray(actions) ? (
                   actions.map((action) => (
                     <div class="flex w-full sm:w-auto">
