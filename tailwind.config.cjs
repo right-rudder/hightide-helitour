@@ -13,6 +13,7 @@ module.exports = {
         "beaufort-tour": "url('~/assets/images/beaufort-sc-waterways.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
         "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
+        404: "url('~/assets/images/pier-at-st-simons-island.jpg')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
