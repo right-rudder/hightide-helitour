@@ -1,0 +1,86 @@
+---
+import Headline from "~/components/ui/Headline.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Content from "~/components/widgets/Content.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import Features4 from "~/components/widgets/Features4.astro";
+import SimpleHero from "~/components/widgets/SimpleHero.astro";
+import Steps2 from "~/components/widgets/Steps2.astro";
+import TestimonialsWidget from "~/components/widgets/Testimonials.astro";
+import Layout from "~/layouts/PageLayout.astro";
+
+const metadata = {
+  title: "Testimonials || High Tide Aviation",
+};
+---
+
+<Layout metadata={metadata}>
+  <SimpleHero
+    title="Testimonials"
+    image={{
+      src: "~/assets/images/cape-fear-north-carolina.jpg",
+      alt: "cape-fear-north-carolina",
+    }}
+  />
+
+  <section
+    id="comunity-enviroment"
+    class="my-20 px-4 lg:px-32 flex flex-col justify-center align-middle items-center"
+  >
+    <h2
+      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-1 font-heading dark:text-gray-200"
+    >
+      Experience it for yourself today
+    </h2>
+    <h4
+      class="text-2xl md:text-3xl font-semibold leading-tighter text-gray-500 tracking-tighter mb-6 font-heading dark:text-gray-300"
+    >
+      What Our Guests Love About High Tide's Tours
+    </h4>
+    <p
+      class="text-xl text-center lg:text-justify text-muted mb-6 dark:text-slate-300"
+    >
+      Our mission is to showcase the coastlines of North Carolina, South
+      Carolina, and Georgia. Our guests come from all over the world to fly in a
+      plane or helicopter and see the high tide from above. Hear what they have
+      to say below.
+    </p>
+  </section>
+
+  <TestimonialsWidget
+    title="Words from Our Guests"
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    testimonials={[
+      {
+        testimonial: `Never been in a helicopter before, but this was one of the best experiences of my life! Our pilot, Paige, was super friendly, explained everything as it was happening, and gave me an AMAZING experience by letting me take part in controlling some of the flight - definitely recommend the Discovery add-on! I'd love to do this again if I visit the area in the future, and will be talking it up to family and friends!`,
+        name: "Esther Zimmerman",
+        job: "Cape Fear Discovery Tour",
+      },
+      {
+        testimonial: `My Granddaughter and myself had an Awesome experience. The female pilot we had was great and allowed my Granddaughter to fly the Plane , I believe this will be an experience.That she will never forget. Thanks for making it a special  moment!!!`,
+        name: "Steve Gamble",
+        job: "St Simons Island Tour",
+      },
+      {
+        testimonial: `A perfect way to celebrate a special occasion! We have done a helicopter tour and most recently a discovery flight (mini-flight lesson). All the staff have been excellent, made us feel very safe- lots of “checks” and careful attention to detail. There’s nothing like seeing our favorite island from a helicopter view! Spectacular!`,
+        name: "Casey Berkshire",
+        job: "Southport Discovery Flight",
+      },
+      {
+        testimonial: `I had a really great experience with High Tide Aviation. Getting there was easy and we were able to get on our plane within minutes. Justin was our pilot and he was very sweet and knowledgeable. We did the Bald Head Island tour which was about 20 minutes- Justin told us everything about the island and surrounding areas which was cool. The flight was very smooth and comfortable as well. I would love to do this again. Thank you Justin!`,
+        name: "Sarah Keles",
+        job: " Bald Head Island Tour",
+      },
+      {
+        testimonial: `My sister and I have always wanted to take a helicopter ride. It was a quick decision as we were coming up on the airport. We both were so glad that we decided to do it. It was so much fun. The pilot was awesome! He explained everything to us and told us what to expect. He also pointed out things around the area which was great! We have decided to go back and do it again when we go back to Oak Island on our next beach trip.`,
+        name: "Eloise Hollar",
+        job: "Southport Helicopter Tour",
+      },
+      {
+        testimonial: `What a wonderful way to spend a very special Valentine's Day. The entire staff was friendly and our pilot Lauren was absolutely darling! I highly recommend the experience.  We did the Beach Lovers flight.`,
+        name: "Christa Cullen",
+        job: "Beach Lovers Tour",
+      },
+    ]}
+  />
+</Layout>

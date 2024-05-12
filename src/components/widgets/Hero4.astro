@@ -1,0 +1,136 @@
+---
+import Image from "~/components/common/Image.astro";
+import PricingTable from "~/components/widgets/PricingToggle";
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  airport?: string;
+  openHours?: hours[];
+  pricePlane: number;
+  priceHelicopter: number;
+  planeLink: string;
+  helicopterLink: string;
+  tagline?: string;
+  content?: string;
+  reversed?: boolean;
+  image?: string | any; // TODO: find HTMLElementProps
+}
+
+interface hours {
+  weekday: string;
+  time: string;
+}
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  airport = await Astro.slots.render("airport"),
+  openHours,
+  tagline,
+  pricePlane,
+  priceHelicopter,
+  planeLink,
+  helicopterLink,
+  content = await Astro.slots.render("content"),
+  image = await Astro.slots.render("image"),
+  reversed,
+} = Astro.props;
+---
+
+<section class="relative md:-mt-[76px] not-prose">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+    <div
+      class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen-3/4 lg:my-20 lg:gap-8"
+    >
+      <div class="basis-1/2 text-center pb-10 md:pb-16 mx-auto">
+        {
+          tagline && (
+            <p
+              class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+              set:html={tagline}
+            />
+          )
+        }
+        {
+          title && (
+            <h1
+              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-400"
+              set:html={title}
+            />
+          )
+        }
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+          {
+            subtitle && (
+              <>
+                <p
+                  class="text-xl text-muted mb-6 dark:text-slate-300"
+                  set:html={subtitle}
+                />
+              </>
+            )
+          }
+          {
+            airport && (
+              <div class="mt-6 dark:text-gray-300">
+                <p>Departs from</p>
+                <p class="text-xl text-muted mb-6" set:html={airport} />
+              </div>
+            )
+          }
+          {
+            openHours && (
+              <div class="mt-6 p-5 text-sm rounded-md w-4/5 lg:w-2/3 mx-auto bg-gray-100 dark:bg-gray-700">
+                <ul>
+                  {openHours.map((hours) => (
+                    <li class="flex flex-nowrap justify-center dark:text-slate-200">
+                      <span class="basis-1/2 text-right">{hours.weekday}</span>
+                      <span class="mx-2" />
+                      <span class="basis-1/2 text-left font-semibold">
+                        {hours.time}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
+          {
+            pricePlane && priceHelicopter && planeLink && helicopterLink && (
+              <PricingTable
+                pricePlane={pricePlane}
+                priceHelicopter={priceHelicopter}
+                planeLink={planeLink}
+                helicopterLink={helicopterLink}
+                client:visible
+              />
+            )
+          }
+        </div>
+        {content && <Fragment set:html={content} />}
+      </div>
+      <div class={`basis-1/2 ${reversed ? "order-first" : ""}`}>
+        {
+          image && (
+            <div class="relative m-auto max-w-5xl">
+              {typeof image === "string" ? (
+                <Fragment set:html={image} />
+              ) : (
+                <Image
+                  class="mx-auto rounded-md w-full object-cover object-center shadow-lg"
+                  widths={[400, 768, 1024, 2040]}
+                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                  loading="eager"
+                  {...image}
+                />
+              )}
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,311 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero3 from "~/components/widgets/Hero3.astro";
+import Note from "~/components/widgets/Note.astro";
+import FAQs from "~/components/widgets/FAQs.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import beaufortRoadmap from "~/components/common/beaufortRoadmap.astro";
+import Image from "~/components/common/Image.astro";
+import Pricing2 from "~/components/widgets/Pricing2.astro";
+import StSimonsTours from "~/components/tours/StSimonsTours.astro";
+
+const metadata = {
+  title: "Southport | High Tide Aviation",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    actions={[
+      {
+        variant: "primary",
+        text: "Choose a Tour",
+        href: "#tours",
+        target: "_self",
+      },
+      /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    openHours={[
+      {
+        weekday: "Monday - Saturday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Sunday",
+        time: "Closed",
+      },
+    ]}
+    image={{
+      src: "~/assets/images/IMG_9901.jpg",
+      alt: "Helicopter on the ground ready to take off",
+    }}
+  >
+    <Fragment slot="title">
+      Let's Fly Above
+      <br />
+      <span class="text-sky-400 text-6xl lg:text-7xl dark:text-white highlight"
+        >St Simons Island</span
+      >
+    </Fragment>
+
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from McKinnon-St Simons Island Airport (KSSI)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >1759 Demere Road – St Simons Island, GA</span
+      >
+    </Fragment>
+    <Fragment slot="subtitle">
+      <div class="dark:text-white text-primary text-2xl font-bold px-2 py-5">
+        Airplane Only Tours
+      </div>
+    </Fragment>
+  </Hero3>
+
+  <!-- Note Widget ******************* -->
+
+  <Note description="Airplane tours only at this location." />
+
+  <!-- Roadmap Widget **************** -->
+  <section id="beaufort-roadmap">
+    <div
+      class="text- bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <h2
+            class="xl:text-5xl text-4xl font-bold tracking-tight text-main-red text-center"
+          >
+            The High Tide Aviation Experience
+          </h2>
+          <p
+            class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
+          >
+            Discover St Simons Island from the air, featuring historical
+            insights and stunning natural landscapes
+          </p>
+        </div>
+        <div class="py-8">
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                1
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lift off from McKinnon-St Simons Island Airport
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Your tour starts at <strong
+                    >McKinnon-St Simons Island Airport (KSSI)</strong
+                  >. Get acquainted with your pilot, board the aircraft, and
+                  prepare for an enlightening aerial experience.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/two-pilots-in-cockpit.jpg"
+                alt="two-pilots-in-cockpit"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                2
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lighthouse and Historical Sites
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Fly over the <strong>St Simons Lighthouse</strong> and the remnants
+                  of <strong>Fort Frederica</strong>. These landmarks highlight
+                  the historical significance of the island and its role in
+                  Georgia’s colonial history.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/lighthouse-st-simons-island-ga.jpg"
+                alt="lighthouse-st-simons-island-ga"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                3
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Natural Scenery and Wildlife
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  View the island's diverse ecosystems, including marshes and
+                  shorelines. Keep an eye out for local wildlife such as <strong
+                    >sea turtles</strong
+                  > and <strong>migratory birds</strong>, often visible from
+                  above.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/st-simons-island-inner-waters-on-a-tour.jpg"
+                alt="st-simons-island-inner-waters-on-a-tour"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                4
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Golden Isles Exploration
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  End your flight with a tour of the broader <strong
+                    >Golden Isles</strong
+                  > area, including <strong>Jekyll Island</strong>
+                  and <strong>Sea Island</strong>. These regions are celebrated
+                  for their serene landscapes and luxurious resorts. Return
+                  knowing you’ve seen the best of St Simons and its
+                  surroundings.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/mckinnon-st-simons-island-airport.jpg"
+                alt="mckinnon-st-simons-island-airport"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Widget ******************* -->
+  <StSimonsTours />
+
+  <!-- Location *********** -->
+  <section id="location" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
+              >
+                Come Fly Over
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
+              >
+                St Simons Island, GA
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
+              >
+                Our St Simons Island location is located at the McKinnon-St
+                Simons Island Airport (KSSI) in St Simons Island, Georgia. Here,
+                you’ll find our airplane tours and our world-class flight school
+                training local pilots across the southeastern coast. <strong
+                  >Come visit us today!</strong
+                >
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
+              </dl>
+            </div>
+          </div>
+          <div class="h-full w-full flex justify-center align-middle">
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1748191.0484641409!2d-83.82412314375001!3d31.153184299999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e4db2855161e87%3A0xa28de7768105440a!2sHigh%20Tide%20Aviation%20Air%20Tours!5e0!3m2!1sen!2sco!4v1714947945708!5m2!1sen!2sco"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

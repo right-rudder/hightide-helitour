@@ -1,0 +1,335 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import { Icon } from "astro-icon/components";
+import Hero3 from "~/components/widgets/Hero3.astro";
+import Note from "~/components/widgets/Note.astro";
+import Image from "~/components/common/Image.astro";
+import SouthportTours from "~/components/tours/SouthportTours.astro";
+const metadata = {
+  title: "Custom Tour | High Tide Aviation",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    reversed={true}
+    actions={[
+      {
+        variant: "custom",
+        text: "Contact Us",
+        href: "/contact",
+        target: "_blank",
+      },
+      /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    openHours={[
+      {
+        weekday: "Monday - Thursday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Friday - Saturday",
+        time: "10:00 AM - 6:00 PM",
+      },
+      {
+        weekday: "Sunday",
+        time: "Closed",
+      },
+    ]}
+    image={{
+      src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
+      alt: "R44-on-flight-tour-in-southport-nc",
+    }}
+  >
+    <Fragment slot="title">
+      Southport
+      <br />
+      <span
+        class="text-sky-400 text-5xl lg:text-7xl dark:text-sky-600 highlight"
+        >Custom Tour</span
+      >
+    </Fragment>
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from Cape Fear Regional Jetport (KSUT)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >4345 Airport Road SE – Southport, NC</span
+      >
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <div class="dark:text-white text-primary rounded px-2 py-5">
+        Please note our Southport tours are available via both helicopter and
+        airplane.
+      </div>
+    </Fragment>
+  </Hero3>
+
+  <!-- Note Widget ******************* -->
+  <Note />
+
+  <section id="tour-info" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-300 to-gray-300 dark:from-slate-700 dark:to-gray-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-2xl text-center text-gray-700 dark:text-gray-300 font-semibold leading-7 w-full"
+              >
+                Airplane | Helicopter
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-500 text-4xl w-full"
+              >
+                Southport Custom Tour
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
+              >
+                Create your own adventure over Southport’s diverse landscapes.
+                Choose from a wide range of sights including beaches, historic
+                forts, lighthouses, and more.
+              </p>
+              <div
+                class="flex flex-col justify-center items-center align-middle"
+              >
+                <h3
+                  class="mt-7 uppercase italic text-3xl text-slate-800 dark:text-slate-400 font-black"
+                >
+                  Customizable
+                </h3>
+                <p class="mt-0 text-lg text-slate-500 font-semibold">
+                  Notable tour sights
+                </p>
+                <ul class="mt-4 space-y-1">
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Oak Island Lighthouse</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Caswell</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Old Baldy Lighthouse</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Bald Head Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-carousel" />
+                    <span class="ml-2 font-medium">Cape Fear</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:fish" />
+                    <span class="ml-2 font-medium"
+                      >Frying Pan Shoals (Shark Spotting!)</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Fisher</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Kure Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Carolina Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">Cape Fear River</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">Southport Waterfront</span>
+                  </li>
+                </ul>
+                <div
+                  class="mt-8 p-6 flex flex-col justify-center items-center align-middle bg-gray-200 dark:bg-gray-800 rounded-lg"
+                >
+                  <ul class="space-y-1">
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Custom flight time</span>
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Custom duration</span>
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Narrated by pilot</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-full w-full flex flex-col justify-center align-middle items-center"
+          >
+            <Image
+              class="rounded shadow-lg"
+              src="~/assets/images/HTA-map-southport.jpg"
+              alt="tour-map-route"
+            />
+            <div
+              class="mt-3 flex justify-center bg-gray-100 dark:bg-gray-900 rounded p-6 shadow-lg w-full lg:w-1/2"
+            >
+              <ul role="list" class="space-y-3">
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#9fc242] text-gray-800 dark:text-gray-200"
+                    href="/southport/beach-lover"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#9fc242]"></div>
+                    <span>Beach Lover</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#bfc1c4] text-gray-800 dark:text-gray-200"
+                    href="/southport/oak-island"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#bfc1c4]"></div>
+                    <span>Oak Island</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#ffa64b] text-gray-800 dark:text-gray-200"
+                    href="/southport/lighthouse-tour"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#ffa64b]"></div>
+                    <span>Lighthouse Tour</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#ffe94a] text-gray-800 dark:text-gray-200"
+                    href="/southport/bald-head-island"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#ffe94a]"></div>
+                    <span>Bald Head Island</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex align-middle items-center hover:underline hover:text-[#970c5f] text-gray-800 dark:text-gray-200"
+                    href="/southport/cape-fear-passport"
+                  >
+                    <div class="mr-2 rounded h-5 w-5 bg-[#970c5f]"></div>
+                    <span>Cape Fear Passport</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location *********** -->
+  <section id="location" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
+              >
+                Come Fly Over
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
+              >
+                Southport, NC
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
+              >
+                Our Southport location is conveniently located at the Cape Fear
+                Regional Jetport in Southport, North Carolina. Here, you’ll find
+                our tour operations and our flight school training pilots across
+                the southeast coast. Come visit us today!
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
+              </dl>
+            </div>
+          </div>
+          <div class="h-full w-full flex justify-center align-middle">
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694922.496540005!2d-80.51713514375002!3d33.9309545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa07e3b3a0b82b%3A0xe199a7d4a214440f!2sHigh%20Tide%20Aviation!5e0!3m2!1sen!2sco!4v1714928747011!5m2!1sen!2sco"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Widget ******************* -->
+  <SouthportTours />
+</Layout>

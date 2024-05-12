@@ -1,0 +1,98 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero3 from "~/components/widgets/Hero3.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features2 from "~/components/widgets/Features2.astro";
+import SimpleHero from "~/components/widgets/SimpleHero.astro";
+import Pricing2 from "~/components/widgets/Pricing2.astro";
+import SouthportTours from "~/components/tours/SouthportTours.astro";
+import BeaufortTours from "~/components/tours/BeaufortTours.astro";
+import StSimonsTours from "~/components/tours/StSimonsTours.astro";
+
+const metadata = {
+  title: "Custom Tour | High Tide Aviation",
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <SimpleHero
+    title="Custom Tours"
+    image={{
+      src: "~/assets/images/cape-fear-north-carolina.jpg",
+      alt: "cape-fear-north-carolina",
+    }}
+  />
+
+  <!-- Note Widget ******************* -->
+  <Note />
+
+  <Features2
+    id="locations"
+    title="High Tide Tour Locations"
+    tagline="Select a Coastline"
+    columns={3}
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    items={[
+      {
+        title: "Southport, NC",
+        description: "Airplane + Helicopter",
+        icon: "tabler:map-pin",
+        callToAction: {
+          variant: "secondary",
+          text: "Explore",
+          href: "/southport/custom-tour-southport",
+        },
+        classes: {
+          panel: "bg-southport-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-md lg:text-lg uppercase dark:text-white",
+          icon: "text-slate-700 dark:text-white",
+        },
+      },
+      {
+        title: "St Simons Island, GA",
+        description: "Airplane Only",
+        icon: "tabler:map-pin",
+        callToAction: {
+          variant: "secondary",
+          text: "Explore",
+          href: "/st-simons-island/custom-tour-st-simons",
+        },
+        classes: {
+          panel: "bg-simons-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
+          icon: "text-slate-700 dark:text-white",
+        },
+      },
+      {
+        title: "Beaufort, SC",
+        description: "Airplane Only",
+        icon: "tabler:map-pin",
+        callToAction: {
+          variant: "secondary",
+          text: "Explore",
+          href: "/beaufort/custom-tour-beaufort",
+        },
+        classes: {
+          panel: "bg-beaufort-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
+          icon: "text-slate-700 dark:text-white",
+        },
+      },
+    ]}
+  />
+
+  <SouthportTours />
+  <BeaufortTours />
+  <StSimonsTours />
+</Layout>

@@ -1,11 +1,28 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title?: string;
+  description?: string;
+  icon?: string;
+}
+
+const {
+  title = "Please Note:",
+  description = "Helicopter tours are only available at our Southport, NC location.",
+  icon = "tabler:info-square",
+} = Astro.props;
 ---
 
 <section class="bg-blue-50 dark:bg-slate-800 not-prose">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
+  <div
+    class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium"
+  >
     <span class="font-bold">
-      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" /> Philosophy:</span
-    > Simplicity, Best Practices and High Performance
+      <Icon name={icon} class="w-5 h-5 inline-block align-text-bottom" /><strong
+        >{title}</strong
+      ></span
+    >
+    {description}
   </div>
 </section>

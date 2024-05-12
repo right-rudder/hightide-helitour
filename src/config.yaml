@@ -1,7 +1,7 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
-  base: '/'
+  name: High Tide Aviation
+  site: "https://flyhightide.com"
+  base: "/"
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: High Tide Aviation
+    template: "%s — High Tide Aviation"
+  description: "\U0001F680 High Tide Aviation is a full-service aviation company based in Southport, North Carolina. We offer flight training, aircraft rental, and aircraft maintenance services. 🛩️✈️🚁"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: High Tide Aviation
     images:
-      - url: '~/assets/images/default.png'
+      - url: "~/assets/images/high-tide-aviation-team-southport.jpg"
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: "@onwidget"
+    site: "@onwidget"
     cardType: summary_large_image
 
 i18n:
@@ -33,30 +33,30 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
+    isEnabled: false
     postsPerPage: 6
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: "/%slug%" # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: "blog" # Blog main path, you can change this to "articles" (/articles)
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: "category" # Category main path /category/some-category, you can change this to "group" (/group/some-category)
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: "tag" # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
       robots:
         index: false
 
@@ -66,10 +66,10 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: "G-LLPZRNV0EP" # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: "system" # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   tokens:
     default:
@@ -78,13 +78,13 @@ ui:
         serif: InterVariable
         heading: InterVariable
       colors:
-        default: rgb(16 16 16)
+        default: rgb(50 60 70)
         heading: rgb(0 0 0)
-        muted: rgb(16 16 16 / 66%)
+        muted: rgb(50 50 50 / 66%)
         bgPage: rgb(255 255 255)
-        primary: rgb(1 97 239)
-        secondary: rgb(1 84 207)
-        accent: rgb(109 40 217)
+        primary: rgb(0 19 53)
+        secondary: rgb(0 44 81)
+        accent: rgb(100 76 13)
     dark:
       fonts: {}
       colors:

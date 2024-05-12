@@ -1,0 +1,121 @@
+---
+import Pricing2 from "../widgets/Pricing2.astro";
+---
+
+<Pricing2
+  id="tours"
+  title="Select from the tours below"
+  bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+  prices={[
+    {
+      image: {
+        src: "~/assets/images/beaufort-sc-waterways.jpg",
+        alt: "beaufort-sc-waterways",
+      },
+      hasRibbon: true,
+      ribbonTitle: "popular",
+      city: "Beaufort",
+      title: "Low Country Passport",
+      btnSpace: true,
+      subtitle: "Discover the vast landscapes and history of the Low Country.",
+      price: 200,
+      period: "per person",
+      items: [
+        {
+          description: "60 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "60 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491361/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/beaufort/low-country-passport",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/Yaupon-Pier.jpg",
+        alt: "Yaupon-Pier",
+      },
+      city: "Beaufort",
+      title: "Hilton Head Tour",
+      btnSpace: true,
+      subtitle: "Get up close with Hilton Head Island’s famous sites.",
+      price: 140,
+      period: "per person",
+      items: [
+        {
+          description: "40 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "50 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491353/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/beaufort/hilton-head",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/IMG_3331.jpg",
+        alt: "happy woman looking out of an airplane window",
+      },
+      city: "Beaufort",
+      title: "Barrier Island Tour",
+      btnSpace: true,
+      subtitle: "Explore the serene Barrier Islands for a peaceful retreat.",
+      price: 120,
+      period: "per person",
+      items: [
+        {
+          description: "30 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "40 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491350/?full-items=yes&flow=1034072&u=da3e79c0-d261-4c84-968c-c5d7b79f8038&from-ssl=yes&ga4t=&g4=yes&ad-adv=F6QBYONAWJEHZKKCQC2O6Z&ad-pix=6EWVJA72QFH3FFB5UCYBNK&cp=no&csp=no&back=https%3A%2F%2Fflyhightide.com%2Fscenic-air-tours-beaufort-sc%2F&language=en-us",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/beaufort/barrier-island",
+      },
+    },
+  ]}
+/>

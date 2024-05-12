@@ -1,183 +1,220 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { locations } from "./locations";
+import { getPermalink, getBlogPermalink, getAsset } from "./utils/permalinks";
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: "Locations",
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: "Southport",
+          href: getPermalink("/southport"),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: "Beaufort",
+          href: getPermalink("/beaufort"),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: "St. Simons Island",
+          href: getPermalink("/st-simons-island"),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: "The High Tide Experience",
+      href: getPermalink("/high-tide-experience"),
+    },
+    {
+      text: "Other Services",
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: "Book a Custom Tour!",
+          href: getPermalink("/packages/custom-tours"),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: "Aerial Photography - Videography",
+          href: getPermalink("/packages/aerial-photography"),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: "Flight Training",
+          href: "https://www.hightideaviation.com/",
         },
       ],
     },
     {
-      text: 'Landing',
+      text: "Gift Cards",
+      href: getPermalink("/gift-cards"),
+    },
+    {
+      text: "About Us",
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: "Why High Tide?",
+          href: getPermalink("/about/why-high-tide"),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: "Testimonials",
+          href: getPermalink("/about/testimonials"),
         },
       ],
     },
     {
-      text: 'Blog',
-      links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
-      ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
+      text: "Shop",
+      href: "https://shop.flyhightide.com/",
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [
+    {
+      text: "Book a Tour",
+      href: getPermalink("/packages/custom-tours"),
+      target: "_self",
+    },
+  ],
 };
 
 export const footerData = {
+  description:
+    "High Tide Aviation offers premier aerial tours across three spectacular locations: Southport, NC, St Simons Island, GA, and Beaufort, SC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia and South Carolina. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
   links: [
     {
-      title: 'Product',
+      title: "Southport",
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        {
+          text: "Bald Head Island",
+          href: getPermalink("/southport/bald-head-island"),
+        },
+        {
+          text: "Beach Lover",
+          href: getPermalink("/southport/beach-lover"),
+        },
+        {
+          text: "Cape Fear Passport",
+          href: getPermalink("/southport/cape-fear-passport"),
+        },
+        {
+          text: "Lighthouse Tour",
+          href: getPermalink("/southport/lighthouse-tour"),
+        },
+        {
+          text: "Oak Island",
+          href: getPermalink("/southport/oak-island"),
+        },
       ],
     },
     {
-      title: 'Platform',
+      title: "Beaufort",
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        {
+          text: "Barrier Island",
+          href: getPermalink("/beaufort/barrier-island"),
+        },
+        {
+          text: "Hilton Head Tour",
+          href: getPermalink("/beaufort/hilton-head"),
+        },
+        {
+          text: "Low Country Passport",
+          href: getPermalink("/beaufort/low-country-passport"),
+        },
       ],
     },
     {
-      title: 'Support',
+      title: "St Simons Island",
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        {
+          text: "Lighthouse Tour",
+          href: getPermalink("/st-simons-island/lighthouse-tour"),
+        },
+        {
+          text: "Jekyll Island Tour",
+          href: getPermalink("/st-simons-island/jekyll-island"),
+        },
+        {
+          text: "Golden Isles Passport",
+          href: getPermalink("/st-simons-island/golden-isles-passport"),
+        },
       ],
     },
     {
-      title: 'Company',
+      title: "Services",
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        {
+          text: "Book a Custom Tour!",
+          href: getPermalink("/packages/custom-tours"),
+        },
+        {
+          text: "Aerial Photography",
+          href: getPermalink("/packages/aerial-photography"),
+        },
+        {
+          text: "Flight Training",
+          href: "https://www.hightideaviation.com/",
+        },
+      ],
+    },
+    {
+      title: "About Us",
+      links: [
+        {
+          text: "Why High Tide?",
+          href: getPermalink("/about/why-high-tide"),
+        },
+        {
+          text: "Testimonials",
+          href: getPermalink("/about/testimonials"),
+        },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    /* { text: "Terms", href: getPermalink("/terms") }, */
+    { text: "Privacy Policy", href: getPermalink("/privacy") },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    {
+      ariaLabel: "YouTube",
+      icon: "tabler:brand-youtube",
+      href: "https://www.youtube.com/@hightideaviation",
+    },
+    {
+      ariaLabel: "Instagram",
+      icon: "tabler:brand-instagram",
+      href: "https://www.instagram.com/hightideaviation/",
+    },
+    {
+      ariaLabel: "Facebook",
+      icon: "tabler:brand-facebook",
+      href: "https://facebook.com/High-Tide-Aviation-763218714053314/",
+    },
+    /* { ariaLabel: "RSS", icon: "tabler:rss", href: getAsset("/rss.xml") }, */
+    /* {
+      ariaLabel: "Github",
+      icon: "tabler:brand-github",
+      href: "https://github.com/onwidget/astrowind",
+    }, */
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-rrm-icon"></span>
+    Made by <a class="text-blue-900 hover:text-blue-600 hover:underline dark:text-muted" href="https://rightruddermarketing.com/"> Right Rudder Marketing</a> · All rights reserved · 2024.
   `,
+  locations: [
+    {
+      city: "Southport, NC",
+      airport: "Cape Fear Regional Jetport (KSUT)",
+      address: "4345 Airport Road SE",
+      phone: "(910) 294-5871",
+    },
+    {
+      city: "St Simons Island, GA",
+      airport: "McKinnon-St Simons Island Airport (KSSI)",
+      address: "1759 Demere Road",
+      phone: "(912) 434-2937",
+    },
+    {
+      city: "Beaufort, SC",
+      airport: "Beaufort Executive Airport (KZJX)",
+      address: "39 Airport Circle",
+      phone: "(843) 612-0278 ",
+    },
+  ],
 };
