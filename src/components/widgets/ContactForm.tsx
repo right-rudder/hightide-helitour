@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [userName, setUserName] = useState<string>("");
 
   const PHONE_NUMBER = "(910) 477-1926";
-  const EMAIL_ADDRESS = "office@flyhightide.com.";
+  const EMAIL_ADDRESS = "office@flyhightide.com";
 
   const handleSubmit = (e) => {
     e.preventDefault();
