@@ -7,15 +7,15 @@ export const headerData = {
       text: "Locations",
       links: [
         {
-          text: "Southport",
+          text: "Southport, NC",
           href: getPermalink("/southport"),
         },
         {
-          text: "Beaufort",
+          text: "Beaufort, SC",
           href: getPermalink("/beaufort"),
         },
         {
-          text: "St. Simons Island",
+          text: "St Simons Island, GA",
           href: getPermalink("/st-simons-island"),
         },
       ],
@@ -36,14 +36,10 @@ export const headerData = {
           href: getPermalink("/packages/aerial-photography"),
         },
         {
-          text: "Flight Training",
-          href: "https://www.hightideaviation.com/",
+          text: "Gift Cards",
+          href: getPermalink("/gift-cards"),
         },
       ],
-    },
-    {
-      text: "Gift Cards",
-      href: getPermalink("/gift-cards"),
     },
     {
       text: "About Us",
@@ -65,9 +61,16 @@ export const headerData = {
   ],
   actions: [
     {
+      text: "Flight Training",
+      href: "https://www.hightideaviation.com/",
+      target: "_blank",
+      variant: "special",
+    },
+    {
       text: "Book a Tour",
       href: getPermalink("/packages/custom-tours"),
       target: "_self",
+      variant: "primary",
     },
   ],
 };
@@ -77,7 +80,7 @@ export const footerData = {
     "High Tide Aviation offers premier aerial tours across three spectacular locations: Southport, NC, St Simons Island, GA, and Beaufort, SC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia and South Carolina. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
   links: [
     {
-      title: "Southport",
+      title: "Southport, NC",
       links: [
         {
           text: "Bald Head Island",
@@ -102,7 +105,7 @@ export const footerData = {
       ],
     },
     {
-      title: "Beaufort",
+      title: "Beaufort, SC",
       links: [
         {
           text: "Barrier Island",
@@ -119,7 +122,7 @@ export const footerData = {
       ],
     },
     {
-      title: "St Simons Island",
+      title: "St Simons Island, GA",
       links: [
         {
           text: "Lighthouse Tour",
@@ -186,12 +189,6 @@ export const footerData = {
       icon: "tabler:brand-facebook",
       href: "https://facebook.com/High-Tide-Aviation-763218714053314/",
     },
-    /* { ariaLabel: "RSS", icon: "tabler:rss", href: getAsset("/rss.xml") }, */
-    /* {
-      ariaLabel: "Github",
-      icon: "tabler:brand-github",
-      href: "https://github.com/onwidget/astrowind",
-    }, */
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-rrm-icon"></span>
@@ -212,7 +209,7 @@ export const footerData = {
     },
     {
       city: "Beaufort, SC",
-      airport: "Beaufort Executive Airport (KZJX)",
+      airport: "Beaufort Executive Airport (KARW)",
       address: "39 Airport Circle",
       phone: "(843) 612-0278 ",
     },

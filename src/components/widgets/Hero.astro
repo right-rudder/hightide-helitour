@@ -37,7 +37,7 @@ const {
       {
         image && (
           <>
-            <div class="absolute bg-gradient-to-b from-gray-200/40 to-transparent dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
+            <div class="absolute bg-gradient-to-b from-gray-900/40 to-gray-900/30 dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
             <div class="absolute inset-0 -z-50 m-auto h-full w-full bg-zoom">
               {typeof image === "string" ? (
                 <Fragment set:html={image} />
@@ -57,7 +57,7 @@ const {
     </div>
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
     <div class="py-12 md:py-20">
-      <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+      <div class="text-center pb-10 md:pb-16 max-w-7xl mx-auto">
         {
           tagline && (
             <p
@@ -76,17 +76,18 @@ const {
               <TypeAnimation
                 preRenderFirstString
                 sequence={[
-                  "Beaufort",
-                  1500,
-                  "Southport",
-                  1500,
-                  "St Simons Island",
-                  2000,
+                  "Beaufort, SC",
+                  6300,
+                  "Southport, NC",
+                  6300,
+                  "St Simons Island, GA",
+                  9000,
                 ]}
-                className="text-sky-400/95 italic font-black text-6xl lg:text-8xl dark:text-gray-200"
+                className="text-sky-300 italic font-black min-h-24 text-6xl lg:text-8xl dark:text-gray-200"
                 wrapper="h1"
-                speed={30}
-                deletionSpeed={50}
+                cursor={false}
+                speed={10}
+                deletionSpeed={40}
                 repeat={27}
                 client:visible
               />

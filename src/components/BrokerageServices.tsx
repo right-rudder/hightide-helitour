@@ -10,21 +10,21 @@ const BrokerageServices = () => {
     {
       title: "Real Estate",
       description: [
-        "Maximize property appeal with aerial images that showcase property layouts, proximity to amenities, and the surrounding landscape. Ideal for realtors and property developers in St Simons Island and Southport, these photographs can significantly enhance listing attractiveness and help properties stand out in competitive markets.",
+        "Maximize property appeal with aerial images that showcase property layouts, proximity to amenities, and the surrounding landscape. Ideal for realtors and property developers in St Simons Island, GA and Southport, NC, these photographs can significantly enhance listing attractiveness and help properties stand out in competitive markets.",
       ],
       icon: AiTwotoneHome,
     },
     {
       title: "Event Photography",
       description: [
-        "Elevate the coverage of your outdoor events with breathtaking aerial shots. Perfect for weddings, festivals, and corporate events in St Simons Island and Southport, aerial photography offers a grand perspective that adds a layer of sophistication to any event documentation.",
+        "Elevate the coverage of your outdoor events with breathtaking aerial shots. Perfect for weddings, festivals, and corporate events in St Simons Island, GA and Southport, NC, aerial photography offers a grand perspective that adds a layer of sophistication to any event documentation.",
       ],
       icon: MdOutlineEmojiEvents,
     },
     {
       title: "Environmental Studies",
       description: [
-        "Support environmental projects and conservation efforts with detailed aerial images that can track changes over time, monitor wildlife, and assess ecological impacts. This service is invaluable for researchers and environmental organizations operating in and around St Simons Island and Southport.",
+        "Support environmental projects and conservation efforts with detailed aerial images that can track changes over time, monitor wildlife, and assess ecological impacts. This service is invaluable for researchers and environmental organizations operating in and around St Simons Island, GA and Southport, NC.",
       ],
       icon: GiWhaleTail,
     },
