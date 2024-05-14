@@ -25,12 +25,13 @@ const metadata = {
     actions={[
       {
         variant: "custom",
-        text: "Contact Us",
-        href: "/contact",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/flyhightide-ssi/items/327876/calendar/2024/05/?full-items=yes",
         target: "_blank",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
+    price={220}
     openHours={[
       {
         weekday: "Monday - Saturday",
@@ -50,7 +51,7 @@ const metadata = {
       St Simons Island, GA
       <br />
       <span
-        class="text-sky-400 text-5xl lg:text-7xl dark:text-sky-600 highlight"
+        class="text-sky-400 text-5xl lg:text-6xl dark:text-sky-600 highlight"
         >Golden Isles Custom Tour</span
       >
     </Fragment>
@@ -100,9 +101,8 @@ const metadata = {
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
               >
-                Personalize your aerial exploration of the Golden Isles. Focus
-                on landscapes, historical sites, or both across key
-                destinations.
+                Personalize your one-hour flight over the Golden Isles. Focus on
+                landscapes, historical sites, or both across key destinations.
               </p>
               <div
                 class="flex flex-col justify-center items-center align-middle"
@@ -115,12 +115,74 @@ const metadata = {
                 <p class="mt-0 text-lg text-slate-500 font-semibold">
                   Notable tour sights
                 </p>
-                <ul class="mt-4 space-y-1">
+                <ul class="mt-4 space-y-1 grid grid-cols-2 space-x-2">
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">St Simons Pier</span>
+                  </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
                     <span class="ml-2 font-medium">St Simons Lighthouse</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:plant-2" />
+                    <span class="ml-2 font-medium">Neptune Park</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">St Simons Sound</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Driftwood Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:golf" />
+                    <span class="ml-2 font-medium"
+                      >Jekyll Island Club Resort</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">St. Andrews Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:map-pin" />
+                    <span class="ml-2 font-medium">Jekyll Point</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Shark Tooth Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
+                    <span class="ml-2 font-medium">Jekyll Island Pier</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Hawkins Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -131,16 +193,40 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:wall" />
+                    <Icon class="w-5 h-5" name="tabler:ripple" />
                     <span class="ml-2 font-medium"
-                      >Jekyll Island Historic District</span
+                      >King and Prince Golf Course</span
                     >
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:beach" />
-                    <span class="ml-2 font-medium">Driftwood Beach</span>
+                    <Icon class="w-5 h-5" name="tabler:home" />
+                    <span class="ml-2 font-medium">Hampton Plantation</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:golf" />
+                    <span class="ml-2 font-medium">Ocean Forest Golf Club</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:golf" />
+                    <span class="ml-2 font-medium">Frederica Golf Club</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:golf" />
+                    <span class="ml-2 font-medium">Altamaha Sound</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Egg Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -161,12 +247,6 @@ const metadata = {
                     <span class="ml-2 font-medium">Little St Simons Island</span
                     >
                   </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:map-pin" />
-                    <span class="ml-2 font-medium">Brunswick</span>
-                  </li>
                 </ul>
                 <div
                   class="mt-8 p-6 flex flex-col justify-center items-center align-middle bg-gray-200 dark:bg-gray-800 rounded-lg"
@@ -176,19 +256,29 @@ const metadata = {
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Custom flight time</span>
+                      <span class="ml-2 font-medium">1 hour flight</span>
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Custom duration</span>
+                      <span class="ml-2 font-medium">Custom sights</span>
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Narrated by pilot</span>
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to discovery flight</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to sunset flight</span
+                      >
                     </li>
                   </ul>
                 </div>

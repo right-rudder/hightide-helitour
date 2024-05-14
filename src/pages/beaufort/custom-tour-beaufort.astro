@@ -21,12 +21,13 @@ const metadata = {
     actions={[
       {
         variant: "custom",
-        text: "Contact Us",
-        href: "/contact",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/flyhightide/items/491363/calendar/2024/05/?full-items=yes",
         target: "_blank",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
+    price={220}
     openHours={[
       {
         weekday: "Monday - Thursday",
@@ -98,8 +99,8 @@ const metadata = {
               <p
                 class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
               >
-                Design your own air tour of Beaufort's Low Country. Pick from
-                historical forts, serene islands, and ecological marvels.
+                Design your one-hour air tour of Beaufort's Low Country. Pick
+                from historical forts, serene islands, and ecological marvels.
               </p>
               <div
                 class="flex flex-col justify-center items-center align-middle"
@@ -112,26 +113,12 @@ const metadata = {
                 <p class="mt-0 text-lg text-slate-500 font-semibold">
                   Notable tour sights
                 </p>
-                <ul class="mt-4 space-y-1">
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
-                    <span class="ml-2 font-medium">Fort Pulaski</span>
-                  </li>
+                <ul class="mt-4 space-y-1 grid grid-cols-2 space-x-2">
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Hunting Island</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium"
-                      >Morgan Island (Monkey Island)</span
-                    >
+                    <span class="ml-2 font-medium">Morgan Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -142,14 +129,10 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Hilton Head Island</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Parris Island</span>
+                    <Icon class="w-5 h-5" name="tabler:plant-2" />
+                    <span class="ml-2 font-medium"
+                      >Hunting Island State Park & Lighthouse</span
+                    >
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -161,7 +144,31 @@ const metadata = {
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Dafuskie Island</span>
+                    <span class="ml-2 font-medium">Pritchard's Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Bull Point Beach</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Hilton Head Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Daufuskie Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:map-pin" />
+                    <span class="ml-2 font-medium">Bloody Point</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -172,14 +179,42 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Edisto Island</span>
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Tybee Island Light Station</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium"
+                      >Cockspur Island Lighthouse</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Pulaski</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
+                    <span class="ml-2 font-medium">Harbor Town Lighthouse</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Tybee Island</span>
+                    <span class="ml-2 font-medium">Parris Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:building-fortress" />
+                    <span class="ml-2 font-medium">Fort Frederick</span>
                   </li>
                 </ul>
                 <div
@@ -190,19 +225,29 @@ const metadata = {
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Custom flight time</span>
+                      <span class="ml-2 font-medium">1 hour flight</span>
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Custom duration</span>
+                      <span class="ml-2 font-medium">Custom sights</span>
                     </li>
                     <li
                       class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
                     >
                       <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
-                      <span class="ml-2 font-medium">Narrated by pilot</span>
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to discovery flight</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to sunset flight</span
+                      >
                     </li>
                   </ul>
                 </div>
