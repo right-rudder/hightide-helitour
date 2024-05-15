@@ -32,7 +32,7 @@ export const headerData = {
           href: getPermalink("/packages/custom-tours"),
         },
         {
-          text: "Aerial Photography - Videography",
+          text: "Aerial Photography/Videography",
           href: getPermalink("/packages/aerial-photography"),
         },
         {
@@ -146,7 +146,7 @@ export const footerData = {
           href: getPermalink("/packages/custom-tours"),
         },
         {
-          text: "Aerial Photography",
+          text: "Aerial Photography/Videography",
           href: getPermalink("/packages/aerial-photography"),
         },
         {
