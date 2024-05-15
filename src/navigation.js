@@ -199,19 +199,19 @@ export const footerData = {
       city: "Southport, NC",
       airport: "Cape Fear Regional Jetport (KSUT)",
       address: "4345 Airport Road SE",
-      phone: "(910) 294-5871",
+      phone: "(910) 477-1926",
     },
     {
       city: "St Simons Island, GA",
       airport: "McKinnon-St Simons Island Airport (KSSI)",
       address: "1759 Demere Road",
-      phone: "(912) 434-2937",
+      phone: "(912) 434-4843",
     },
     {
       city: "Beaufort, SC",
       airport: "Beaufort Executive Airport (KARW)",
       address: "39 Airport Circle",
-      phone: "(843) 612-0278 ",
+      phone: "(843) 612-0278",
     },
   ],
 };
