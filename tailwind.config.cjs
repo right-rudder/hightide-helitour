@@ -9,7 +9,7 @@ module.exports = {
         "logo-dark": "url('~/assets/images/HTA-white-grad-logo.png')",
         "southport-tour": "url('~/assets/images/beach-of-beaufort-sc.jpg')",
         "simons-tour":
-          "url('~/assets/images/golf-course-st-simons-island.jpg')",
+          "url('~/assets/images/high-tide-aviation-tours-st-simons-island-plane-flying-over-island.jpeg')",
         "beaufort-tour": "url('~/assets/images/beaufort-sc-waterways.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
         "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
