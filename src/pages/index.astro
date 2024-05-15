@@ -7,6 +7,7 @@ import Features2 from "~/components/widgets/Features2.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
+import Brands from "~/components/widgets/Brands.astro";
 
 const metadata = {
   title: "Airplane and Helicopter Tours | High Tide Aviation",
@@ -183,6 +184,29 @@ const metadata = {
       href: "/about/testimonials",
       icon: "tabler:chevron-right",
     }}
+  />
+
+  <Brands
+    title="What People are Saying"
+    subtitle="See what matters most to our customers. Explore reviews to find out what people love about our tours."
+    icons={[]}
+    imagesLink={[
+      {
+        src: "~/assets/images/Tripadvisor-Logo-PNG4.png",
+        alt: "Tripadvisor",
+        href: "https://www.tripadvisor.com/Attraction_Review-g49403-d7726762-Reviews-High_Tide_Helicopters-Oak_Island_North_Carolina.html",
+      },
+      {
+        src: "~/assets/images/pngwing.com.png",
+        alt: "Google",
+        href: "https://maps.app.goo.gl/kCbEjLT6HXo9AykC6",
+      },
+      {
+        src: "~/assets/images/Facebook_logo_PNG9.png",
+        alt: "Facebook",
+        href: "https://www.facebook.com/flyhightide/reviews",
+      },
+    ]}
   />
 
   <!-- CallToAction Widget *********** -->

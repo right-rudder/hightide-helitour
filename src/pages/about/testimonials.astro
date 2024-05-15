@@ -1,5 +1,6 @@
 ---
 import Headline from "~/components/ui/Headline.astro";
+import Brands from "~/components/widgets/Brands.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import Content from "~/components/widgets/Content.astro";
 import Features2 from "~/components/widgets/Features2.astro";
@@ -44,6 +45,30 @@ const metadata = {
       to say below.
     </p>
   </section>
+
+  <Brands
+    bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-50 to-slate-100 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+    title="What People are Saying"
+    subtitle="See what matters most to our customers. Explore reviews to find out what people love about our tours."
+    icons={[]}
+    imagesLink={[
+      {
+        src: "~/assets/images/Tripadvisor-Logo-PNG4.png",
+        alt: "Tripadvisor",
+        href: "https://www.tripadvisor.com/Attraction_Review-g49403-d7726762-Reviews-High_Tide_Helicopters-Oak_Island_North_Carolina.html",
+      },
+      {
+        src: "~/assets/images/pngwing.com.png",
+        alt: "Google",
+        href: "https://maps.app.goo.gl/kCbEjLT6HXo9AykC6",
+      },
+      {
+        src: "~/assets/images/Facebook_logo_PNG9.png",
+        alt: "Facebook",
+        href: "https://www.facebook.com/flyhightide/reviews",
+      },
+    ]}
+  />
 
   <TestimonialsWidget
     title="Words from Our Guests"
