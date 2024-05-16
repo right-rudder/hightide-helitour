@@ -3,11 +3,9 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "allowJs": true,
-    "baseUrl": "/Users/raminka/Developer/right-rudder/hightide-helitours",
+    "baseUrl": "/Users/raminka/Developer/right-rudder/hightide-helitour",
     "paths": {
-      "~/*": [
-        "src/*"
-      ]
+      "~/*": ["src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

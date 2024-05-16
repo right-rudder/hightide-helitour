@@ -7,10 +7,11 @@ module.exports = {
       backgroundImage: {
         logo: "url('~/assets/images/HTA-logo.png')",
         "logo-dark": "url('~/assets/images/HTA-white-grad-logo.png')",
-        "southport-tour": "url('~/assets/images/beach-of-beaufort-sc.jpg')",
+        "southport-tour": "url('~/assets/images/beaufort-sc-waterways.jpg')",
         "simons-tour":
           "url('~/assets/images/high-tide-aviation-tours-st-simons-island-plane-flying-over-island.jpeg')",
-        "beaufort-tour": "url('~/assets/images/beaufort-sc-waterways.jpg')",
+        "beaufort-tour":
+          "url('~/assets/images/high-tide-aviation-beaufort-sc-tours.jpg')",
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
         "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
         404: "url('~/assets/images/pier-at-st-simons-island.jpg')",
