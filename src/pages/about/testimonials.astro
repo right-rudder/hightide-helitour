@@ -1,4 +1,5 @@
 ---
+import { load } from "js-yaml";
 import Headline from "~/components/ui/Headline.astro";
 import Brands from "~/components/widgets/Brands.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
@@ -21,6 +22,7 @@ const metadata = {
     image={{
       src: "~/assets/images/cape-fear-north-carolina.jpg",
       alt: "cape-fear-north-carolina",
+      loading: "eager",
     }}
   />
 
@@ -29,12 +31,12 @@ const metadata = {
     class="my-20 px-4 lg:px-32 flex flex-col justify-center align-middle items-center"
   >
     <h2
-      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-1 font-heading dark:text-gray-200"
+      class="text-5xl md:text-6xl font-bold text-center leading-tighter tracking-tighter mb-1 font-heading dark:text-gray-200"
     >
       Experience it for yourself today
     </h2>
     <h4
-      class="text-2xl md:text-3xl font-semibold leading-tighter text-gray-500 tracking-tighter mb-6 font-heading dark:text-gray-300"
+      class="text-2xl md:text-3xl font-semibold text-center leading-tighter text-gray-500 tracking-tighter mb-6 font-heading dark:text-gray-300"
     >
       What Our Guests Love About High Tide's Tours
     </h4>

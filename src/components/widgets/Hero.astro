@@ -38,13 +38,14 @@ const {
         image && (
           <>
             <div class="absolute bg-gradient-to-b from-gray-900/20 to-gray-900/10 dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
-            <div class="absolute inset-0 -z-50 m-auto h-full w-full bg-zoom">
+            <div class="absolute inset-0 -z-50 h-full w-full bg-zoom">
               {typeof image === "string" ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
                   class="object-contain object-center h-full w-full"
-                  widths={[400, 768, 1024, 2040]}
+                  layout="cover"
+                  widths={[400, 768, 1024, 2040, 4096]}
                   sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
                   loading="eager"
                   {...image}
