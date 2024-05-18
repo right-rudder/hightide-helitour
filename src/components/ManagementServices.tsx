@@ -9,21 +9,21 @@ const ManagementServices = () => {
     {
       title: "Promotional Videos",
       description: [
-        "Create compelling video content that highlights the vibrancy and activity of your business or community. Aerial videos are particularly effective for promoting tourist attractions, luxury real estate, and special events in St Simons Island and Southport, offering viewers a dynamic and immersive experience.",
+        "Create compelling video content that highlights the vibrancy and activity of your business or community. Aerial videos are particularly effective for promoting tourist attractions, luxury real estate, and special events in St Simons Island, GA and Southport, NC, offering viewers a dynamic and immersive experience.",
       ],
       icon: MdOutlineVideoChat,
     },
     {
       title: "Construction Progress",
       description: [
-        "Keep stakeholders informed with regular video updates of construction sites. Aerial videography offers a comprehensive view of ongoing projects, facilitating better project management and documentation. This service is essential for construction companies and developers in St Simons Island and Southport.",
+        "Keep stakeholders informed with regular video updates of construction sites. Aerial videography offers a comprehensive view of ongoing projects, facilitating better project management and documentation. This service is essential for construction companies and developers in St Simons Island, GA and Southport, NC.",
       ],
       icon: LuConstruction,
     },
     {
       title: "Documentaries",
       description: [
-        "Incorporate striking aerial footage into your documentaries to enhance storytelling. Whether you're documenting historical landmarks, natural landscapes, or urban development in St Simons Island and Southport, aerial videography adds depth and context to your narrative.",
+        "Incorporate striking aerial footage into your documentaries to enhance storytelling. Whether you're documenting historical landmarks, natural landscapes, or urban development in St Simons Island, GA and Southport, NC, aerial videography adds depth and context to your narrative.",
       ],
       icon: FaPhotoVideo,
     },

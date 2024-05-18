@@ -59,12 +59,10 @@ const {
             <Fragment set:html={image} />
           ) : (
             <Image
-              class="inset-0 w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+              class="inset-0 w-full aspect-auto rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
               layout="cover"
               src={image?.src}
               alt={image?.alt || ""}
-              widths={[400, 768, 1024, 2040]}
-              sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
               loading="lazy"
             />
           )}

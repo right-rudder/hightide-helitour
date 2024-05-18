@@ -8,6 +8,7 @@ import Pricing2 from "~/components/widgets/Pricing2.astro";
 import SouthportTours from "~/components/tours/SouthportTours.astro";
 import BeaufortTours from "~/components/tours/BeaufortTours.astro";
 import StSimonsTours from "~/components/tours/StSimonsTours.astro";
+import { load } from "js-yaml";
 
 const metadata = {
   title: "Gift Cards | High Tide Aviation",
@@ -20,8 +21,9 @@ const metadata = {
   <SimpleHero
     title="Give the Gift of Flight"
     image={{
-      src: "~/assets/images/cape-fear-north-carolina.jpg",
+      src: "~/assets/images/cape-fear-banner.jpg",
       alt: "cape-fear-north-carolina",
+      loading: "eager",
     }}
   />
 

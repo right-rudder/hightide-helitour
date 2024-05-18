@@ -33,12 +33,16 @@ const metadata = {
     ]}
     openHours={[
       {
-        weekday: "Monday - Thursday",
+        weekday: "Monday - Wednesday",
         time: "10:00 AM - 5:00 PM",
       },
       {
+        weekday: "Thursday",
+        time: "Closed",
+      },
+      {
         weekday: "Friday - Saturday",
-        time: "10:00 AM - 6:00 PM",
+        time: "10:00 AM - 5:00 PM",
       },
       {
         weekday: "Sunday",
@@ -47,12 +51,12 @@ const metadata = {
     ]}
     price={200}
     image={{
-      src: "~/assets/images/beaufort-sc-waterways.jpg",
-      alt: "beaufort-sc-waterways",
+      src: "~/assets/images/high-tide-low-country-passport-tour.jpg",
+      alt: "high-tide-low-country-passport-tour",
     }}
   >
     <Fragment slot="title">
-      Beaufort
+      Beaufort, SC
       <br />
       <span
         class="text-sky-400 text-5xl lg:text-7xl dark:text-sky-600 highlight"
@@ -61,7 +65,7 @@ const metadata = {
     </Fragment>
     <Fragment slot="airport">
       <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
-        >Beaufort Executive Airport (KZJX)</span
+        >Beaufort Executive Airport (KARW)</span
       ><br />
       <span class="text-gray-700 text-base dark:text-gray-100 highlight"
         >39 Airport Circle - Beaufort, SC</span
@@ -76,7 +80,7 @@ const metadata = {
   </Hero3>
 
   <!-- Note Widget ******************* -->
-  <Note description="Our Beaufort tours are only available via airplane." />
+  <Note description="Our Beaufort, SC tours are only available via airplane." />
 
   <section id="tour-info" class="w-full">
     <div
@@ -144,15 +148,9 @@ const metadata = {
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
-                    <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Parris Island</span>
-                  </li>
-                  <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
-                  >
                     <Icon class="w-5 h-5" name="tabler:building-lighthouse" />
                     <span class="ml-2 font-medium"
-                      >Parris Island Lighthouse</span
+                      >Hunting Island Lighthouse</span
                     >
                   </li>
                   <li
@@ -165,13 +163,25 @@ const metadata = {
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Head Island</span>
+                    <span class="ml-2 font-medium">Pritchard's Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:beach" />
+                    <span class="ml-2 font-medium">Bull Point Beach</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
                   >
                     <Icon class="w-5 h-5" name="tabler:photo" />
-                    <span class="ml-2 font-medium">Dafuskie Island</span>
+                    <span class="ml-2 font-medium">Hilton Head Island</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:photo" />
+                    <span class="ml-2 font-medium">Daufuskie Island</span>
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -334,7 +344,7 @@ const metadata = {
                 class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
               >
                 Our Beaufort location is located at the Beaufort Executive
-                Aiport (KZJX) in Beaufort, South Carolina. Here, you’ll have
+                Aiport (KARW) in Beaufort, South Carolina. Here, you’ll have
                 access to all our airplane tours and further passage to the
                 Hilton Head region of South Carolina. <strong
                   >Come visit us today!</strong
