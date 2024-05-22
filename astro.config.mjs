@@ -104,5 +104,6 @@ export default defineConfig({
       "https://hightideaviation.com/blog/",
     "/contact-high-tide-aviation/": "/contact",
     "/financing/": "https://hightideaviation.com/about/financing/",
+    "/request-flight-training/": "https://hightideaviation.com/",
   },
 });
