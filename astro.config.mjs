@@ -89,12 +89,13 @@ export default defineConfig({
     "/flight-training-southport-nc/": "/southport",
     "/fly-with-us-wilmington-nc/": "/southport",
     "/flight-training-st-simons-island-ga/": "https://hightideaviation.com/",
-    "/specials/": "/southport",
+    "/specials/": "https://hightideaviation.com/",
     "/flight-school-wilmington-nc/": "https://hightideaviation.com/",
     "/flight-school-southport-nc/flight-lessons/":
       "https://hightideaviation.com/",
     "/flight-school-st-simons-island-ga/": "https://hightideaviation.com/",
-    "/aircraft-services-southport-nc/": "https://hightideaviation.com/",
+    "/aircraft-services-southport-nc/":
+      "https://hightideaviation.com/about/aircraft-services/",
     "/flight-training-southport-nc/airplane/": "https://hightideaviation.com/",
     "/fly-with-us-southport-nc/scenic-air-tours/": "/southport",
     "/fly-with-us-southport-nc/helicopter-flights/": "/southport",
