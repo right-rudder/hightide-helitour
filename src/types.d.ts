@@ -145,6 +145,7 @@ export interface Price {
   price?: number | string;
   period?: string;
   items?: Array<Item>;
+  starting?: boolean;
   btnSpace?: boolean;
   callToAction?: CallToAction;
   callToAction2?: CallToAction;

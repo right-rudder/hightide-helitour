@@ -7,6 +7,8 @@ import Announcement from "~/components/widgets/Announcement.astro";
 import { headerData, footerData } from "~/navigation";
 
 import type { MetaData } from "~/types";
+import FAQs from "~/components/widgets/FAQs";
+import { GeneralFAQs } from "~/general-faqs";
 
 export interface Props {
   metadata?: MetaData;
@@ -24,6 +26,8 @@ const { metadata } = Astro.props;
   </slot>
   <main>
     <slot />
+    <!-- FAQs -->
+    <FAQs faqs={GeneralFAQs} type="Tours" client:visible />
   </main>
   <slot name="footer">
     <Footer {...footerData} />
