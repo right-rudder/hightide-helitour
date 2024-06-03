@@ -37,6 +37,7 @@ const {
               city,
               title,
               subtitle,
+              starting,
               price,
               period,
               items,
@@ -121,6 +122,9 @@ const {
                         </div>
                       )}
                       <div class="my-3">
+                        {starting && (
+                      <span class="text-gray-500 dark:text-gray-300 text-sm">starting at:</span>
+                        )}
                         <div class="mx-auto flex items-center w-1/2 py-5 justify-center text-center mb-1 bg-sky-500 dark:bg-sky-700 rounded-lg">
                           <span class="text-3xl">$</span>
                         {price && (

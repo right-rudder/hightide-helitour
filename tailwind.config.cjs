@@ -30,6 +30,7 @@ module.exports = {
         accent: "var(--aw-color-accent)",
         default: "var(--aw-color-text-default)",
         muted: "var(--aw-color-text-muted)",
+        "mustard-yellow": "#ffc220",
       },
       fontFamily: {
         sans: [

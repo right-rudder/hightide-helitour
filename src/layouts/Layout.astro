@@ -46,6 +46,64 @@ const { language, textDirection } = I18N;
 
     <!-- Uncomment line below to activate View Transitions -->
     <ViewTransitions fallback="swap" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "High Tide Aviation",
+        "description": "High Tide Aviation is a full-service aviation company based in Southport, North Carolina. We offer flight training, aircraft rental, and aircraft maintenance services. 🛩️✈️🚁",
+        "keywords": "airplane tours, helicopter tours, Southport, North Carolina, airplane, helicopter, flight training, aircraft rental, aircraft maintenance, aviation, pilot training, flight school, flight academy, aviation company, aviation services, aviation training, aviation maintenance, aviation rental, aviation school, aviation academy, aviation company, aviation services, aviation training, aviation maintenance, aviation rental, aviation school, aviation academy",
+        "image": "https://flyhightide.com/_astro/HTA-logo.DuOU4FiH_W1rd9.webp",
+        "logo": "https://flyhightide.com/_astro/HTA-logo.DuOU4FiH_W1rd9.webp",
+        "telephone": "+19104771926",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4345 Airport Road SE",
+          "addressLocality": "Southport",
+          "addressRegion": "NC",
+          "addressCountry": "US",
+          "postalCode": "28461"
+        },
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express, Discover, Checks",
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.937778120276356,
+            "longitude": -78.06462908650822
+          },
+          "geoRadius": 9000
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "27"
+        },
+        "url": "https://hightideaviation.com/",
+        "priceRange": "$",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.937778120276356,
+          "longitude": -78.06462908650822
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+            "opens": "10:00",
+            "closes": "17:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">

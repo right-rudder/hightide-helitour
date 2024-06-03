@@ -38,7 +38,7 @@
   }
 
   .btn-special {
-    @apply rounded px-3 transition duration-200 font-semibold bg-sky-600 text-white border-sky-600 hover:bg-secondary hover:border-secondary hover:dark:text-slate-300 dark:text-white dark:bg-slate-500 dark:border-slate-500 dark:hover:border-secondary dark:hover:bg-secondary;
+    @apply rounded text-center px-3 transition duration-200 font-semibold bg-mustard-yellow hover:bg-yellow-300 text-slate-800 border-mustard-yellow filter dark:saturate-50 dark:hover:saturate-100;
   }
 }
 
