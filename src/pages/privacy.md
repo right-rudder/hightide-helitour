@@ -3,7 +3,7 @@ title: "Privacy Policy"
 layout: "~/layouts/MarkdownLayout.astro"
 ---
 
-_Last updated_: December 02, 2020
+_Last updated_: June 02, 2024
 
 We want you to know how seriously we take your privacy, so please read our privacy policy, which we’re sure will address any worries you may have:
 
@@ -37,7 +37,7 @@ This online privacy policy applies only to information collected through our web
 
 ### Cookie Policy
 
-As you browse our site, advertising cookies will be placed on your computer so that we can understand what you are interested in. Our display advertising partner, AdRoll, then enables us to present you with retargeting advertising on other sites based on your previous interaction on our site. The techniques our partners employ do not collect personal information such as your name, email address, postal address, or telephone number. Please contact us if you have questions about our use of cookies or to opt out of AdRoll’s and their partners’ targeted advertising.
+As you browse our site, advertising cookies will be placed on your computer so that we can understand what you are interested in. The techniques our partners employ do not collect personal information such as your name, email address, postal address, or telephone number. Please contact us if you have questions about our use of cookies or to opt out of AdRoll’s and their partners’ targeted advertising.
 
 To opt out of interest-based advertising such as adroll retargeting please click the following link and click the buttons for browser and/or mobile opt-outs to opt out of each.
 <http://optout.networkadvertising.org/?c=1>
@@ -48,7 +48,7 @@ By using our site, you consent to our privacy policy.
 
 ### Changes to our Privacy Policy
 
-If we decide to change our privacy policy, we will post those changes on this page. This policy was last modified on 2-DEC-2020
+If we decide to change our privacy policy, we will post those changes on this page. This policy was last modified on 2-JUN-2024
 
 ### Contacting Us
 
