@@ -35,13 +35,14 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <!-- <Analytics /> -->
-    <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-LLPZRNV0EP"></script>
-    <script type="text/partytown">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLPZRNV0EP"></script>
+    <script>
       window.dataLayer = window.dataLayer || [];
-      window.gtag = function gtag(){dataLayer.push(arguments);}
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', "G-LLPZRNV0EP");
+      gtag('config', 'G-LLPZRNV0EP');
     </script>
 
     <!-- Uncomment line below to activate View Transitions -->
