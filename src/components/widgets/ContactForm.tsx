@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
+const GHL_CONTACT_WEBHOOK_URL = import.meta.env.GHL_CONTACT_WEBHOOK_URL;
 
 const ContactForm = () => {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
@@ -21,8 +22,7 @@ const ContactForm = () => {
       setUserName(name.toString());
     }
 
-    const url =
-      "https://services.leadconnectorhq.com/hooks/sR3pjXdLKAppPONWswW9/webhook-trigger/bec1377d-13f6-4888-91e7-4d350695a5b4";
+    const url = GHL_CONTACT_WEBHOOK_URL;
 
     fetch(url, {
       method: "POST",
