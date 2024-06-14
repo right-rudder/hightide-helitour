@@ -69,6 +69,7 @@ export default defineConfig({
     }),
     astrowind(),
     react(),
+    partytown(),
   ],
   image: {
     service: squooshImageService(),
