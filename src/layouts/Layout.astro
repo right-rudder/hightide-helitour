@@ -28,14 +28,7 @@ const { language, textDirection } = I18N;
 <!doctype html>
 <html lang={language} dir={textDirection} class="2xl:text-[20px] scroll-smooth">
   <head>
-    <CommonMeta />
-    <Favicons />
-    <CustomStyles />
-    <ApplyColorMode />
-    <Metadata {...metadata} />
-    <SiteVerification />
     <!-- <Analytics /> -->
-    <!-- Google tag (gtag.js) -->
     <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-LLPZRNV0EP"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
@@ -44,6 +37,12 @@ const { language, textDirection } = I18N;
 
       gtag('config', 'G-LLPZRNV0EP');
     </script>
+    <CommonMeta />
+    <Favicons />
+    <CustomStyles />
+    <ApplyColorMode />
+    <Metadata {...metadata} />
+    <SiteVerification />
 
     <!-- Uncomment line below to activate View Transitions -->
     <ViewTransitions fallback="swap" />
