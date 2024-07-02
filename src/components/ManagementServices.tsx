@@ -34,7 +34,7 @@ const ManagementServices = () => {
 
   const handleClick = (e) => {
     const selectedService = managementServices.find(
-      (item) => item.title === e.currentTarget.id
+      (item) => item.title === e.currentTarget.id,
     );
     if (selectedService) {
       setDescription(selectedService.description);

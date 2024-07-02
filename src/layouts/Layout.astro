@@ -36,13 +36,18 @@ const { language, textDirection } = I18N;
     <SiteVerification />
 
     <!-- <Analytics /> -->
-    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-LLPZRNV0EP"></script>
+    <script
+      type="text/partytown"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LLPZRNV0EP"></script>
     <script type="text/partytown">
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-LLPZRNV0EP');
+      gtag("config", "G-LLPZRNV0EP");
     </script>
 
     <!-- Uncomment line below to activate View Transitions -->

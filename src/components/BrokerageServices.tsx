@@ -35,7 +35,7 @@ const BrokerageServices = () => {
 
   const handleClick = (e) => {
     const selectedService = brokerageServices.find(
-      (item) => item.title === e.currentTarget.id
+      (item) => item.title === e.currentTarget.id,
     );
     if (selectedService) {
       setDescription(selectedService.description);

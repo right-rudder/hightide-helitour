@@ -41,7 +41,7 @@ const ContactForm = () => {
       .catch((error) => {
         console.error(
           "Network error occurred while submitting the form:",
-          error
+          error,
         );
       });
   };

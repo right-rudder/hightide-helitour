@@ -1,0 +1,231 @@
+---
+import Image from "~/components/common/Image.astro";
+import type { CallToAction } from "~/types";
+import Button from "~/components/ui/Button.astro";
+
+import HeliImage from "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg";
+import PlaneImage from "~/assets/images/wedding-engagement-on-a-custom-airplane-tour-at-high-tide-aviation.jpg";
+
+export interface Props {
+  title?: string;
+  subtitle?: string[];
+  airport?: string;
+  openHours?: hours[];
+  price?: number[];
+  tagline?: string;
+  content?: string;
+  actions?: string | CallToAction[];
+  reversed?: boolean;
+  image?: any; // TODO: find HTMLElementProps
+}
+
+interface hours {
+  weekday: string;
+  time: string;
+}
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  airport = await Astro.slots.render("airport"),
+  openHours,
+  tagline,
+  price,
+  content = await Astro.slots.render("content"),
+  actions = await Astro.slots.render("actions"),
+  image = await Astro.slots.render("image"),
+  reversed,
+} = Astro.props;
+---
+
+<section class="relative pt-16 md:-mt-[76px] not-prose">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
+    <div
+      class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen-3/4 lg:my-20 lg:gap-8"
+    >
+      <div class="basis-1/2 text-center pb-10 md:pb-16 mx-auto">
+        {
+          tagline && (
+            <p
+              class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+              set:html={tagline}
+            />
+          )
+        }
+        {
+          title && (
+            <h1
+              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-400"
+              set:html={title}
+            />
+          )
+        }
+        <div class="max-w-3xl mx-auto lg:max-w-none">
+          {
+            airport && (
+              <div class="mt-6 dark:text-gray-300">
+                <p>Departs from</p>
+                <p class="text-xl text-muted mb-6" set:html={airport} />
+              </div>
+            )
+          }
+          {
+            openHours && (
+              <div class="mt-6 p-5 text-sm rounded-md w-4/5 lg:w-2/3 mx-auto bg-gray-100 dark:bg-gray-700">
+                <ul>
+                  {openHours.map((hours) => (
+                    <li class="flex flex-nowrap justify-center items-center align-middle dark:text-slate-200">
+                      <span class="basis-1/2 text-right">{hours.weekday}</span>
+                      <span class="mx-2" />
+                      <span class="basis-1/2 text-left font-semibold">
+                        {hours.time}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          }
+          <fieldset
+            id="tour-type"
+            aria-label="Tour type"
+            class="w-4/5 lg:w-2/3 mx-auto"
+          >
+            <div
+              class="grid grid-cols-2 mt-6 gap-x-1 bg-gray-100 dark:bg-gray-700 rounded-md p-1 text-center text-xs font-semibold leading-5"
+            >
+              <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
+              <label
+                class="cursor-pointer rounded-md px-2.5 py-1 h-16 duration-200 bg-primary text-white flex justify-center items-center"
+              >
+                <input
+                  type="radio"
+                  name="type"
+                  value="airplane"
+                  class="sr-only"
+                />
+                <span class="text-2xl font-medium italic">Airplane</span>
+              </label>
+              <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
+              <label
+                class="cursor-pointer rounded-md px-2.5 py-1 h-16 duration-200 text-gray-700 dark:text-white flex justify-center items-center"
+              >
+                <input
+                  type="radio"
+                  name="type"
+                  value="helicopter"
+                  class="sr-only"
+                />
+                <span class="text-2xl font-medium italic">Helicopter</span>
+              </label>
+            </div>
+          </fieldset>
+          {
+            price && (
+              <div class="mt-6 px-4 py-5 w-1/2 lg:w-1/3 mx-auto bg-sky-200 dark:bg-sky-700 rounded-t-md">
+                <span class="flex justify-center align-middle">
+                  <small class="dark:text-sky-400">$</small>
+                  <p
+                    id="priceText"
+                    class="text-4xl text-center text-gray-800 font-black dark:text-sky-300"
+                  >
+                    {" "}
+                    {price[0]}
+                  </p>
+                </span>
+                <small class="text-center font-semibold dark:text-sky-200">
+                  per person per hour
+                </small>
+              </div>
+            )
+          }
+          {
+            actions && (
+              <div
+                class={`${price ? "mt-0" : "mt-6"} max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row justify-center gap-4 lg:max-w-7xl`}
+              >
+                {Array.isArray(actions) ? (
+                  actions.map((action) => (
+                    <div class="flex w-full sm:w-auto">
+                      <Button
+                        {...(action || {})}
+                        id="bookNow"
+                        class="w-full px-16 py-6 sm:mb-0 font-black uppercase text-3xl italic shadow-lg duration-300 rounded-md bg-gradient-to-br from-sky-600 to-sky-300 dark:from-slate-800 dark:to-sky-600 text-white"
+                      />
+                    </div>
+                  ))
+                ) : (
+                  <Fragment set:html={actions} />
+                )}
+              </div>
+            )
+          }
+          {
+            subtitle && (
+              <>
+                <p
+                  class="dark:text-white text-primary mb-6 px-2 py-5"
+                  id="subtitleText"
+                >
+                  {subtitle[0]}
+                </p>
+              </>
+            )
+          }
+        </div>
+        {content && <Fragment set:html={content} />}
+      </div>
+      <div class={`basis-1/2 ${reversed ? "order-first" : ""}`}>
+        {
+          image[0] && (
+            <div class="relative m-auto max-w-5xl" id="hero-image">
+              <Image
+                class="mx-auto rounded-md w-full object-cover object-center shadow-lg"
+                widths={[400, 768, 1024, 2040]}
+                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                loading="eager"
+                {...image[0]}
+              />
+            </div>
+          )
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script define:vars={{ price, image, HeliImage, PlaneImage, subtitle }}>
+  document.addEventListener("DOMContentLoaded", function () {
+    const heroImage = document.getElementById("hero-image");
+    const fieldset = document.getElementById("tour-type");
+    const labels = fieldset.querySelectorAll("label");
+    const priceText = document.getElementById("priceText");
+    const subtitleText = document.getElementById("subtitleText");
+    const bookNow = document.getElementById("bookNow");
+
+    labels.forEach((label) => {
+      label.addEventListener("click", function () {
+        labels.forEach((l) => l.classList.remove("bg-primary", "text-white"));
+        this.classList.add("bg-primary", "text-white");
+
+        const value = this.querySelector("input").value;
+        priceText.textContent = value === "airplane" ? price[0] : price[1];
+
+        subtitleText.textContent =
+          value === "airplane" ? subtitle[0] : subtitle[1];
+
+        bookNow.href =
+          value === "airplane"
+            ? "https://fareharbor.com/embeds/book/hightidehelicopters/items/560185/calendar/2024/07/?full-items=yes&flow=335654"
+            : "https://fareharbor.com/embeds/book/hightidehelicopters/items/560333/calendar/2024/07/?full-items=yes&flow=335644 ";
+
+        heroImage.innerHTML =
+          value === "airplane"
+            ? `<img src="${PlaneImage.src}" alt="Wedding engagement on a custom airplane tour at High Tide Aviation" class="mx-auto rounded-md w-full object-cover object-center shadow-lg" />`
+            : `<img src="${HeliImage.src}" alt="R44-on-flight-tour-in-southport-nc" class="mx-auto rounded-md w-full object-cover object-center shadow-lg" />`;
+      });
+    });
+  });
+</script>
