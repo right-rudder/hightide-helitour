@@ -13,25 +13,25 @@ export default function PricingTable(props: PricingTabProps) {
   return (
     <div className="mt-8">
       {/* Pricing toggle */}
-      <div className="flex justify-center max-w-[14rem] m-auto mb-3">
-        <div className="relative flex w-full p-1 bg-gray-100 dark:bg-slate-800 rounded-full">
+      <div className="flex justify-center w-4/5 lg:w-2/3 mx-auto mb-3">
+        <div className="relative flex w-full p-1 bg-gray-100 dark:bg-slate-800 rounded-md">
           <span
             className="absolute inset-0 m-1 pointer-events-none"
             aria-hidden="true"
           >
             <span
-              className={`absolute inset-0 w-1/2 bg-mustard-yellow rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${plane ? "translate-x-0" : "translate-x-full"}`}
+              className={`absolute inset-0 w-1/2 bg-mustard-yellow rounded-md shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${plane ? "translate-x-0" : "translate-x-full"}`}
             ></span>
           </span>
           <button
-            className={`relative flex-1 text-base h-12 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${plane ? "text-slate-900 font-semibold" : "text-slate-500 dark:text-slate-400"}`}
+            className={`relative flex-1 text-lg italic h-12 rounded-md focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${plane ? "text-slate-900 font-semibold" : "text-slate-500 dark:text-slate-400"}`}
             onClick={() => setPlane(true)}
             aria-pressed={isPlane}
           >
             Airplane
           </button>
           <button
-            className={`relative flex-1 text-base h-12 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${plane ? "text-slate-500 dark:text-slate-400" : "text-slate-900 font-semibold"}`}
+            className={`relative flex-1 text-lg italic h-12 rounded-md focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${plane ? "text-slate-500 dark:text-slate-400" : "text-slate-900 font-semibold"}`}
             onClick={() => setPlane(false)}
             aria-pressed={isPlane}
           >
