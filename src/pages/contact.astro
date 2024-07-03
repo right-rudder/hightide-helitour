@@ -15,6 +15,62 @@ const metadata = {
 
   <HeroText tagline="Contact" title="Let's Connect!" />
 
+  <div
+    class="w-full flex justify-center align-middle items-center md:gap-7 flex-col md:flex-row"
+  >
+    <a
+      href="/job-application"
+      class="bg-primary rounded mb-10 py-3 max-w-sm h-32 px-5 flex gap-5 items-center group hover:bg-slate-400 duration-500"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        class="size-10 text-gray-300"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M12 6.75a5.25 5.25 0 0 1 6.775-5.025.75.75 0 0 1 .313 1.248l-3.32 3.319c.063.475.276.934.641 1.299.365.365.824.578 1.3.64l3.318-3.319a.75.75 0 0 1 1.248.313 5.25 5.25 0 0 1-5.472 6.756c-1.018-.086-1.87.1-2.309.634L7.344 21.3A3.298 3.298 0 1 1 2.7 16.657l8.684-7.151c.533-.44.72-1.291.634-2.309A5.342 5.342 0 0 1 12 6.75ZM4.117 19.125a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Z"
+          clip-rule="evenodd"></path>
+        <path
+          d="m10.076 8.64-2.201-2.2V4.874a.75.75 0 0 0-.364-.643l-3.75-2.25a.75.75 0 0 0-.916.113l-.75.75a.75.75 0 0 0-.113.916l2.25 3.75a.75.75 0 0 0 .643.364h1.564l2.062 2.062 1.575-1.297Z"
+        ></path>
+        <path
+          fill-rule="evenodd"
+          d="m12.556 17.329 4.183 4.182a3.375 3.375 0 0 0 4.773-4.773l-3.306-3.305a6.803 6.803 0 0 1-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 0 0-.167.063l-3.086 3.748Zm3.414-1.36a.75.75 0 0 1 1.06 0l1.875 1.876a.75.75 0 1 1-1.06 1.06L15.97 17.03a.75.75 0 0 1 0-1.06Z"
+          clip-rule="evenodd"></path>
+      </svg>
+
+      <div>
+        <p
+          class="dark:text-slate-900 font-bold text-xl leading-tight group-hover:text-primary dark:group-hover:text-primary duration-500 text-white"
+        >
+          Maintenance Personnel!
+        </p>
+        <p
+          class="text-sm text-gray-300 group-hover:text-gray-200 font-semibold leading-tight"
+        >
+          Now Hiring
+        </p>
+      </div>
+    </a>
+    <div
+      class="bg-gray-400 rounded mb-10 py-3 max-w-sm h-32 px-5 flex gap-5 items-center duration-500"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" class="size-10">
+        <path
+          d="M5.25 6.375a4.125 4.125 0 1 1 8.25 0 4.125 4.125 0 0 1-8.25 0ZM2.25 19.125a7.125 7.125 0 0 1 14.25 0v.003l-.001.119a.75.75 0 0 1-.363.63 13.067 13.067 0 0 1-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 0 1-.364-.63l-.001-.122ZM18.75 7.5a.75.75 0 0 0-1.5 0v2.25H15a.75.75 0 0 0 0 1.5h2.25v2.25a.75.75 0 0 0 1.5 0v-2.25H21a.75.75 0 0 0 0-1.5h-2.25V7.5Z"
+        ></path>
+      </svg>
+
+      <div>
+        <p class="text-slate-900 font-bold text-xl leading-tight duration-500">
+          Not Currently Hiring CFIs
+        </p>
+        <p class="text-sm font-semibold leading-tight"></p>
+      </div>
+    </div>
+  </div>
+
   <ContactForm client:visible />
 
   <!-- <ContactUs
