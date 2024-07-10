@@ -105,3 +105,11 @@
     transform: scale(1.1);
   }
 }
+
+.wave-text {
+  background: linear-gradient(90deg, blue, pink, blue);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

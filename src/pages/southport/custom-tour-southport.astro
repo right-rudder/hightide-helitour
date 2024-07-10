@@ -1,7 +1,7 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 import { Icon } from "astro-icon/components";
-import Hero3 from "~/components/widgets/Hero3.astro";
+import Hero5 from "~/components/widgets/Hero5.astro";
 import Note from "~/components/widgets/Note.astro";
 import Image from "~/components/common/Image.astro";
 import SouthportTours from "~/components/tours/SouthportTours.astro";
@@ -14,14 +14,14 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero3
+  <Hero5
     reversed={true}
     actions={[
       {
         variant: "custom",
-        text: "Call to Schedule a Custom Tour",
-        href: "tel:(910) 477-1926",
-        target: "_self",
+        text: "Book Now",
+        href: "https://fareharbor.com/embeds/book/hightidehelicopters/items/560185/calendar/2024/07/?full-items=yes&flow=335654",
+        target: "_blank",
       },
       /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
     ]}
@@ -39,10 +39,21 @@ const metadata = {
         time: "Closed",
       },
     ]}
-    image={{
-      src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
-      alt: "R44-on-flight-tour-in-southport-nc",
-    }}
+    subtitle={[
+      "This hourly rate will be prorated to accommodate your flight time. Custom tours can be as long or as short as you would like. Please book a start time with us, and we will organize the further details with you over the phone following your booking confirmation.",
+      "Please note that helicopter tours must have a minimum passenger booking of 2 people to schedule. This hourly rate will be prorated to accommodate your flight time. Custom tours can be as long or as short as you would like. Please book a start time with us, and we will organize the further details with you over the phone following your booking confirmation.",
+    ]}
+    price={[300, 450]}
+    image={[
+      {
+        src: "~/assets/images/wedding-engagement-on-a-custom-airplane-tour-at-high-tide-aviation.jpg",
+        alt: "Wedding engagement on a custom airplane tour at High Tide Aviation",
+      },
+      {
+        src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
+        alt: "R44-on-flight-tour-in-southport-nc",
+      },
+    ]}
   >
     <Fragment slot="title">
       Southport, NC
@@ -60,15 +71,7 @@ const metadata = {
         >4345 Airport Road SE – Southport, NC</span
       >
     </Fragment>
-
-    <Fragment slot="subtitle">
-      <div class="dark:text-white text-primary rounded px-2 py-5">
-        Our custom tours in Southport, NC, are only available to be scheduled
-        over the phone given the range of services available. Please note our
-        Southport tours are available via both helicopter and airplane.
-      </div>
-    </Fragment>
-  </Hero3>
+  </Hero5>
 
   <!-- Note Widget ******************* -->
   <Note />
@@ -134,10 +137,15 @@ const metadata = {
                     <span class="ml-2 font-medium">Wedding Proposals</span>
                   </li>
                   <li
-                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200 hover:underline duration-100 underline-offset-2"
                   >
                     <Icon class="w-5 h-5" name="tabler:gender-bigender" />
-                    <span class="ml-2 font-medium">Gender Reveals</span>
+                    <a
+                      href="https://www.youtube.com/watch?v=itO2t7Z3ve8"
+                      target="_blank"
+                      class="ml-2 font-medium animate-wave wave-text hover:underline"
+                      >Gender Reveals</a
+                    >
                   </li>
                   <li
                     class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
@@ -210,15 +218,38 @@ const metadata = {
                 <div
                   class="mt-8 p-6 flex flex-col justify-center items-center align-middle bg-gray-200 dark:bg-gray-800 rounded-lg"
                 >
-                  <p
-                    class="text-gray-800 text-center font-bold dark:text-gray-200 text-lg"
-                  >
-                    Please call the <a
-                      href="tel:(910) 477-1926"
-                      class="text-secondary hover:underline"
-                      >Southport office phone</a
-                    > to schedule your tour today!
-                  </p>
+                  <ul class="space-y-1">
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >Custom flight duration</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Custom sights</span>
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to discovery flight</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to sunset flight</span
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

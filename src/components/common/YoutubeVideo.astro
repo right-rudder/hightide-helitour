@@ -1,10 +1,5 @@
 ---
-
-const {
-  videoId,
-  title = ""
-} = Astro.props;
-
+const { videoId, title = "" } = Astro.props;
 ---
 
 <lite-youtube videoid={videoId} playlabel={title}></lite-youtube>
@@ -23,7 +18,7 @@ const {
 
   /* gradient */
   lite-youtube::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -40,7 +35,7 @@ const {
     thanks https://css-tricks.com/responsive-iframes/
 */
   lite-youtube::after {
-    content: '';
+    content: "";
     display: block;
     padding-bottom: calc(100% / (16 / 9));
   }
@@ -100,8 +95,8 @@ const {
 
 <script>
   /* eslint-disable */
-// @ts-nocheck 
-  
+  // @ts-nocheck
+
   /**
    * A lightweight youtube embed. Still should feel the same to the user, just MUCH faster to initialize and paint.
    *
@@ -116,11 +111,14 @@ const {
    */
   class LiteYTEmbed extends HTMLElement {
     connectedCallback() {
-      this.videoId = this.getAttribute('videoid');
+      this.videoId = this.getAttribute("videoid");
 
-      let playBtnEl = this.querySelector('.lty-playbtn');
+      let playBtnEl = this.querySelector(".lty-playbtn");
       // A label for the button takes priority over a [playlabel] attribute on the custom-element
-      this.playLabel = (playBtnEl && playBtnEl.textContent.trim()) || this.getAttribute('playlabel') || 'Play';
+      this.playLabel =
+        (playBtnEl && playBtnEl.textContent.trim()) ||
+        this.getAttribute("playlabel") ||
+        "Play";
 
       /**
        * Lo, the youtube placeholder image!  (aka the thumbnail, poster image, etc)
@@ -137,32 +135,38 @@ const {
 
       // Set up play button, and its visually hidden label
       if (!playBtnEl) {
-        playBtnEl = document.createElement('button');
-        playBtnEl.type = 'button';
-        playBtnEl.classList.add('lty-playbtn');
+        playBtnEl = document.createElement("button");
+        playBtnEl.type = "button";
+        playBtnEl.classList.add("lty-playbtn");
         this.append(playBtnEl);
       }
       if (!playBtnEl.textContent) {
-        const playBtnLabelEl = document.createElement('span');
-        playBtnLabelEl.className = 'lyt-visually-hidden';
+        const playBtnLabelEl = document.createElement("span");
+        playBtnLabelEl.className = "lyt-visually-hidden";
         playBtnLabelEl.textContent = this.playLabel;
         playBtnEl.append(playBtnLabelEl);
       }
-      playBtnEl.removeAttribute('href');
+      playBtnEl.removeAttribute("href");
 
       // On hover (or tap), warm up the TCP connections we're (likely) about to use.
-      this.addEventListener('pointerover', LiteYTEmbed.warmConnections, { once: true });
+      this.addEventListener("pointerover", LiteYTEmbed.warmConnections, {
+        once: true,
+      });
 
       // Once the user clicks, add the real iframe and drop our play button
       // TODO: In the future we could be like amp-youtube and silently swap in the iframe during idle time
       //   We'd want to only do this for in-viewport or near-viewport ones: https://github.com/ampproject/amphtml/pull/5003
-      this.addEventListener('click', this.addIframe);
+      this.addEventListener("click", this.addIframe);
 
       // Detect Safari
-      const isSafari = navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome');
+      const isSafari =
+        navigator.userAgent.includes("Safari") &&
+        !navigator.userAgent.includes("Chrome");
 
       // Detect mobile browser
-      const isMobile = navigator.userAgent.includes('Mobi') || navigator.userAgent.includes('Android');
+      const isMobile =
+        navigator.userAgent.includes("Mobi") ||
+        navigator.userAgent.includes("Android");
 
       // Chrome & Edge desktop have no problem with the basic YouTube Embed with ?autoplay=1
       // However Safari desktop and most/all mobile browsers do not successfully track the user gesture of clicking through the creation/loading of the iframe,
@@ -175,7 +179,7 @@ const {
      * Add a <link rel={preload | preconnect} ...> to the head
      */
     static addPrefetch(kind: string, url: string, as: string | undefined) {
-      const linkEl = document.createElement('link');
+      const linkEl = document.createElement("link");
       linkEl.rel = kind;
       linkEl.href = url;
       if (as) {
@@ -197,13 +201,16 @@ const {
       if (LiteYTEmbed.preconnected) return;
 
       // The iframe document and most of its subresources come right off youtube.com
-      LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
+      LiteYTEmbed.addPrefetch("preconnect", "https://www.youtube-nocookie.com");
       // The botguard script is fetched off from google.com
-      LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
+      LiteYTEmbed.addPrefetch("preconnect", "https://www.google.com");
 
       // Not certain if these ad related domains are in the critical path. Could verify with domain-specific throttling.
-      LiteYTEmbed.addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
-      LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
+      LiteYTEmbed.addPrefetch(
+        "preconnect",
+        "https://googleads.g.doubleclick.net",
+      );
+      LiteYTEmbed.addPrefetch("preconnect", "https://static.doubleclick.net");
 
       LiteYTEmbed.preconnected = true;
     }
@@ -212,8 +219,8 @@ const {
       if (window.YT || (window.YT && window.YT.Player)) return;
 
       this.ytApiPromise = new Promise((res, rej) => {
-        var el = document.createElement('script');
-        el.src = 'https://www.youtube.com/iframe_api';
+        var el = document.createElement("script");
+        el.src = "https://www.youtube.com/iframe_api";
         el.async = true;
         el.onload = (_) => {
           YT.ready(res);
@@ -227,17 +234,17 @@ const {
       this.fetchYTPlayerApi();
       await this.ytApiPromise;
 
-      const videoPlaceholderEl = document.createElement('div');
+      const videoPlaceholderEl = document.createElement("div");
       this.append(videoPlaceholderEl);
 
       const paramsObj = Object.fromEntries(params.entries());
 
       new YT.Player(videoPlaceholderEl, {
-        width: '100%',
+        width: "100%",
         videoId: this.videoId,
         playerVars: paramsObj,
         events: {
-          onReady: (event: { target: { playVideo: () => void; }; }) => {
+          onReady: (event: { target: { playVideo: () => void } }) => {
             event.target.playVideo();
           },
         },
@@ -245,23 +252,24 @@ const {
     }
 
     async addIframe() {
-      if (this.classList.contains('lyt-activated')) return;
-      this.classList.add('lyt-activated');
+      if (this.classList.contains("lyt-activated")) return;
+      this.classList.add("lyt-activated");
 
-      const params = new URLSearchParams(this.getAttribute('params') || []);
-      params.append('autoplay', '1');
-      params.append('playsinline', '1');
+      const params = new URLSearchParams(this.getAttribute("params") || []);
+      params.append("autoplay", "1");
+      params.append("playsinline", "1");
 
       if (this.needsYTApiForAutoplay) {
         return this.addYTPlayerIframe(params);
       }
 
-      const iframeEl = document.createElement('iframe');
+      const iframeEl = document.createElement("iframe");
       iframeEl.width = 560;
       iframeEl.height = 315;
       // No encoding necessary as [title] is safe. https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#:~:text=Safe%20HTML%20Attributes%20include
       iframeEl.title = this.playLabel;
-      iframeEl.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+      iframeEl.allow =
+        "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
       iframeEl.allowFullscreen = true;
       // AFAIK, the encoding here isn't necessary for XSS, but we'll do it only because this is a URL
       // https://stackoverflow.com/q/64959723/89484
@@ -273,5 +281,5 @@ const {
     }
   }
   // Register custom element
-  customElements.define('lite-youtube', LiteYTEmbed);
+  customElements.define("lite-youtube", LiteYTEmbed);
 </script>

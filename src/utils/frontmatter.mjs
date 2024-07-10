@@ -1,6 +1,6 @@
-import getReadingTime from 'reading-time';
-import { toString } from 'mdast-util-to-string';
-import lazyLoadPlugin from 'rehype-plugin-image-native-lazy-loading'
+import getReadingTime from "reading-time";
+import { toString } from "mdast-util-to-string";
+import lazyLoadPlugin from "rehype-plugin-image-native-lazy-loading";
 
 export function readingTimeRemarkPlugin() {
   return function (tree, file) {
@@ -18,12 +18,12 @@ export function responsiveTablesRehypePlugin() {
     for (let i = 0; i < tree.children.length; i++) {
       const child = tree.children[i];
 
-      if (child.type === 'element' && child.tagName === 'table') {
+      if (child.type === "element" && child.tagName === "table") {
         const wrapper = {
-          type: 'element',
-          tagName: 'div',
+          type: "element",
+          tagName: "div",
           properties: {
-            style: 'overflow:auto',
+            style: "overflow:auto",
           },
           children: [child],
         };
@@ -36,4 +36,4 @@ export function responsiveTablesRehypePlugin() {
   };
 }
 
-export const lazyImagesRehypePlugin = lazyLoadPlugin
+export const lazyImagesRehypePlugin = lazyLoadPlugin;

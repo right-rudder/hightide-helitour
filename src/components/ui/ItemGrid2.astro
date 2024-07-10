@@ -29,7 +29,7 @@ const {
                 ? "sm:grid-cols-2 "
                 : ""
         }`,
-        containerClass
+        containerClass,
       )}
     >
       {items.map(
@@ -44,7 +44,7 @@ const {
             class={twMerge(
               "relative flex flex-col overflow-hidden",
               panelClass,
-              itemClasses?.panel
+              itemClasses?.panel,
             )}
           >
             <div class="absolute top-0 left-0 w-full h-full bg-white/60 dark:bg-slate-800/60 -z-10" />
@@ -55,7 +55,7 @@ const {
                 class={twMerge(
                   "mb-2 w-10 h-10 mx-auto",
                   defaultIconClass,
-                  itemClasses?.icon
+                  itemClasses?.icon,
                 )}
               />
             )}
@@ -63,7 +63,7 @@ const {
               class={twMerge(
                 "text-xl font-bold mx-auto text-center",
                 titleClass,
-                itemClasses?.title
+                itemClasses?.title,
               )}
             >
               {title}
@@ -78,13 +78,13 @@ const {
                 class={twMerge(
                   "text-muted mt-2 mx-auto text-center",
                   descriptionClass,
-                  itemClasses?.description
+                  itemClasses?.description,
                 )}
                 set:html={description}
               />
             )}
           </div>
-        )
+        ),
       )}
     </div>
   )

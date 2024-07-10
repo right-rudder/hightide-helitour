@@ -46,6 +46,27 @@ module.exports = {
           ...defaultTheme.fontFamily.sans,
         ],
       },
+      keyframes: {
+        "color-change": {
+          "0%": {
+            color: "#0000FF",
+          },
+          "50%": {
+            color: "#FFC0CB",
+          },
+          "100%": {
+            color: "#0000FF",
+          },
+        },
+        wave: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "200% 50%" },
+        },
+      },
+      animation: {
+        "color-change": "color-change 3s infinite",
+        wave: "wave 3s infinite linear",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

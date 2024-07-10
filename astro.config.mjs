@@ -53,7 +53,7 @@ export default defineConfig({
         config: {
           forward: ["dataLayer.push"],
         },
-      })
+      }),
     ),
     compress({
       CSS: true,
@@ -104,7 +104,7 @@ export default defineConfig({
     "/flight-school-southport-nc/": "https://hightideaviation.com/",
     "/category/flight-training-aerial-services-blog/":
       "https://hightideaviation.com/blog/",
-    "/contact-high-tide-aviation/": "/contact",
+    "/contact-high-tide-aviation/": "/",
     "/financing/": "https://hightideaviation.com/about/financing/",
     "/request-flight-training/": "https://hightideaviation.com/",
   },
