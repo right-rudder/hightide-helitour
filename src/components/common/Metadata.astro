@@ -22,6 +22,7 @@ const {
   description,
   openGraph = {},
   twitter = {},
+  keywords = "high tide aviation, high tide helicopters, helicopter rides in wilmington nc, helicopter rides wilmington nc, helicopter rides in nc, helicopter north carolina, helicopter nc, wilmington nc helicopter rides, helicopter training nc, helicopter flight training nc, airplane tours near me, wilmington helicopter rides, wilmington nc helicopter rides, high tide helicopters, air tours near me, airplane tours southport nc, southport nc helicopter tours, golden isles airplane tours, jekyll island tours, lighthouse airplane tour, scenic flights georgia, aerial tours ga, barrier island airplane tours, hilton head tours, scenic flights south carolina, aerial tours sc, book aerial tour",
 } = Astro.props;
 
 const seoProps: AstroSeoProps = merge(
@@ -78,3 +79,5 @@ const seoProps: AstroSeoProps = merge(
     openGraph: await adaptOpenGraphImages(seoProps?.openGraph, Astro.site),
   }}
 />
+
+<meta name="keywords" content={keywords} />
