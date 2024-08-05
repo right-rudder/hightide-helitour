@@ -5,10 +5,8 @@ export default function FAQs({ faqs, type }) {
   const [open, setOpen] = useState("");
   const handleClick = (e) => {
     if (open === e.target.id) {
-      console.log("closing", e.target.id);
       setOpen("");
     } else {
-      console.log("opening", e.target.id);
       setOpen(e.target.id);
     }
   };
@@ -23,7 +21,7 @@ export default function FAQs({ faqs, type }) {
           <h2 className="text-center capitalize text-4xl font-bold leading-10 tracking-tight text-primary">
             Frequently asked questions
           </h2>
-          <dl className="flex flex-col gap-2 mt-6">
+          <div className="flex flex-col gap-2 mt-6">
             {faqs.map((faq, index) => (
               <Accordion
                 key={index}
@@ -33,7 +31,7 @@ export default function FAQs({ faqs, type }) {
                 onShow={handleClick}
               />
             ))}
-          </dl>
+          </div>
         </div>
       </div>
     </div>
