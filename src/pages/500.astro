@@ -3,13 +3,13 @@ import Layout from "~/layouts/PageLayout.astro";
 import { getHomePermalink } from "~/utils/permalinks";
 
 const metadata = {
-  title: "404 Page Not Found",
+  title: "500 Server Error",
 };
 ---
 
 <Layout metadata={metadata}>
   <section
-    id="error-404"
+    id="error-500"
     class="bg-404 bg-cover flex items-center h-screen-2/3 lg:h-screen p-16 bg-center bg-no-repeat bg-fixed"
   >
     <div
@@ -18,13 +18,13 @@ const metadata = {
       <div class="max-w-md text-center">
         <h2 class="mb-8 font-black text-6xl lg:text-9xl">
           <span class="sr-only">Error</span>
-          <span class="text-primary">404</span>
+          <span class="text-primary">500</span>
         </h2>
         <p class="text-3xl font-semibold md:text-3xl">
-          Sorry, we couldn't find this page.
+          Oops, something went wrong.
         </p>
         <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
+          Try refreshing the page or come back later.
         </p>
         <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4"
           >Back to homepage</a
