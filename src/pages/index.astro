@@ -390,7 +390,7 @@ const metadata = {
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
+  <!-- <Testimonials
     title="Words from Our Guests"
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     testimonials={[
@@ -417,7 +417,36 @@ const metadata = {
       href: "/about/testimonials",
       icon: "tabler:chevron-right",
     }}
-  />
+  /> -->
+
+  <section
+    class="bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900 py-24 px-5"
+    aria-hidden="true"
+  >
+    <h2
+      class="font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl md:text-4xl mx-auto w-fit"
+    >
+      Words from Our Guests
+    </h2>
+    <div
+      class="elfsight-app-73a2fa53-0ca0-4c0b-a823-75ecf2091cd2 my-10"
+      data-elfsight-app-lazy
+    >
+    </div>
+    <div
+      class="elfsight-app-8cf0f9d3-129c-465d-ae52-36274fd54c7c"
+      data-elfsight-app-lazy
+    >
+    </div>
+
+    <!-- <a
+      href="/about/testimonials"
+      target="_self"
+      rel="noopener noreferrer"
+      class="btn btn-tertiary mx-auto w-fit block mt-10"
+      >Read more testimonials</a
+    > -->
+  </section>
 
   <Brands
     title="What People are Saying"
@@ -458,3 +487,8 @@ const metadata = {
     bg='<div class="absolute inset-0 bg-gift-card bg-cover bg-center" aria-hidden="true"></div>'
   />
 </Layout>
+
+<script
+  src="https://static.elfsight.com/platform/platform.js"
+  data-use-service-core
+  defer></script>
