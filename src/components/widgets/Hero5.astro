@@ -98,7 +98,7 @@ const {
             >
               <!-- Checked: "bg-indigo-600 text-white", Not Checked: "text-gray-500" -->
               <label
-                class="cursor-pointer rounded-md px-2.5 py-1 h-12 duration-200 bg-mustard-yellow text-slate-900 flex justify-center items-center"
+                class="cursor-pointer rounded-md px-2.5 py-1 h-12 duration-200 text-slate-500 flex justify-center items-center"
               >
                 <input
                   type="radio"
@@ -110,7 +110,7 @@ const {
               </label>
               <!-- Checked: "bg-indigo-600 text-slate-900", Not Checked: "text-gray-500" -->
               <label
-                class="cursor-pointer rounded-md px-2.5 py-1 h-12 duration-200 text-slate-500 flex justify-center items-center"
+                class="cursor-pointer rounded-md px-2.5 py-1 h-12 duration-200 bg-mustard-yellow text-slate-900 flex justify-center items-center"
               >
                 <input
                   type="radio"
@@ -132,7 +132,7 @@ const {
                     class="text-4xl text-center text-gray-800 font-black dark:text-sky-300"
                   >
                     {" "}
-                    {price[0]}
+                    {price[1]}
                   </p>
                 </span>
                 <small class="text-center font-semibold dark:text-sky-200">
@@ -169,7 +169,7 @@ const {
                   class="dark:text-white text-primary mb-6 px-2 py-5"
                   id="subtitleText"
                 >
-                  {subtitle[0]}
+                  {subtitle[1]}
                 </p>
               </>
             )
@@ -179,14 +179,14 @@ const {
       </div>
       <div class={`basis-1/2 ${reversed ? "order-first" : ""}`}>
         {
-          image[0] && (
+          image[1] && (
             <div class="relative m-auto max-w-5xl" id="hero-image">
               <Image
                 class="mx-auto rounded-md w-full object-cover object-center shadow-lg"
                 widths={[400, 768, 1024, 2040]}
                 sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
                 loading="eager"
-                {...image[0]}
+                {...image[1]}
               />
             </div>
           )
@@ -204,6 +204,8 @@ const {
     const priceText = document.getElementById("priceText");
     const subtitleText = document.getElementById("subtitleText");
     const bookNow = document.getElementById("bookNow");
+    bookNow.href =
+      "https://fareharbor.com/embeds/book/hightidehelicopters/items/560333/calendar/2024/07/?full-items=yes&flow=335644";
 
     labels.forEach((label) => {
       label.addEventListener("click", function () {
@@ -221,7 +223,7 @@ const {
         bookNow.href =
           value === "airplane"
             ? "https://fareharbor.com/embeds/book/hightidehelicopters/items/560185/calendar/2024/07/?full-items=yes&flow=335654"
-            : "https://fareharbor.com/embeds/book/hightidehelicopters/items/560333/calendar/2024/07/?full-items=yes&flow=335644 ";
+            : "https://fareharbor.com/embeds/book/hightidehelicopters/items/560333/calendar/2024/07/?full-items=yes&flow=335644";
 
         heroImage.innerHTML =
           value === "airplane"

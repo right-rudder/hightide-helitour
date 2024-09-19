@@ -8,7 +8,7 @@ interface PricingTabProps {
 }
 
 export default function PricingTable(props: PricingTabProps) {
-  const [plane, setPlane] = useState<boolean>(true);
+  const [plane, setPlane] = useState<boolean>(false);
   const [isPlane, setIsPlane] = useState<boolean>(true);
   return (
     <div className="mt-8">
