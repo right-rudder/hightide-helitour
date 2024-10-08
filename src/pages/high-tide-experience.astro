@@ -1,19 +1,16 @@
 ---
 import Headline from "~/components/ui/Headline.astro";
-import CallToAction from "~/components/widgets/CallToAction.astro";
-import Content from "~/components/widgets/Content.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import Features4 from "~/components/widgets/Features4.astro";
 import SimpleHero from "~/components/widgets/SimpleHero.astro";
-import Testimonials from "~/components/widgets/Testimonials.astro";
 import Layout from "~/layouts/PageLayout.astro";
 
 const metadata = {
   title: "High Tide Experience",
   description:
-    "Discover the High Tide Aviation experience with unmatched aerial tours across Southport, NC, St Simons Island, GA, and Beaufort, SC. From pre-flight briefings to in-flight highlights and smooth landings, enjoy breathtaking views and insightful commentary from our expert pilots. Book your helicopter or airplane tour today for a memorable adventure.",
+    "Discover the High Tide Aviation experience with unmatched aerial tours across Southport, NC, and St Simons Island, GA. From pre-flight briefings to in-flight highlights and smooth landings, enjoy breathtaking views and insightful commentary from our expert pilots. Book your helicopter or airplane tour today for a memorable adventure.",
   keywords:
-    "high tide aviation, aerial tours, helicopter tours southport nc, airplane tours st simons island ga, scenic flights beaufort sc, cape fear regional jetport, mckinnon st simons island airport, beaufort executive airport, pre-flight briefing, in-flight highlights, scenic views, regional history, lighthouse tours, marshland flights, river flights, historic forts, beach flights, smooth landing, book aerial tour",
+    "high tide aviation, aerial tours, helicopter tours southport nc, airplane tours st simons island ga, scenic flights, cape fear regional jetport, mckinnon st simons island airport, executive airport, pre-flight briefing, in-flight highlights, scenic views, regional history, lighthouse tours, marshland flights, river flights, historic forts, beach flights, smooth landing, book aerial tour",
 };
 ---
 
@@ -31,19 +28,19 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features4
-    subtitle="At High Tide Aviation, we offer unmatched aerial tours across Southport, NC, St Simons Island, and Beaufort, SC. Here’s what to expect when you book a flight with us:"
+    subtitle="At High Tide Aviation, we offer unmatched aerial tours across Southport, NC, and St Simons Island, GA. Here’s what to expect when you book a flight with us:"
     columns={2}
     items={[
       {
         title: "Pre-Flight",
         description:
-          "Arrive at your designated airport—Cape Fear Regional Jetport, McKinnon St Simons Island Airport, or Beaufort, SC Executive Airport. Our staff will greet you and brief you on the day’s schedule. Safety is our priority; we'll provide a comprehensive safety briefing and introduce you to your pilot and aircraft.",
+          "Arrive at your designated airport—Cape Fear Regional Jetport or McKinnon St Simons Island Airport. Our staff will greet you and brief you on the day’s schedule. Safety is our priority; we'll provide a comprehensive safety briefing and introduce you to your pilot and aircraft.",
         icon: "tabler:plane",
       },
       {
         title: "Take-Off",
         description:
-          "The flight begins with take-off, offering immediate views of local landscapes. Each location presents unique sights: Southport’s beaches, St Simons Island’s historical sites, and Beaufort’s Lowcountry vistas.",
+          "The flight begins with take-off, offering immediate views of local landscapes. Each location presents unique sights: Southport’s beaches and St Simons Island’s historical sites.",
         icon: "tabler:plane-departure",
       },
       {
@@ -82,7 +79,7 @@ const metadata = {
     id="locations"
     title="High Tide Tour Locations"
     tagline="Select a Coastline"
-    columns={3}
+    columns={2}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
@@ -114,24 +111,6 @@ const metadata = {
         },
         classes: {
           panel: "bg-simons-tour bg-cover bg-center",
-          title:
-            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
-          description:
-            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
-          icon: "text-slate-700 dark:text-white",
-        },
-      },
-      {
-        title: "Beaufort, SC",
-        description: "Airplane Only",
-        icon: "tabler:map-pin",
-        callToAction: {
-          variant: "secondary",
-          text: "Explore",
-          href: "/beaufort",
-        },
-        classes: {
-          panel: "bg-beaufort-tour bg-cover bg-center",
           title:
             "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
           description:
