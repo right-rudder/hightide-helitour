@@ -11,10 +11,6 @@ export const headerData = {
           href: getPermalink("/southport"),
         },
         {
-          text: "Beaufort, SC",
-          href: getPermalink("/beaufort"),
-        },
-        {
           text: "St Simons Island, GA",
           href: getPermalink("/st-simons-island"),
         },
@@ -77,7 +73,7 @@ export const headerData = {
 
 export const footerData = {
   description:
-    "High Tide Aviation offers premier aerial tours across three spectacular locations: Southport, NC, St Simons Island, GA, and Beaufort, SC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia and South Carolina. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
+    "High Tide Aviation offers premier aerial tours across two spectacular locations: Southport, NC, and St Simons Island, GA. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
   links: [
     {
       title: "Southport, NC",
@@ -101,23 +97,6 @@ export const footerData = {
         {
           text: "Oak Island",
           href: getPermalink("/southport/oak-island"),
-        },
-      ],
-    },
-    {
-      title: "Beaufort, SC",
-      links: [
-        {
-          text: "Barrier Island",
-          href: getPermalink("/beaufort/barrier-island"),
-        },
-        {
-          text: "Hilton Head Tour",
-          href: getPermalink("/beaufort/hilton-head"),
-        },
-        {
-          text: "Low Country Passport",
-          href: getPermalink("/beaufort/low-country-passport"),
         },
       ],
     },
@@ -206,12 +185,6 @@ export const footerData = {
       airport: "McKinnon-St Simons Island Airport (KSSI)",
       address: "1759 Demere Road",
       phone: "(912) 434-4843",
-    },
-    {
-      city: "Beaufort, SC",
-      airport: "Beaufort Executive Airport (KARW)",
-      address: "39 Airport Circle",
-      phone: "(843) 612-0278",
     },
   ],
 };

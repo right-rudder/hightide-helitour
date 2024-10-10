@@ -12,7 +12,7 @@ import Brands from "~/components/widgets/Brands.astro";
 const metadata = {
   title: "Airplane and Helicopter Tours",
   description:
-    "High Tide Aviation offers premier aerial tours across three spectacular locations: Southport, NC, St Simons Island, GA, and Beaufort, SC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia and South Carolina. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
+    "High Tide Aviation offers premier aerial tours across two spectacular locations: Southport, NC, and St Simons Island, GA. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
   keywords:
     "high tide aviation, high tide helicopters, helicopter rides in wilmington nc, helicopter rides wilmington nc, helicopter rides in nc, helicopter north carolina, helicopter nc, wilmington nc helicopter rides, helicopter training nc, helicopter flight training nc, airplane tours near me, wilmington helicopter rides, wilmington nc helicopter rides, high tide helicopters, air tours near me, airplane tours southport nc, southport nc helicopter tours, golden isles airplane tours, jekyll island tours, lighthouse airplane tour, scenic flights georgia, aerial tours ga, barrier island airplane tours, hilton head tours, scenic flights south carolina, aerial tours sc, book aerial tour",
 };
@@ -50,7 +50,7 @@ const metadata = {
     id="locations"
     title="High Tide Tour Locations"
     tagline="Select a Coastline"
-    columns={3}
+    columns={2}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
@@ -82,24 +82,6 @@ const metadata = {
         },
         classes: {
           panel: "bg-simons-tour bg-cover bg-center",
-          title:
-            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
-          description:
-            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
-          icon: "text-slate-700 dark:text-white",
-        },
-      },
-      {
-        title: "Beaufort, SC",
-        description: "Airplane Only",
-        icon: "tabler:map-pin",
-        callToAction: {
-          variant: "secondary",
-          text: "Explore",
-          href: "/beaufort",
-        },
-        classes: {
-          panel: "bg-beaufort-tour bg-cover bg-center",
           title:
             "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
           description:
@@ -199,77 +181,6 @@ const metadata = {
     </div>
   </section>
 
-  <section id="our-tours-beaufort" class="w-full">
-    <div
-      class="overflow-hidden bg-gradient-to-t from-sky-100 dark:from-sky-900 to-slate-500 py-4 sm:py-16"
-    >
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
-        >
-          <div class="flex align-middle items-center justify-center">
-            <div
-              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
-            >
-              <h2
-                class="text-3xl text-center text-muted font-semibold leading-7 w-full"
-              >
-                Our Tours In
-              </h2>
-              <p
-                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary text-4xl w-full"
-              >
-                Beaufort, SC
-              </p>
-              <div
-                class="mt-8 flex justify-center bg-gray-100 dark:bg-gray-900 font-semibold rounded p-6 shadow-lg w-full lg:w-1/2"
-              >
-                <ul role="list" class="space-y-3">
-                  <li>
-                    <a
-                      class="flex align-middle items-center hover:underline hover:text-[#d7532f] text-gray-800 dark:text-gray-200"
-                      href="/beaufort/barrier-island"
-                    >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#d7532f]"></div>
-                      <span>Barrier Island</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex align-middle items-center hover:underline hover:text-[#492847] text-gray-800 dark:text-gray-200"
-                      href="/beaufort/hilton-head"
-                    >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#492847]"></div>
-                      <span>Hilton Head Tour</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="flex align-middle items-center hover:underline hover:text-[#009c4e] text-gray-800 dark:text-gray-200"
-                      href="/beaufort/low-country-passport"
-                    >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#009c4e]"></div>
-                      <span>Low Country Passport</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div
-            class="h-full w-full flex justify-center align-middle items-center order-first"
-          >
-            <Image
-              class="rounded shadow-lg"
-              src="~/assets/images/beaufort-sc-tour-map-high-tide-aviation-aerial-tours.jpg"
-              alt="tour-map-route"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="our-tours-st-simons" class="w-full">
     <div
       class="overflow-hidden bg-gradient-to-t from-sky-100 dark:from-sky-900 to-slate-500 py-4 sm:py-16"
@@ -328,7 +239,7 @@ const metadata = {
             </div>
           </div>
           <div
-            class="h-full w-full flex justify-center align-middle items-center"
+            class="h-full w-full flex justify-center align-middle items-center order-first"
           >
             <Image
               class="rounded shadow-lg"

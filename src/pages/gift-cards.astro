@@ -1,21 +1,15 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
-import Hero3 from "~/components/widgets/Hero3.astro";
 import Note from "~/components/widgets/Note.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import SimpleHero from "~/components/widgets/SimpleHero.astro";
-import Pricing2 from "~/components/widgets/Pricing2.astro";
-import SouthportTours from "~/components/tours/SouthportTours.astro";
-import BeaufortTours from "~/components/tours/BeaufortTours.astro";
-import StSimonsTours from "~/components/tours/StSimonsTours.astro";
-import { load } from "js-yaml";
 
 const metadata = {
   title: "Gift Cards",
   description:
-    "Give the gift of adventure with High Tide Aviation gift cards. Perfect for any occasion, our gift cards can be used for helicopter and airplane tours across Southport, NC, St Simons Island, GA, and Beaufort, SC. Surprise your loved ones with an unforgettable aerial experience. Purchase your gift card today!",
+    "Give the gift of adventure with High Tide Aviation gift cards. Perfect for any occasion, our gift cards can be used for helicopter and airplane tours across Southport, NC, and St Simons Island, GA. Surprise your loved ones with an unforgettable aerial experience. Purchase your gift card today!",
   keywords:
-    "gift cards, high tide aviation, helicopter tour gift cards, airplane tour gift cards, aerial tour gift cards, southport nc, st simons island ga, beaufort sc, gift of adventure, special occasion gift, book aerial tour, purchase gift card",
+    "gift cards, high tide aviation, helicopter tour gift cards, airplane tour gift cards, aerial tour gift cards, southport nc, st simons island ga, gift of adventure, special occasion gift, book aerial tour, purchase gift card",
 };
 ---
 
@@ -37,7 +31,7 @@ const metadata = {
     id="locations"
     title="High Tide Tour Locations"
     tagline="Select a Coastline"
-    columns={3}
+    columns={2}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
@@ -71,25 +65,6 @@ const metadata = {
         },
         classes: {
           panel: "bg-simons-tour bg-cover bg-center",
-          title:
-            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
-          description:
-            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
-          icon: "text-slate-700 dark:text-white",
-        },
-      },
-      {
-        title: "Beaufort, SC",
-        description: "Airplane Only",
-        icon: "tabler:map-pin",
-        callToAction: {
-          variant: "secondary",
-          target: "_blank",
-          text: "Buy Gift Card",
-          href: "https://fareharbor.com/embeds/book/flyhightide/items/510158/?full-items=yes&back=https://flyhightide.com/scenic-air-tours-beaufort-sc/&flow=1034072&g4=yes",
-        },
-        classes: {
-          panel: "bg-beaufort-tour bg-cover bg-center",
           title:
             "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
           description:

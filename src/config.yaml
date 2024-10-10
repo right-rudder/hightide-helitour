@@ -11,7 +11,7 @@ metadata:
   title:
     default: High Tide Aviation
     template: "%s | High Tide Aviation"
-  description: "High Tide Aviation offers premier aerial tours across three spectacular locations: Southport, NC, St Simons Island, GA, and Beaufort, SC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia and South Carolina. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!"
+  description: "High Tide Aviation offers premier aerial tours across two spectacular locations: Southport, NC, and St Simons Island, GA. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!"
   robots:
     index: true
     follow: true
