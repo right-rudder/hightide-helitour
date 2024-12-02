@@ -48,6 +48,10 @@ export const headerData = {
           text: "Testimonials",
           href: getPermalink("/about/testimonials"),
         },
+        {
+          text: "Blog",
+          href: getBlogPermalink("/blog"),
+        },
       ],
     },
     {
