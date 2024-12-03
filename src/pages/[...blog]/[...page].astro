@@ -8,6 +8,7 @@ import Pagination from "~/components/blog/Pagination.astro";
 // import PostTags from "~/components/blog/Tags.astro";
 
 import { blogListRobots, getStaticPathsBlogList } from "~/utils/blog";
+import SimpleHero from "~/components/widgets/SimpleHero.astro";
 
 export const prerender = true;
 
@@ -36,11 +37,18 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
+  <SimpleHero
+    title=""
+    image={{
+      src: "~/assets/images/high-tide-aviation-front-sign-in-southport-nc.jpg",
+      alt: "high-tide-aviation-front-sign-in-southport-nc",
+    }}
+  />
   <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
     <Headline
-      subtitle="A statically generated blog example with news, tutorials, resources and other interesting content related to AstroWind"
+      subtitle="The single source for all tips, tricks, and news about our tours. Stay up-to-date with the latest from High Tide Aviation."
     >
-      The Blog
+      The High Tide Aviation Blog
     </Headline>
     <BlogList posts={page.data} />
     <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
