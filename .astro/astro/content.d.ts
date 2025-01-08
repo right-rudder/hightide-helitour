@@ -157,14 +157,14 @@ declare module 'astro:content' {
   slug: "enjoy-georgia-like-never-before";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 "hidden-gems-in-southport.md": {
 	id: "hidden-gems-in-southport.md";
   slug: "hidden-gems-in-southport";
   body: string;
   collection: "post";
-  data: any
+  data: InferEntrySchema<"post">
 } & { render(): Render[".md"] };
 };
 
@@ -176,5 +176,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
