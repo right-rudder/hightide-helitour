@@ -2,7 +2,7 @@
 publishDate: 2025-01-09T00:00:00Z
 author: Jessica Ward
 title: "Enjoy Georgia Like Never Before: A beauty from above"
-excerpt: "St. Simons Island, GA: A Hidden Gem on the Georgia CoastSt. Simons Island is a beautiful barrier island located off the coast of Georgia. It's known for its pristine beaches, lush marshes, and charming historic towns. If you're looking for a relaxing getaway, St. Simons Island is the perfect place to visit."
+excerpt: "St. Simons Island is a beautiful barrier island located off the coast of Georgia. It's known for its pristine beaches, lush marshes, and charming historic towns. If you're looking for a relaxing getaway, St. Simons Island is the perfect place to visit."
 image: /blog/high-tide-aviation-tours-st-simons-island-plane-flying-over-island.jpeg
 category: St Simons Island, GA
 tags:
