@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-12-02T00:00:00Z
-author: Ed Simpson
+author: Jessica Ward
 title: "Hidden Gems in Southport, NC: Off-the-Beaten-Path Adventures, Seen from Above"
 excerpt: Southport, North Carolina, a charming coastal town, offers a wealth of hidden gems waiting to be discovered. But what better way to truly appreciate its beauty than from a bird's-eye view?
 image: /blog/cape-fear-north-carolina.jpg
