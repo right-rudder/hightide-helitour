@@ -26,7 +26,7 @@ const {
 ---
 
 <section
-  class="relative h-screen-3/4 lg:h-screen not-prose overflow-hidden"
+  class="relative h-screen-3/4 lg:h-[90vh] not-prose overflow-hidden"
   {...id ? { id } : {}}
 >
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
@@ -37,6 +37,18 @@ const {
       {
         image && (
           <>
+            <iframe
+              src="https://www.youtube.com/embed/Obq7LdaqiR8?autoplay=1&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0&vq=hd1080&modestbranding=1&playlist=Obq7LdaqiR8&rel=0"
+              title="Southport Helicopter Tour - High Tide Helicopters"
+              loading="eager"
+              allow="accelerometer; autoplay; fullscreen;
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+              class="hidden lg:block absolute -top-[20rem] w-[150rem] -left-[50rem] lg:-left-[20rem] h-[90rem] object-cover z-40 pointer-events-none"
+            />
+
+            <div class="hidden lg:block absolute bg-slate-900/30 inset-0 z-[41]" />
+
             <div class="absolute bg-gradient-to-b from-gray-900/20 to-gray-900/10 dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
             <div class="absolute inset-0 -z-50 h-full w-full bg-zoom">
               {typeof image === "string" ? (
@@ -57,7 +69,7 @@ const {
       }
     </div>
     <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-    <div class="py-12 md:py-20">
+    <div class="py-12 md:py-20 z-[45]">
       <div class="text-center pt-12 pb-10 md:pb-16 max-w-7xl mx-auto">
         {
           tagline && (
@@ -77,7 +89,7 @@ const {
               <TypeAnimation
                 preRenderFirstString
                 sequence={["Southport, NC", 6300, "St Simons Island, GA", 9000]}
-                className="text-sky-700 -mt-6 italic font-black min-h-16 text-6xl lg:text-8xl dark:text-gray-200"
+                className="-mt-6 italic font-black min-h-16 text-6xl lg:text-8xl text-gray-200"
                 wrapper="h1"
                 cursor={false}
                 speed={10}
@@ -99,7 +111,7 @@ const {
           }
           {
             actions && (
-              <div class="mt-72 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+              <div class="mt-52 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
                 {Array.isArray(actions) ? (
                   actions.map((action) => (
                     <div class="flex w-full sm:w-auto">

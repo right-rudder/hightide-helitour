@@ -2,6 +2,7 @@
 import Brands from "~/components/widgets/Brands.astro";
 import SimpleHero from "~/components/widgets/SimpleHero.astro";
 import Layout from "~/layouts/PageLayout.astro";
+import SwiperGallery from "~/components/widgets/SwiperGallery.astro";
 
 const metadata = {
   title: "Testimonials",
@@ -44,6 +45,8 @@ const metadata = {
     </p>
   </section>
 
+  <SwiperGallery />
+
   <section
     class="bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900 py-24 px-5"
     aria-hidden="true"
@@ -67,7 +70,7 @@ const metadata = {
 
   <Brands
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-50 to-slate-100 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
-    title="Want More Reviews?"
+    title="See More Guests Reviews"
     subtitle="Check out what our guests have to say from their tours with High Tide."
     icons={[]}
     imagesLink={[

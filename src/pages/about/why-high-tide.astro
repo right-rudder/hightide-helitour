@@ -45,20 +45,21 @@ const metadata = {
 
   <section
     id="our-mission"
-    class="my-20 px-4 lg:px-32 flex flex-col justify-center align-middle items-center"
+    class="my-20 px-4 lg:px-32 py-24 flex flex-col justify-center align-middle items-center bg-mission bg-fixed bg-cover relative"
   >
+    <div class="absolute bg-gray-200/60 dark:bg-slate-900/60 inset-0"></div>
     <h2
-      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-1 font-heading dark:text-gray-200"
+      class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-1 font-heading dark:text-gray-200 z-10"
     >
       Our Mission
     </h2>
     <h4
-      class="text-2xl md:text-3xl text-center font-semibold leading-tighter text-gray-500 tracking-tighter mb-6 font-heading dark:text-gray-300"
+      class="z-10 text-2xl md:text-3xl text-center font-semibold leading-tighter text-gray-600 tracking-tighter mb-6 font-heading dark:text-gray-300"
     >
       Elevating Experiences
     </h4>
     <p
-      class="text-xl px-5 lg:px-12 text-center text-muted mb-6 dark:text-slate-300"
+      class="z-10 text-xl px-5 lg:px-12 text-center text-gray-600 text-muted mb-6 dark:text-slate-300 font-medium"
     >
       Our mission is to provide exceptional aerial tours that combine adventure,
       safety, and unique perspectives of the scenic landscapes below. We are
@@ -131,7 +132,7 @@ const metadata = {
     title="Ready for Takeoff?"
     tagline="Join Us"
     columns={1}
-    bg='<div class="absolute inset-0 bg-gradient-to-b from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700" aria-hidden="true"></div>'
+    bg='<div class="absolute inset-0 bg-helitour bg-cover bg-fixed from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700" aria-hidden="true"></div>'
     items={[
       {
         title: "Give us a call",
@@ -140,5 +141,8 @@ const metadata = {
         icon: "tabler:phone-outgoing",
       },
     ]}
+    classes={{
+      headline: "text-white",
+    }}
   />
 </Layout>

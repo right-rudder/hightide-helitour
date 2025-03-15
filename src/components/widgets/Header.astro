@@ -53,7 +53,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    "top-0 z-40 flex-none mx-auto bg-gray-200/80 dark:bg-slate-900/80 w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
+    "top-0 z-50 flex-none mx-auto bg-gray-200/80 dark:bg-slate-900/80 w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
   ]}
   {...isSticky ? { "data-aw-sticky-header": true } : {}}
   {...id ? { id } : {}}
@@ -73,7 +73,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         "flex justify-between",
       ]}
     >
-      <a class="flex items-center bg-logo" href={getHomePermalink()}>
+      <a class="flex items-center" href={getHomePermalink()}>
         <div class="hidden dark:block">
           <DarkLogo />
         </div>
