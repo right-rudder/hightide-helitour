@@ -15,6 +15,8 @@ module.exports = {
         "rrm-icon": "url('~/assets/favicons/rrm-favicon.png')",
         "gift-card": "url('~/assets/images/pier-at-st-simons-island.jpg')",
         404: "url('~/assets/images/pier-at-st-simons-island.jpg')",
+        mission: "url('~/assets/images/happy-customer-at-high-tide.jpg')",
+        helitour: "url('~/assets/images/helitour-ready-to-take-off.jpg')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
