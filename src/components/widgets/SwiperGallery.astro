@@ -1,0 +1,121 @@
+---
+import Image from "~/components/common/Image.astro";
+---
+
+<div class="swiper-container">
+  <div class="swiper main">
+    <div class="swiper-wrapper">
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/girlfriends-taking-a-tour-at-hightide.webp"
+        alt="Girlfriend taking a tour at High Tide"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/couple-in-helitour-sothport-hightide.webp"
+        alt="Couple in Helitour at High Tide Southport"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/family-after-helitour-southport.webp"
+        alt="Family after helitour in Southport"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/helitour-southport-hightide.webp"
+        alt="Helitour Southport High Tide Aviation"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/friend-at-high-tide-tours-southport.webp"
+        alt="Happy Customers after helitour in Southport NC, High Tide Aviation"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/happy-family-tour-high-tide.webp"
+        alt="Happy family at High Tide tours"
+      />
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div class="swiper thumbs">
+    <div class="swiper-wrapper">
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/girlfriends-taking-a-tour-at-hightide.webp"
+        alt="Girlfriend taking a tour at High Tide"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/couple-in-helitour-sothport-hightide.webp"
+        alt="Couple in Helitour at High Tide Southport"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/family-after-helitour-southport.webp"
+        alt="Family after helitour in Southport"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/helitour-southport-hightide.webp"
+        alt="Helitour Southport High Tide Aviation"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/friend-at-high-tide-tours-southport.webp"
+        alt="Happy Customers after helitour in Southport NC, High Tide Aviation"
+      />
+      <Image
+        class="swiper-slide"
+        src="~/assets/images/happy-family-tour-high-tide.webp"
+        alt="Happy family at High Tide tours"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .swiper-container {
+    position: relative;
+    height: 600px;
+  }
+  .swiper.main {
+    width: 100%;
+    height: 80%;
+  }
+  .swiper.thumbs {
+    width: 100%;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+  .thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<script src="../../scripts/slider_thumbnail.js"></script>

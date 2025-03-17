@@ -4,6 +4,7 @@ import Features2 from "~/components/widgets/Features2.astro";
 import Features4 from "~/components/widgets/Features4.astro";
 import SimpleHero from "~/components/widgets/SimpleHero.astro";
 import Layout from "~/layouts/PageLayout.astro";
+import SwiperGallery from "../components/widgets/SwiperGallery.astro";
 
 const metadata = {
   title: "High Tide Experience",
@@ -20,7 +21,7 @@ const metadata = {
   <SimpleHero
     title="The High Tide Experience"
     image={{
-      src: "~/assets/images/high-tide-aviation-front-sign-in-southport-nc.jpg",
+      src: "~/assets/images/family-at-high-tide-tours-southport.JPEG",
       alt: "high-tide-aviation-front-sign-in-southport-nc",
     }}
   />
@@ -74,6 +75,8 @@ const metadata = {
       subtitle={"High Tide Aviation delivers a straightforward, memorable flying experience. Every flight offers a new perspective, every view tells a story, and every guest is valued. Fly with us to see why we are the top choice for aerial tours in these regions."}
     />
   </div>
+
+  <SwiperGallery />
 
   <Features2
     id="locations"
