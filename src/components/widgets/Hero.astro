@@ -44,10 +44,10 @@ const {
               allow="accelerometer; autoplay; fullscreen;
     clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerpolicy="strict-origin-when-cross-origin"
-              class="hidden lg:block absolute -top-[20rem] w-[150rem] -left-[50rem] lg:-left-[20rem] h-[90rem] object-cover z-40 pointer-events-none"
+              class="aspect-video pointer-events-none absolute w-[160rem] -left-[65rem] lg:-left-[50rem] -top-[15rem] 2xl:h-[135vh] 2xl:w-[135vw] 2xl:-left-[18vw] 2xl:-top-[18vh]"
             />
 
-            <div class="hidden lg:block absolute bg-slate-900/30 inset-0 z-[41]" />
+            <div class="hidden lg:block absolute bg-slate-900/40 inset-0 z-[41]" />
 
             <div class="absolute bg-gradient-to-b from-gray-900/20 to-gray-900/10 dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
             <div class="absolute inset-0 -z-50 h-full w-full bg-zoom">
@@ -111,7 +111,7 @@ const {
           }
           {
             actions && (
-              <div class="mt-52 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+              <div class="mt-40 sm:mt-52 max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
                 {Array.isArray(actions) ? (
                   actions.map((action) => (
                     <div class="flex w-full sm:w-auto">
