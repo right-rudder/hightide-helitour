@@ -3,7 +3,7 @@ publishDate: 2025-03-21T00:00:00Z
 author: Jessica Ward
 title: "What to Expect on Your First Aerial Tour with Fly High Tide"
 excerpt: Thinking about booking your first aerial tour with High Tide Aviation? Whether you’re exploring the historic charm of Southport, North Carolina, soaking in the coastal beauty of St. Simons Island, Georgia, or just checking off a bucket-list adventure, you’re in for an unforgettable experience.
-image: /src/assets/images/beach-of-beaufort-sc.jpg
+image: /blog/beach-of-beaufort-sc.jpg
 category: Aerial Tours
 tags:
   - Aerial tour
