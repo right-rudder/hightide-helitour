@@ -6,6 +6,8 @@ import { Image } from "astro:assets";
 import logo from "~/assets/images/HTA-logo.png";
 import logoDark from "~/assets/images/HTA-white-grad-logo.png";
 
+const today = new Date();
+
 interface Link {
   text?: string;
   href?: string;
@@ -185,6 +187,7 @@ const {
 
       <div class="text-sm text-slate-900 mr-4 dark:text-primary">
         <Fragment set:html={footNote} />
+        {today.getFullYear()}
       </div>
     </div>
   </div>
