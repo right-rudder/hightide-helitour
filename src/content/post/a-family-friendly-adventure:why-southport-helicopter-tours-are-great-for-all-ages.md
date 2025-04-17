@@ -3,7 +3,7 @@ publishDate: 2025-04-17
 author: Jessica Ward
 title: "A Family-Friendly Adventure: Why Southport Helicopter Tours Are Great for All Ages"
 excerpt: Looking for a fun and safe activity to do with your family in Southport North Carolina? A helicopter tour with High Tide Aviation is a great way to spend time together and see the coast from above. It is easy to book and a fun memory for all ages.
-image: /src/assets/images/dad-helping-out-his-daughter-get-into-the-airplane-high-tide-aviation.jpg
+image: /blog/dad-helping-out-his-daughter-get-into-the-airplane-high-tide-aviation.jpg
 category: Aerial Tours
 tags:
   - Aerial tour
