@@ -37,16 +37,18 @@ const {
       {
         image && (
           <>
-            <iframe
-              src="https://www.youtube.com/embed/Obq7LdaqiR8?autoplay=1&loop=1&mute=1&iv_load_policy=3&controls=0&disablekb=1&fs=0&vq=hd1080&modestbranding=1&playlist=Obq7LdaqiR8&rel=0"
-              title="Southport Helicopter Tour - High Tide Helicopters"
-              loading="eager"
-              allow="accelerometer; autoplay; fullscreen;
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              referrerpolicy="strict-origin-when-cross-origin"
-              class="aspect-video pointer-events-none absolute w-[160rem] -left-[65rem] lg:-left-[50rem] -top-[15rem] 2xl:h-[135vh] 2xl:w-[135vw] 2xl:-left-[18vw] 2xl:-top-[18vh]"
-            />
-
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover z-0"
+            >
+              <source
+                src="https://res.cloudinary.com/dtyv8it4n/video/upload/v1746045570/high-tide-aviation-intro-video-trimmed_aa3s5x.mp4"
+                type="video/mp4"
+              />
+            </video>
             <div class="hidden lg:block absolute bg-slate-900/40 inset-0 z-[41]" />
 
             <div class="absolute bg-gradient-to-b from-gray-900/20 to-gray-900/10 dark:bg-slate-900/30 inset-0 -z-10 h-full w-full bg-zoom" />
