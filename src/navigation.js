@@ -14,6 +14,10 @@ export const headerData = {
           text: "St Simons Island, GA",
           href: getPermalink("/st-simons-island"),
         },
+        {
+          text: "Wilmington, NC",
+          href: getPermalink("/wilmington"),
+        },
       ],
     },
     {
