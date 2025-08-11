@@ -90,12 +90,19 @@ const {
               />
               <TypeAnimation
                 preRenderFirstString
-                sequence={["Southport, NC", 6300, "St Simons Island, GA", 9000]}
+                sequence={[
+                  "Southport, NC",
+                  5000,
+                  "St Simons Island, GA",
+                  5000,
+                  "Wilmington, NC",
+                  5000,
+                ]}
                 className="-mt-6 italic font-black min-h-16 text-6xl lg:text-8xl text-gray-200"
                 wrapper="h1"
                 cursor={false}
                 speed={10}
-                deletionSpeed={40}
+                deletionSpeed={50}
                 repeat={27}
                 client:visible
               />

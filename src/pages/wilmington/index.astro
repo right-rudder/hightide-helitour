@@ -1,0 +1,398 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero3 from "~/components/widgets/Hero3.astro";
+import Note from "~/components/widgets/Note.astro";
+import Image from "~/components/common/Image.astro";
+import SouthportTours from "~/components/tours/SouthportTours.astro";
+import WilmingtonTours from "../../components/tours/WilmingtonTours.astro";
+
+const metadata = {
+  title: "Wilmington, NC Aerial Tours",
+  description:
+    "Explore Wilmington, NC from the sky with High Tide Aviation's scenic airplane tours. Experience breathtaking views of the USS North Carolina, Figure Eight Island, and more. Book your aerial adventure today!",
+  keywords:
+    "Wilmington nc aerial tours, high tide aviation, airplane tours wilmington, cape fear aerial tours, scenic flights wilmington, wilmington nc sightseeing",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    actions={[
+      {
+        variant: "primary",
+        text: "Choose a Tour",
+        href: "#tours",
+        target: "_self",
+      },
+      /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    openHours={[
+      {
+        weekday: "Monday - Thursday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Friday - Saturday",
+        time: "10:00 AM - 6:00 PM",
+      },
+      {
+        weekday: "Sunday",
+        time: "Closed",
+      },
+    ]}
+    image={{
+      src: "~/assets/images/wilmington-nc-downtown-tour.png",
+      alt: "high-tide-aviation-tours-wilmington-nc",
+    }}
+  >
+    <Fragment slot="title">
+      Let's Fly Above
+      <br />
+      <span class="text-sky-400 text-6xl lg:text-8xl dark:text-white highlight"
+        >Wilmington, NC</span
+      >
+    </Fragment>
+
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from Wilmington International Airport (ILM)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >1817 Aviation Dr, Wilmington, NC 28405</span
+      >
+    </Fragment>
+    <Fragment slot="subtitle">
+      <div class="dark:text-white text-primary text-2xl font-bold px-2 py-5">
+        Airplane Only Tours
+      </div>
+    </Fragment>
+  </Hero3>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
+
+  <!-- Roadmap Widget **************** -->
+  <section id="wilmington-roadmap">
+    <div
+      class="text- bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <h2
+            class="xl:text-5xl text-4xl font-bold tracking-tight text-main-red text-center"
+          >
+            The High Tide Aviation Experience
+          </h2>
+          <p
+            class="mt-4 text-lg leading-2 text-black dark:text-white text-center"
+          >
+            Fly over Southport, NC and witness its coastal attractions and
+            marine beauty
+          </p>
+        </div>
+        <div class="py-8">
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                1
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Lift off from Wilmington International Airport
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Begin your journey at <strong>ILM Modern Aviation.</strong> After
+                  a brief introduction with your pilot, board the airplane for takeoff.
+                  Enjoy a comfortable flight with stunning aerial scenery from the
+                  moment you take off.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/tour-guide-with-guests-high-tide-aviation.jpg"
+                alt="Tour guide with guests at High Tide Aviation"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                2
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Iconic Battleship Experience
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Fly over the legendary <strong>USS North Carolina</strong>, a
+                  World War II battleship preserved as a floating museum. Marvel
+                  at its massive decks and rich naval history from a vantage
+                  point few ever see.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/Battleship.jpg"
+                alt="USS North Carolina Battleship"
+              />
+            </div>
+          </div>
+
+          <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                3
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  Coastal Treasures
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Fly past the exclusive <strong>Figure Eight Island</strong>,
+                  known for its pristine beaches and luxury homes. Continue to
+                  the <strong>Surf City Pier &amp; Bridge</strong>, where
+                  turquoise waters meet a charming fishing community.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/high-tide-tour-coastline-sunset.jpg"
+                alt="high-tide-aviation-tours-dolphins-swimming"
+              />
+            </div>
+          </div>
+
+          <div
+            class="my-8 flex flex-wrap justify-center lg:flex-row-reverse gap-8 lg:gap-0"
+          >
+            <div
+              class="flex flex-col justify-center align-middle items-center w-full lg:w-1/2"
+            >
+              <h3
+                class="text-4xl px-6 py-3 rounded-full bg-sky-500 text-white font-semibold"
+              >
+                4
+              </h3>
+              <div class="text-center pr-6">
+                <h3
+                  class="mt-5 text-3xl font-bold tracking-tight text-main-red"
+                >
+                  City and Shoreline Views
+                </h3>
+                <p
+                  class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
+                >
+                  Take in the charm of <strong>Downtown Wilmington</strong> with
+                  its historic riverfront and colorful architecture. Then glide along
+                  the coast for a breathtaking view of
+                  <strong>Wrightsville Beach</strong>, a favorite destination
+                  for water sports and seaside relaxation.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center items-center w-full lg:w-1/2"
+            >
+              <Image
+                class="object-cover rounded"
+                src="~/assets/images/wilmington-nc-downtown-tour.png"
+                alt="bhimarsh-southport-nc"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="our-tours-wilmington" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-sky-100 dark:from-sky-900 to-slate-500 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center justify-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-muted font-semibold leading-7 w-full"
+              >
+                Our Tours In
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary text-4xl w-full"
+              >
+                Wilmington, NC
+              </p>
+              <div
+                class="mt-8 flex justify-center bg-gray-100 dark:bg-gray-900 rounded p-6 shadow-lg w-full lg:w-1/2"
+              >
+                <ul role="list" class="space-y-3">
+                  <li>
+                    <a
+                      class="flex align-middle items-center hover:underline hover:text-[#f3aeb0] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/battleship-to-the-beach"
+                    >
+                      <div class="mr-2 rounded h-5 w-5 bg-[#f3aeb0]"></div>
+                      <span>Battleship to the Beach</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex align-middle items-center hover:underline hover:text-[#3aa9d9] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/masonboro-excursion"
+                    >
+                      <div class="mr-2 rounded h-5 w-5 bg-[#3aa9d9]"></div>
+                      <span>Masonboro Excursion</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex align-middle items-center hover:underline hover:text-[#8c8885] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/topsail-trek"
+                    >
+                      <div class="mr-2 rounded h-5 w-5 bg-[#8c8885]"></div>
+                      <span>Topsail Trek</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex align-middle items-center hover:underline hover:text-[#e8c481] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/cape-fear-expedition"
+                    >
+                      <div class="mr-2 rounded h-5 w-5 bg-[#e8c481]"></div>
+                      <span>Cape Fear Expedition</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex align-middle items-center hover:underline hover:text-[#33b36b] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/beach-lover-tour"
+                    >
+                      <div class="mr-2 rounded h-5 w-5 bg-[#33b36b]"></div>
+                      <span>Beach Lover Tour</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-full w-full flex justify-center align-middle items-center"
+          >
+            <Image
+              class="rounded shadow-lg"
+              src="~/assets/images/wilmington-tours-map.jpg"
+              alt="tour-map-route"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Widget ******************* -->
+  <WilmingtonTours />
+
+  <!-- Location *********** -->
+  <section id="location" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-sky-200 dark:from-slate-800 to-slate-500 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-muted font-semibold leading-7 w-full"
+              >
+                Come Fly Over
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary text-4xl w-full"
+              >
+                Wilmington, NC
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-900 dark:text-gray-300 w-full"
+              >
+                Our Wilmington tours depart from ILM Modern Aviation, located at
+                Wilmington International Airport (ILM) at 1817 Aviation Drive,
+                Wilmington, NC 28405. Here you'll find our airplane tours and
+                our world-class flight school training local pilots across the
+                southeastern coast. <strong>Come visit us today!</strong>
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
+              </dl>
+            </div>
+          </div>
+          <div class="h-full w-full flex justify-center align-middle">
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.5132550384005!2d-77.9099665!3d34.2703456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a98b9213dfa305%3A0xe74b80ead02cfb42!2sHigh%20Tide%20Aviation!5e1!3m2!1sen!2sca!4v1754932328853!5m2!1sen!2sca"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

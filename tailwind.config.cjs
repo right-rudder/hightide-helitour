@@ -17,6 +17,8 @@ module.exports = {
         404: "url('~/assets/images/pier-at-st-simons-island.jpg')",
         mission: "url('~/assets/images/happy-customer-at-high-tide.webp')",
         helitour: "url('~/assets/images/helitour-ready-to-take-off.webp')",
+        "wilmington-tour":
+          "url('~/assets/images/wilmington-nc-downtown-tour.png')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",

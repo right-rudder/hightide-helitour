@@ -14,6 +14,10 @@ export const headerData = {
           text: "St Simons Island, GA",
           href: getPermalink("/st-simons-island"),
         },
+        {
+          text: "Wilmington, NC",
+          href: getPermalink("/wilmington"),
+        },
       ],
     },
     {
@@ -77,7 +81,7 @@ export const headerData = {
 
 export const footerData = {
   description:
-    "High Tide Aviation offers premier aerial tours across two spectacular locations: Southport, NC, and St Simons Island, GA. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in Georgia. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
+    "High Tide Aviation offers premier aerial tours across two spectacular locations: Southport, NC, St Simons Island, GA, and Wilmington, NC. Choose from our diverse tour options including both airplane and helicopter rides in Southport, and exclusive airplane tours in St Simons Island and Wilmington. Each flight is an opportunity to take in breathtaking landscapes and historical landmarks, guided by our experienced pilots who ensure a safe and memorable experience. Perfect for tourists, photography enthusiasts, and anyone looking to celebrate a special occasion. Book your next adventure with High Tide Aviation and see the Southeast coast from a new perspective!",
   links: [
     {
       title: "Southport, NC",
@@ -118,6 +122,31 @@ export const footerData = {
         {
           text: "Golden Isles Passport",
           href: getPermalink("/st-simons-island/golden-isles-passport"),
+        },
+      ],
+    },
+    {
+      title: "Wilmington, NC",
+      links: [
+        {
+          text: "Battleship to the Beach",
+          href: getPermalink("/wilmington/battleship-to-the-beach"),
+        },
+        {
+          text: "Masonboro Excursion",
+          href: getPermalink("/wilmington/masonboro-excursion"),
+        },
+        {
+          text: "Topsail Trek",
+          href: getPermalink("/wilmington/topsail-trek"),
+        },
+        {
+          text: "Cape Fear Expedition",
+          href: getPermalink("/wilmington/cape-fear-expedition"),
+        },
+        {
+          text: "Beach Lover Tour",
+          href: getPermalink("/wilmington/beach-lover-tour"),
         },
       ],
     },
@@ -189,6 +218,12 @@ export const footerData = {
       airport: "McKinnon-St Simons Island Airport (KSSI)",
       address: "1759 Demere Road",
       phone: "(912) 434-4843",
+    },
+    {
+      city: "Wilmington, NC",
+      airport: "Wilmington International Airport (ILM)",
+      address: "1817 Aviation Dr, Wilmington",
+      phone: "(910) 294-5871",
     },
   ],
 };

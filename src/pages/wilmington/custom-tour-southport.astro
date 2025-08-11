@@ -1,0 +1,332 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import { Icon } from "astro-icon/components";
+import Hero5 from "~/components/widgets/Hero5.astro";
+import Note from "~/components/widgets/Note.astro";
+import Image from "~/components/common/Image.astro";
+import SouthportTours from "~/components/tours/SouthportTours.astro";
+const metadata = {
+  title: "Custom Tour",
+  description:
+    "Create your own custom tour with High Tide Aviation in Southport, NC. Tailor your helicopter or airplane flight to explore the sights you want to see. Perfect for personalized adventures and special occasions.",
+  keywords:
+    "custom tour southport nc, high tide aviation, personalized aerial tour, custom helicopter tour, custom airplane tour, scenic flights, southport nc sightseeing",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero5
+    reversed={true}
+    actions={[
+      {
+        variant: "custom",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000018693",
+        target: "_blank",
+      },
+      /* { text: 'Learn more', href: '#features', icon: 'tabler:chevron-down'}, */
+    ]}
+    openHours={[
+      {
+        weekday: "Monday - Thursday",
+        time: "10:00 AM - 5:00 PM",
+      },
+      {
+        weekday: "Friday - Saturday",
+        time: "10:00 AM - 6:00 PM",
+      },
+      {
+        weekday: "Sunday",
+        time: "Closed",
+      },
+    ]}
+    subtitle={[
+      "This hourly rate will be prorated to accommodate your flight time. Custom tours can be as long or as short as you would like. Please book a start time with us, and we will organize the further details with you over the phone following your booking confirmation.",
+      "Please note that helicopter tours must have a minimum passenger booking of 2 people to schedule. This hourly rate will be prorated to accommodate your flight time. Custom tours can be as long or as short as you would like. Please book a start time with us, and we will organize the further details with you over the phone following your booking confirmation.",
+    ]}
+    price={[300, 450]}
+    image={[
+      {
+        src: "~/assets/images/wedding-engagement-on-a-custom-airplane-tour-at-high-tide-aviation.jpg",
+        alt: "Wedding engagement on a custom airplane tour at High Tide Aviation",
+      },
+      {
+        src: "~/assets/images/R44-on-flight-tour-in-southport-nc.jpg",
+        alt: "R44-on-flight-tour-in-southport-nc",
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Southport, NC
+      <br />
+      <span
+        class="text-sky-400 text-5xl lg:text-6xl dark:text-sky-600 highlight"
+        >Custom Tour</span
+      >
+    </Fragment>
+    <Fragment slot="airport">
+      <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
+        >Departs from Cape Fear Regional Jetport (KSUT)</span
+      ><br />
+      <span class="text-gray-700 text-base dark:text-gray-100 highlight"
+        >4345 Airport Road SE – Southport, NC</span
+      >
+    </Fragment>
+  </Hero5>
+
+  <!-- Note Widget ******************* -->
+  <Note />
+
+  <section id="tour-info" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-300 to-gray-300 dark:from-slate-700 dark:to-gray-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-2xl text-center text-gray-700 dark:text-gray-300 font-semibold leading-7 w-full"
+              >
+                Airplane | Helicopter
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 dark:text-slate-500 text-4xl w-full"
+              >
+                Southport Custom Tour
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-800 dark:text-gray-200 w-full"
+              >
+                Our custom tour offering is the perfect opportunity to see North
+                Carolina’s coast from the sky above. Whether it be date night, a
+                real estate showcasing session, or a gender reveal, High Tide
+                Aviation looks forward to making your event even more special.
+              </p>
+              <div
+                class="flex flex-col justify-center items-center align-middle"
+              >
+                <h3
+                  class="mt-7 uppercase italic text-3xl text-slate-800 dark:text-slate-400 font-black"
+                >
+                  Custom
+                </h3>
+                <p class="mt-0 text-lg text-slate-500 font-semibold">
+                  Tour Ideas
+                </p>
+                <ul class="mt-4 space-y-1 sm:grid-cols-1 grid-cols-2">
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:moon-stars" />
+                    <span class="ml-2 font-medium">Date Night</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:gift" />
+                    <span class="ml-2 font-medium">Birthday Gifts</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:diamond" />
+                    <span class="ml-2 font-medium">Wedding Proposals</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200 hover:underline duration-100 underline-offset-2"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:gender-bigender" />
+                    <a
+                      href="https://www.youtube.com/watch?v=itO2t7Z3ve8"
+                      target="_blank"
+                      class="ml-2 font-medium animate-wave wave-text hover:underline"
+                      >Gender Reveals</a
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:wind" />
+                    <span class="ml-2 font-medium">Scattering Ashes</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:wall" />
+                    <span class="ml-2 font-medium">Real Estate Showcasing</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:camera" />
+                    <span class="ml-2 font-medium">Event Photography</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:leaf" />
+                    <span class="ml-2 font-medium">Environmental Studies</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:library-photo" />
+                    <span class="ml-2 font-medium"
+                      >Aerial Photography Sessions</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:device-tv" />
+                    <span class="ml-2 font-medium">Promotional Videos</span>
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:barrier-block" />
+                    <span class="ml-2 font-medium"
+                      >Construction Progress Filming</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:movie" />
+                    <span class="ml-2 font-medium">Documentary Videography</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:video" />
+                    <span class="ml-2 font-medium"
+                      >Aerial Videography Sessions</span
+                    >
+                  </li>
+                  <li
+                    class="flex justify-start align-middle items-center text-lg text-gray-800 dark:text-gray-200"
+                  >
+                    <Icon class="w-5 h-5" name="tabler:bulb" />
+                    <span class="ml-2 font-medium">… and more!</span>
+                  </li>
+                </ul>
+                <div
+                  class="mt-8 p-6 flex flex-col justify-center items-center align-middle bg-gray-200 dark:bg-gray-800 rounded-lg"
+                >
+                  <ul class="space-y-1">
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >Custom flight duration</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium">Custom sights</span>
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to discovery flight</span
+                      >
+                    </li>
+                    <li
+                      class="flex justify-start align-middle items-center text-base text-gray-800 dark:text-gray-200"
+                    >
+                      <Icon class="w-6 h-6" name="tabler:circle-check-filled" />
+                      <span class="ml-2 font-medium"
+                        >+$50 upgrade to sunset flight</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-full w-full flex flex-col justify-center align-middle items-center"
+          >
+            <Image
+              class="rounded shadow-lg"
+              src="~/assets/images/OceanCrestPier.jpg"
+              alt="tour-map-route"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location *********** -->
+  <section id="location" class="w-full">
+    <div
+      class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
+    >
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div
+          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+        >
+          <div class="flex align-middle items-center">
+            <div
+              class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+            >
+              <h2
+                class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
+              >
+                Come Fly Over
+              </h2>
+              <p
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
+              >
+                Southport, NC
+              </p>
+              <p
+                class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
+              >
+                Our Southport location is conveniently located at the Cape Fear
+                Regional Jetport in Southport, North Carolina. Here, you’ll find
+                our tour operations and our flight school training pilots across
+                the southeast coast. Come visit us today!
+              </p>
+              <dl
+                class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+              >
+                <!-- <div class="relative">
+              <a href="#" class="btn-red">Meet the Team</a>
+            </div> -->
+              </dl>
+            </div>
+          </div>
+          <div class="h-full w-full flex justify-center align-middle">
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694922.496540005!2d-80.51713514375002!3d33.9309545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa07e3b3a0b82b%3A0xe199a7d4a214440f!2sHigh%20Tide%20Aviation!5e0!3m2!1sen!2sco!4v1714928747011!5m2!1sen!2sco"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Widget ******************* -->
+  <SouthportTours />
+</Layout>
