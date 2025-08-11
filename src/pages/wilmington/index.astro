@@ -4,13 +4,14 @@ import Hero3 from "~/components/widgets/Hero3.astro";
 import Note from "~/components/widgets/Note.astro";
 import Image from "~/components/common/Image.astro";
 import SouthportTours from "~/components/tours/SouthportTours.astro";
+import WilmingtonTours from "../../components/tours/WilmingtonTours.astro";
 
 const metadata = {
-  title: "Southport, NC Aerial Tours",
+  title: "Wilmington, NC Aerial Tours",
   description:
-    "Explore Southport, NC from above with High Tide Aviation's helicopter and airplane tours. Enjoy breathtaking views of beaches, lighthouses, and Cape Fear with our experienced pilots. Book your Southport aerial tour today!",
+    "Explore Wilmington, NC from the sky with High Tide Aviation's scenic airplane tours. Experience breathtaking views of the USS North Carolina, Figure Eight Island, and more. Book your aerial adventure today!",
   keywords:
-    "southport nc aerial tours, high tide aviation, helicopter tours southport, airplane tours southport, cape fear aerial tours, scenic flights southport, coastal helicopter tours, southport nc sightseeing",
+    "Wilmington nc aerial tours, high tide aviation, airplane tours wilmington, cape fear aerial tours, scenic flights wilmington, wilmington nc sightseeing",
 };
 ---
 
@@ -42,8 +43,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: "~/assets/images/beaufort-sc-waterways.jpg",
-      alt: "high-tide-aviation-tours-southport-nc",
+      src: "~/assets/images/wilmington-nc-downtown-tour.png",
+      alt: "high-tide-aviation-tours-wilmington-nc",
     }}
   >
     <Fragment slot="title">
@@ -56,15 +57,15 @@ const metadata = {
 
     <Fragment slot="airport">
       <span class="text-sky-900 font-bold text-xl dark:text-sky-700 highlight"
-        >Departs from Cape Fear Regional Jetport (KSUT)</span
+        >Departs from Wilmington International Airport (ILM)</span
       ><br />
       <span class="text-gray-700 text-base dark:text-gray-100 highlight"
-        >4345 Airport Road SE – Southport, NC</span
+        >1817 Aviation Dr, Wilmington, NC 28405</span
       >
     </Fragment>
     <Fragment slot="subtitle">
       <div class="dark:text-white text-primary text-2xl font-bold px-2 py-5">
-        Airplane and Helicopter
+        Airplane Only Tours
       </div>
     </Fragment>
   </Hero3>
@@ -74,7 +75,7 @@ const metadata = {
   <Note />
 
   <!-- Roadmap Widget **************** -->
-  <section id="southport-roadmap">
+  <section id="wilmington-roadmap">
     <div
       class="text- bg-gradient-to-b from-gray-100 to-gray-50 dark:from-slate-800 dark:to-slate-500 py-12 sm:py-24"
     >
@@ -106,16 +107,15 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Lift off from Cape Fear Regional Jetport
+                  Lift off from Wilmington International Airport
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Begin your journey at <strong
-                    >Cape Fear Regional Jetport (KSUT).</strong
-                  > After a brief introduction with your pilot, board the helicopter
-                  or airplane for takeoff. Our tours are designed for comfort and
-                  provide panoramic views from the start.
+                  Begin your journey at <strong>ILM Modern Aviation.</strong> After
+                  a brief introduction with your pilot, board the airplane for takeoff.
+                  Enjoy a comfortable flight with stunning aerial scenery from the
+                  moment you take off.
                 </p>
               </div>
             </div>
@@ -124,8 +124,8 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/high-tide-helicopter-on-beaufort.jpg"
-                alt="Certified helicopter pilot preparing for takeoff"
+                src="~/assets/images/tour-guide-with-guests-high-tide-aviation.jpg"
+                alt="Tour guide with guests at High Tide Aviation"
               />
             </div>
           </div>
@@ -145,15 +145,15 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Historic Landmarks
+                  Iconic Battleship Experience
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Tour the historic <strong>Oak Island Lighthouse</strong> and the
-                  ruins of <strong>Fort Caswell</strong>. These flights offer a
-                  unique perspective on Southport’s rich maritime history and
-                  its role in coastal defense.
+                  Fly over the legendary <strong>USS North Carolina</strong>, a
+                  World War II battleship preserved as a floating museum. Marvel
+                  at its massive decks and rich naval history from a vantage
+                  point few ever see.
                 </p>
               </div>
             </div>
@@ -162,8 +162,8 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/fort-caswell-southport.jpg"
-                alt="fort-caswell-southport-nc"
+                src="~/assets/images/Battleship.jpg"
+                alt="USS North Carolina Battleship"
               />
             </div>
           </div>
@@ -181,19 +181,15 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Marine and Wildlife Views
+                  Coastal Treasures
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  As you fly over the coastline, observe the <strong
-                    >diverse marine life</strong
-                  >
-                  and natural habitats. The area is known for its <strong
-                    >pristine beaches</strong
-                  >
-                  and the opportunity to see <strong>aquatic wildlife</strong> in
-                  their natural environment.
+                  Fly past the exclusive <strong>Figure Eight Island</strong>,
+                  known for its pristine beaches and luxury homes. Continue to
+                  the <strong>Surf City Pier &amp; Bridge</strong>, where
+                  turquoise waters meet a charming fishing community.
                 </p>
               </div>
             </div>
@@ -202,7 +198,7 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/high-tide-aviation-tours-dolphins-swimming.jpg"
+                src="~/assets/images/high-tide-tour-coastline-sunset.jpg"
                 alt="high-tide-aviation-tours-dolphins-swimming"
               />
             </div>
@@ -223,16 +219,16 @@ const metadata = {
                 <h3
                   class="mt-5 text-3xl font-bold tracking-tight text-main-red"
                 >
-                  Extensive Beach Tours
+                  City and Shoreline Views
                 </h3>
                 <p
                   class="mt-4 px-4 lg:px-20 text-lg leading-2 text-gray-800 dark:text-white"
                 >
-                  Conclude your tour with expansive views of Southport’s
-                  beaches, from <strong>Caswell Beach</strong> to <strong
-                    >Bald Head Island</strong
-                  >. Return to the jetport with a new impression of the area’s
-                  natural beauty.
+                  Take in the charm of <strong>Downtown Wilmington</strong> with
+                  its historic riverfront and colorful architecture. Then glide along
+                  the coast for a breathtaking view of
+                  <strong>Wrightsville Beach</strong>, a favorite destination
+                  for water sports and seaside relaxation.
                 </p>
               </div>
             </div>
@@ -241,7 +237,7 @@ const metadata = {
             >
               <Image
                 class="object-cover rounded"
-                src="~/assets/images/bhimarsh.jpg"
+                src="~/assets/images/wilmington-nc-downtown-tour.png"
                 alt="bhimarsh-southport-nc"
               />
             </div>
@@ -251,7 +247,7 @@ const metadata = {
     </div>
   </section>
 
-  <section id="our-tours-southport" class="w-full">
+  <section id="our-tours-wilmington" class="w-full">
     <div
       class="overflow-hidden bg-gradient-to-t from-sky-100 dark:from-sky-900 to-slate-500 py-4 sm:py-16"
     >
@@ -271,7 +267,7 @@ const metadata = {
               <p
                 class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary text-4xl w-full"
               >
-                Southport, NC
+                Wilmington, NC
               </p>
               <div
                 class="mt-8 flex justify-center bg-gray-100 dark:bg-gray-900 rounded p-6 shadow-lg w-full lg:w-1/2"
@@ -279,47 +275,47 @@ const metadata = {
                 <ul role="list" class="space-y-3">
                   <li>
                     <a
-                      class="flex align-middle items-center hover:underline hover:text-[#9fc242] text-gray-800 dark:text-gray-200"
-                      href="/southport/beach-lover"
+                      class="flex align-middle items-center hover:underline hover:text-[#f3aeb0] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/battleship-to-the-beach"
                     >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#9fc242]"></div>
-                      <span>Beach Lover</span>
+                      <div class="mr-2 rounded h-5 w-5 bg-[#f3aeb0]"></div>
+                      <span>Battleship to the Beach</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      class="flex align-middle items-center hover:underline hover:text-[#bfc1c4] text-gray-800 dark:text-gray-200"
-                      href="/southport/oak-island"
+                      class="flex align-middle items-center hover:underline hover:text-[#3aa9d9] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/masonboro-excursion"
                     >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#bfc1c4]"></div>
-                      <span>Oak Island</span>
+                      <div class="mr-2 rounded h-5 w-5 bg-[#3aa9d9]"></div>
+                      <span>Masonboro Excursion</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      class="flex align-middle items-center hover:underline hover:text-[#ffa64b] text-gray-800 dark:text-gray-200"
-                      href="/southport/lighthouse-tour"
+                      class="flex align-middle items-center hover:underline hover:text-[#8c8885] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/topsail-trek"
                     >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#ffa64b]"></div>
-                      <span>Lighthouse Tour</span>
+                      <div class="mr-2 rounded h-5 w-5 bg-[#8c8885]"></div>
+                      <span>Topsail Trek</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      class="flex align-middle items-center hover:underline hover:text-[#ffe94a] text-gray-800 dark:text-gray-200"
-                      href="/southport/bald-head-island"
+                      class="flex align-middle items-center hover:underline hover:text-[#e8c481] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/cape-fear-expedition"
                     >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#ffe94a]"></div>
-                      <span>Bald Head Island</span>
+                      <div class="mr-2 rounded h-5 w-5 bg-[#e8c481]"></div>
+                      <span>Cape Fear Expedition</span>
                     </a>
                   </li>
                   <li>
                     <a
-                      class="flex align-middle items-center hover:underline hover:text-[#970c5f] text-gray-800 dark:text-gray-200"
-                      href="/southport/cape-fear-passport"
+                      class="flex align-middle items-center hover:underline hover:text-[#33b36b] text-gray-800 dark:text-gray-200"
+                      href="/wilmington/beach-lover-tour"
                     >
-                      <div class="mr-2 rounded h-5 w-5 bg-[#970c5f]"></div>
-                      <span>Cape Fear Passport</span>
+                      <div class="mr-2 rounded h-5 w-5 bg-[#33b36b]"></div>
+                      <span>Beach Lover Tour</span>
                     </a>
                   </li>
                 </ul>
@@ -331,7 +327,7 @@ const metadata = {
           >
             <Image
               class="rounded shadow-lg"
-              src="~/assets/images/HTA-map-southport.jpg"
+              src="~/assets/images/wilmington-tours-map.jpg"
               alt="tour-map-route"
             />
           </div>
@@ -341,12 +337,12 @@ const metadata = {
   </section>
 
   <!-- Pricing Widget ******************* -->
-  <SouthportTours />
+  <WilmingtonTours />
 
   <!-- Location *********** -->
   <section id="location" class="w-full">
     <div
-      class="overflow-hidden bg-gradient-to-t from-slate-400 to-sky-700 py-4 sm:py-16"
+      class="overflow-hidden bg-gradient-to-t from-sky-200 dark:from-slate-800 to-slate-500 py-4 sm:py-16"
     >
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div
@@ -357,22 +353,23 @@ const metadata = {
               class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
             >
               <h2
-                class="text-3xl text-center text-gray-300 font-semibold leading-7 w-full"
+                class="text-3xl text-center text-muted font-semibold leading-7 w-full"
               >
                 Come Fly Over
               </h2>
               <p
-                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-slate-900 text-4xl w-full"
+                class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary text-4xl w-full"
               >
-                Southport, NC
+                Wilmington, NC
               </p>
               <p
-                class="mt-6 text-center text-lg leading-8 text-gray-100 w-full"
+                class="mt-6 text-center text-lg leading-8 text-gray-900 dark:text-gray-300 w-full"
               >
-                Our Southport location is conveniently located at the Cape Fear
-                Regional Jetport in Southport, North Carolina. Here, you’ll find
-                our tour operations and our flight school training pilots across
-                the southeast coast. Come visit us today!
+                Our Wilmington tours depart from ILM Modern Aviation, located at
+                Wilmington International Airport (ILM) at 1817 Aviation Drive,
+                Wilmington, NC 28405. Here you'll find our airplane tours and
+                our world-class flight school training local pilots across the
+                southeastern coast. <strong>Come visit us today!</strong>
               </p>
               <dl
                 class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
@@ -386,7 +383,7 @@ const metadata = {
           <div class="h-full w-full flex justify-center align-middle">
             <iframe
               class="rounded"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1694922.496540005!2d-80.51713514375002!3d33.9309545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aa07e3b3a0b82b%3A0xe199a7d4a214440f!2sHigh%20Tide%20Aviation!5e0!3m2!1sen!2sco!4v1714928747011!5m2!1sen!2sco"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3756.5132550384005!2d-77.9099665!3d34.2703456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a98b9213dfa305%3A0xe74b80ead02cfb42!2sHigh%20Tide%20Aviation!5e1!3m2!1sen!2sca!4v1754932328853!5m2!1sen!2sca"
               width="600"
               height="450"
               style="border:0;"

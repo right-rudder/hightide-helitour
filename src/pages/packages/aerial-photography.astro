@@ -183,8 +183,8 @@ const metadata = {
   <Features2
     id="locations"
     title="Add Aerial Footage to Your Tour"
-    tagline=" Tour Add-ons"
-    columns={2}
+    tagline="Tour Add-ons"
+    columns={3}
     bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
     items={[
       {
@@ -220,7 +220,25 @@ const metadata = {
             "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
           description:
             "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
-          icon: "text-slate-700",
+          icon: "text-slate-700 dark:text-white",
+        },
+      },
+      {
+        title: "Wilmington, NC",
+        description: "Airplane Only",
+        icon: "tabler:map-pin",
+        callToAction: {
+          variant: "secondary",
+          text: "Explore",
+          href: "/wilmington",
+        },
+        classes: {
+          panel: "bg-wilmington-tour bg-cover bg-center",
+          title:
+            "text-slate-700 text-2xl lg:text-3xl font-black m-0 p-0 uppercase dark:text-white",
+          description:
+            "text-slate-600 tracking-tighter font-bold text-lg lg:text-xl uppercase dark:text-white",
+          icon: "text-slate-700 dark:text-white",
         },
       },
     ]}

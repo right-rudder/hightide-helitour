@@ -1,0 +1,195 @@
+---
+import Pricing2 from "../widgets/Pricing2.astro";
+---
+
+<Pricing2
+  id="tours"
+  title="Select from the tours below"
+  bg='<div class="absolute inset-0 bg-gradient-to-t from-slate-300 to-slate-400 dark:from-gray-800 dark:to-gray-900" aria-hidden="true"></div>'
+  prices={[
+    {
+      image: {
+        src: "~/assets/images/battleship-to-the-beach-high-tide-tours.jpg",
+        alt: "Battleship to the Beach Tour",
+      },
+      city: "Wilmington, NC",
+      title: "Battleship to the Beach",
+      btnSpace: true,
+      subtitle:
+        "A scenic flight from the Battleship North Carolina to Wrightsville Beach.",
+      price: 120,
+      period: "per person",
+      items: [
+        {
+          description: "20 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "25 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000022451",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/wilmington/battleship-to-the-beach",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/masonboro-excursion-high-tide-tours.jpg",
+        alt: "Masonboro Excursion Tour",
+      },
+      btnSpace: true,
+      city: "Wilmington, NC",
+      title: "Masonboro Excursion",
+      subtitle:
+        "A scenic flight to Masonboro Island, a pristine barrier island.",
+      price: 180,
+      period: "per person",
+      items: [
+        {
+          description: "35 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "40 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000022551",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/wilmington/masonboro-excursion",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/topsail-trek-high-tide-aviation-tours.png",
+        alt: "Topsail Trek Tour",
+      },
+      city: "Wilmington, NC",
+      title: "Topsail Trek",
+      subtitle:
+        "A scenic flight to Topsail Island, known for its beautiful beaches and rich history.",
+      price: 220,
+      period: "per person",
+      items: [
+        {
+          description: "45 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "55 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000022552",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/wilmington/topsail-trek",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/cape-fear-expedition-high-tide-tours.png",
+        alt: "Cape Fear Expedition Tour",
+      },
+      city: "Wilmington, NC",
+      title: "Cape Fear Expedition",
+      btnSpace: true,
+      subtitle:
+        "Real adventure awaits on this scenic flight over the Cape Fear River and its surrounding areas.",
+      price: 250,
+      period: "per person",
+      items: [
+        {
+          description: "50 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "65 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000022554",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/wilmington/cape-fear-expedition",
+      },
+    },
+    {
+      image: {
+        src: "~/assets/images/wilmington-nc-downtown-tour.png",
+        alt: "Beach Lover Tour",
+      },
+      city: "Wilmington, NC",
+      title: "Beach Lover Tour",
+      btnSpace: true,
+      subtitle:
+        "A comprehensive tour of Wilmington's beaches, lighthouses, and coastal landmarks.",
+      price: 320,
+      period: "per person",
+      items: [
+        {
+          description: "65 minutes of flight",
+          icon: "tabler:hourglass",
+        },
+        {
+          description: "85 miles of coastline",
+          icon: "tabler:ripple",
+        },
+        {
+          description: "Airplane only",
+          icon: "tabler:plane-departure",
+        },
+      ],
+      callToAction: {
+        target: "_blank",
+        text: "Book Now",
+        href: "https://www.flightcircle.com/shop/5c9443ea346a/4000022555",
+      },
+      callToAction2: {
+        target: "_self",
+        text: "More Details",
+        href: "/wilmington/beach-lover-tour",
+      },
+    },
+  ]}
+/>
