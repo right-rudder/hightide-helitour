@@ -3,7 +3,7 @@ publishDate: 2025-09-24T00:00:00Z
 author: Jessica Ward
 title: "Take Flight: Your First Step Into the World of Aviation"
 excerpt: "Dreaming of flying but not sure where to start? With High Tide Aviation, newcomers can experience the thrill of aviation through safe, family-friendly aerial tours along the stunning southeastern coast."
-image: /blog/public/blog/happy-customer-at-high-tide.jpg
+image: /blog/happy-customer-at-high-tide.jpg
 category: Aviation for Beginners
 tags:
   - Newcomers
