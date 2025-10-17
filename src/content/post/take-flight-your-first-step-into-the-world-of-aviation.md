@@ -31,10 +31,10 @@ First time in the air? No worries. High Tide Aviation’s professional pilots gu
 Many newcomers who start with a simple tour find themselves inspired to learn more about flying. Whether it’s your first ride or the first step toward flight training, every experience opens the door to new possibilities.
 
 ## Ready to Try It Yourself?
-There’s no better time to explore the skies. Book your first flight with [High Tide Aviation](https://flyhightide.com/) and see why so many newcomers fall in love with aviation from the very first takeoff.
+There’s no better time to explore the skies. Book your first flight with [High Tide Aviation](/packages/custom-tours) and see why so many newcomers fall in love with aviation from the very first takeoff.
 
 ---
 
 **High Tide Aviation – Southport, NC | Wilmington, NC | St. Simons Island, GA**
 📞 (910) 477-1926
-👉 [Book your first flight today](https://flyhightide.com/)
+👉 [Book your first flight today](/packages/custom-tours)
