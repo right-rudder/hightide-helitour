@@ -2,7 +2,7 @@
 publishDate: 2025-10-15T12:00:00Z
 author: Jessica Ward
 title: "Fall in Love with the Coast: Why Autumn Is the Best Time for a Scenic Flight"
-excerpt: "Cooler air, golden light, and peaceful skies—discover why autumn is the perfect season to take a scenic flight with High Tide Aviation over the Carolina and Georgia coasts."
+excerpt: "Cooler air, golden light, and peaceful skies, discover why autumn is the perfect season to take a scenic flight with High Tide Aviation over the Carolina and Georgia coasts."
 image: /blog/st-simons-island-lighthouse.jpg
 category: Aerial Tours
 tags:
@@ -16,7 +16,7 @@ tags:
 # Fall in Love with the Coast: Why Autumn Is the Best Time for a Scenic Flight
 
 ## Crisp Air and Golden Skies
-Autumn transforms the southeastern coast into a breathtaking display of color and clarity. Cooler temperatures and low humidity mean smoother flights and unmatched visibility—perfect for taking in the coastline from above.
+Autumn transforms the southeastern coast into a breathtaking display of color and clarity. Cooler temperatures and low humidity mean smoother flights and unmatched visibility, perfect for taking in the coastline from above.
 
 ## Peaceful, Crowd-Free Flights
 As summer crowds fade, fall offers a calmer, more intimate experience in the air. Whether you’re flying over the beaches of Wilmington, the marshes of St. Simons Island, or the historic shores of Southport, autumn skies are yours to explore.
