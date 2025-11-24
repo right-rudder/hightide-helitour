@@ -1,5 +1,5 @@
 ---
-publishDate: 2025-11-15T12:00:00Z
+publishDate: 2025-11-19T12:00:00Z
 author: Jessica Ward
 title: "Gift an Experience: Why Scenic Flights Are the Perfect Holiday Present"
 excerpt: "Forget the wrapping paper, give the gift of flight this holiday season. Discover why High Tide Aviation’s scenic flights make the ultimate experience gift for family, friends, or someone special."
