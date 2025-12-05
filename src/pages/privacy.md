@@ -52,4 +52,4 @@ If we decide to change our privacy policy, we will post those changes on this pa
 
 ### Contacting Us
 
-If there are any questions regarding this privacy policy you may contact us via the [contact us](/contact) page on this website.
+If there are any questions regarding this privacy policy you may contact us via the contact us page on this website.
