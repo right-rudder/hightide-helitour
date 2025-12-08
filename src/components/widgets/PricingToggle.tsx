@@ -62,6 +62,11 @@ export default function PricingTable(props: PricingTabProps) {
               Book Now
             </a>
           </div>
+          {/* To prevent height changes when switching between Airplane and Helicopter */}
+          <p className="mt-3 text-sm invisible">
+            Please note our helicopter tours require a minimum purchase of two
+            passengers to operate.
+          </p>
         </div>
       ) : (
         <div>

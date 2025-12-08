@@ -21,7 +21,7 @@ export const headerData = {
       ],
     },
     {
-      text: "The High Tide Experience",
+      text: "The Experience",
       href: getPermalink("/high-tide-experience"),
     },
     {
