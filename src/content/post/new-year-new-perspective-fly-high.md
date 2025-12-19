@@ -33,5 +33,5 @@ Make this the year you finally take flight, literally. Visit [FlyHighTide.com](/
 ---
 
 **High Tide Aviation – Southport, NC | Wilmington, NC | St. Simons Island, GA**  
-📞 (910) 477-1926  
+📞 [(910) 477-1926](tel:9104771926)  
 👉 [Book your New Year flight](/packages/custom-tours)
